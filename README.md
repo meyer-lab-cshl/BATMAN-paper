@@ -8,4 +8,4 @@ Folder contains all codes and raw data to reproduce figures in the BATMAN paper.
 Folder contains codes for the Python package pyBATMAN, hosted at https://pypi.org/project/pybatman/.
 
 # run_batman
-Folder contains a test input data file and a python test script that trains BATMAN on the input data file and plots results. Please pip install pyBATMAN, preferably in a new conda environment with python=3.11, before running the script.
+Folder contains a test input data file and a python test script that trains BATMAN on the input data file and plots results. Please pip install pyBATMAN, preferably in a new conda environment with python=3.11, before running the script. The folder also has an interactive Jupyter notebook that trains and validates pyBATMAN on the test data and visualizes the results.
