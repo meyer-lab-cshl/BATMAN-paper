@@ -19,7 +19,7 @@ conda create -n BATMAN-env python=3.11
 conda activate BATMAN-env
 ```
 
-In the Conda environment with Python v3.11 installed, run the following command to install BATMAN.
+In the newly created Conda environment named 'BATMAN-env' with Python v3.11 installed, run the following command to install BATMAN.
 
 ```
 pip install pybatman
