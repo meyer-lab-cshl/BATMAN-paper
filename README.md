@@ -5,17 +5,24 @@ BATMAN predicts TCR activation by mutant peptides based on their distances to th
 
 ![BATMAN schematic diagram showing that it integrates mutational scan datasets across many TCRs to build a hierarchical Bayesian inference model. BATMAN infers
 hyperparameters from the training database and uses them to generate prior distributions for cross-TCR AA distance and TCR-specific
-positional weights, which are multiplied and used as a predictor of TCR activation by a given mutant](BATMAN_schematic.jpg)
+positional weights, which are multiplied and used as a predictor of TCR activation by a given mutant](BATMAN_schematic_github.jpg)
 
 BATMAN can be trained in two modes: (1) within-TCR, where the train and test peptides are associated with the same TCR, and BATMAN-inferred positional weight profiles are TCR-specific, and (2) leave-one-TCR-out, where peptides are tested for activation of a TCR left out of the training data, and BATMAN-inferred positional weight profile is common across all TCRs.
 
 For more information, refer to our preprint! For an interactive tutorial and test input, refer to our [jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb).
 
-# paper_figures
-Folder contains all codes and raw data to reproduce figures in the BATMAN paper. The excel file paper_figures/data/TCR_epitope_database.xlsx is the main file containing all the TCR-pMHC mutational scan data we curated.
+# Installing and running pyBATMAN
+It is advisable to install and run the Python implementation of BATMAN ('pyBATMAN') in a Conda environment with Python v=3.11. For instruction on creating and activating Conda environments, please refer to the [Conda user guide](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#). In the Conda environment with Python v3.11 nstalled, run the following command to install BATMAN.
 
-# pybatman
-Folder contains codes for the Python package pyBATMAN, hosted at https://pypi.org/project/pybatman/.
+```
+pip install pybatman
+```
+Once installed successfully, you should be able to run a [test script](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/test_script.py) on [sample input data](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/test_input.csv), both available to download from this repository. 
 
-# run_batman
-Folder contains a test input data file and a python test script that trains BATMAN on the input data file and plots results. Please pip install pyBATMAN, preferably in a new conda environment with python=3.11, before running the script. The folder also has an interactive Jupyter notebook that trains and validates pyBATMAN on the test data and visualizes the results.
+For an interactive tutorial on different functions available with pyBATMAN, please refer to our [jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb). The Jupyter notebook trains and validates pyBATMAN on the test data and visualizes the results.
+
+# BATMAN preprint
+The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/paper_figures) in this repository contains all codes and raw data to reproduce figures in the BATMAN preprint. 
+
+# Downloading BATMAN dataset
+The fully curated database of TCR-pMHC interactions can be downloaded as an excel sheet from the [data folder](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/paper_figures/data/TCR_epitope_database.xlsx) in this repository.
