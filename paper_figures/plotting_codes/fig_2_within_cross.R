@@ -245,7 +245,7 @@ p <- ggplot(plot_data,
         axis.title.y = element_text(size=25))
 
 ggsave(plot=p, "within_cross_by_method.pdf",
-       width=20, height=10)
+       width=20, height=8)
 
 ##        Fig 2b       #############
 within_wider <- read_csv("../data/within_tcr1.csv")
