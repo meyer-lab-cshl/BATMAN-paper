@@ -1,0 +1,11 @@
+*
+!*/
+!.gitignore
+!README.md
+!LICENSE
+!BATMAN_schematic_github.jpg
+!data-processing/**
+!paper_figures/**
+!pybatman/**
+!run_batman/**
+data-processing/data
