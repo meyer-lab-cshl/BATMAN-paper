@@ -9,3 +9,5 @@
 !pybatman/**
 !run_batman/**
 data-processing/data
+data-processing/cluster_logs
+data-processing/.*
