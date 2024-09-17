@@ -1,0 +1,10 @@
+name: immunogenic
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - r-base
+  - r-stringr
+  - r-tidyverse
+  - r-seqinr
+  - r-cowplot
