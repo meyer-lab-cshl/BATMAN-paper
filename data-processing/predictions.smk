@@ -14,13 +14,16 @@ def construct_combine_input(wildcards):
     fastadir = checkpoints.split_fasta_files.get(**wildcards).output[0]
     print(fastadir)
     mhc=glob_wildcards(os.path.join(fastadir,
-                                           "peptides_{mhc}_{plength}.fasta")).mhc
+                                           "peptides_{mhc}_{plength}_{distance}.fasta")).mhc
     plength=glob_wildcards(os.path.join(fastadir,
-                                           "peptides_{mhc}_{plength}.fasta")).plength
-    return expand("data/predictions/netMHCpan_{mhc}_{plength}_formated.csv",
+                                           "peptides_{mhc}_{plength}_{distance}.fasta")).plength
+    distance=glob_wildcards(os.path.join(fastadir,
+                                           "peptides_{mhc}_{plength}_{distance}.fasta")).distance
+    return expand("data/predictions/netMHCpan_{mhc}_{plength}_{distance}_formated.csv",
                 zip,
                 mhc=mhc,
-                plength=plength
+                plength=plength,
+                distance=distance
                 )
 
 ##### wildcards #####
@@ -31,14 +34,15 @@ wildcard_constraints:
 
 rule all:
     input:
-        "data/predictions/netMHCpan_formated.csv",
-        "data/sanitycheck_peptides_predictions.txt"
+        #"data/predictions/netMHCpan_formated_{distance}.csv",
+        expand("data/sanitycheck_peptides_predictions_{distance}.txt",
+            distance=['1dhamming', 'multihamming'])
 
 checkpoint split_fasta_files:
     input:
-        "data/netmhcpan_inputs_mhc_i.csv"
+        peptides="data/netmhcpan_inputs_mhci_{distance}.csv"
     output:
-        directory("data/fastafiles")
+        directory("data/fastafiles/{distance}")
     resources:
         mem_mb = 10000
     conda:
@@ -48,13 +52,11 @@ checkpoint split_fasta_files:
 
 rule netmhcpan:
     input:
-        peptides="data/fastafiles/peptides_{mhc}_{plength}.fasta",
+        peptides="data/fastafiles/{distance}/peptides_{mhc}_{plength}.fasta",
     output:
-        "data/predictions/netMHCpan_{mhc}_{plength}.txt",
+        "data/predictions/{distance}/netMHCpan_{mhc}_{plength}.txt",
     resources:
         mem_mb = 10000
-    params:
-        plength=9
     shell:
         """
         netMHCpan -f {input.peptides} \
@@ -66,9 +68,9 @@ rule netmhcpan:
 
 rule format:
     input:
-        "data/predictions/netMHCpan_{mhc}_{plength}.txt",
+        "data/predictions/{distance}/netMHCpan_{mhc}_{plength}.txt",
     output:
-        "data/predictions/netMHCpan_{mhc}_{plength}_formated.csv",
+        "data/predictions/{distance}/netMHCpan_{mhc}_{plength}_formated.csv",
     conda:
         "envs/format.yaml"
     resources:
@@ -76,8 +78,8 @@ rule format:
     shell:
         """
         Rscript scripts/02_format-predictions.R  \
-            --dirpred data/predictions \
-            --dirseq data/fastafiles \
+            --dirpred data/predictions/{wildcards.distance} \
+            --dirseq data/fastafiles/{wildcards.distance} \
             --sampleid {wildcards.mhc}_{wildcards.plength}
         """
 
@@ -85,7 +87,7 @@ rule combine:
     input:
         construct_combine_input
     output:
-        "data/predictions/netMHCpan_formated.csv",
+        "data/predictions/netMHCpan_formated_{distance}.csv",
     resources:
         mem_mb = 1000
     shell:
@@ -98,10 +100,10 @@ rule combine:
 
 rule sanitycheck_io:
     input:
-        pred="data/netmhcpan_inputs_mhc_i.csv",
-        pep="data/predictions/netMHCpan_formated.csv",
+        pred="data/netmhcpan_inputs_mhci_{distance}.csv",
+        pep="data/predictions/netMHCpan_formated_{distance}.csv",
     output:
-        "data/sanitycheck_peptides_predictions.txt"
+        "data/sanitycheck_peptides_predictions_{distance}.txt"
     shell:
         """
         pep=`wc -l {input.pep}`
