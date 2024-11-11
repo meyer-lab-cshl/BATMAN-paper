@@ -19,9 +19,10 @@ peptides <- peptides %>%
                          mhc ==  "I-Au" ~"H-2-IAu",
         # remove * and : : cluster submission can't deal with these in filenames
                          grepl("DR", mhc) ~ gsub("\\*","_", mhc),
-                         TRUE ~ gsub("[\\*:]","", mhc)),
-         length=nchar(peptide),
-         combined = paste0(mhc, "_", length))
+                         TRUE ~ mhc),
+        mhc = gsub("[\\*:]","", mhc),
+        length=nchar(peptide),
+        combined = paste0(mhc, "_", length))
 
 peptides_list <- split(peptides, f=peptides$combined)
 
