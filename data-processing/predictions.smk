@@ -14,17 +14,27 @@ def construct_combine_input(wildcards):
     fastadir = checkpoints.split_fasta_files.get(**wildcards).output[0]
     print(fastadir)
     mhc=glob_wildcards(os.path.join(fastadir,
-                                           "peptides_{mhc}_{plength}_{distance}.fasta")).mhc
+                                           "peptides_{mhc}_{plength}.fasta")).mhc
     plength=glob_wildcards(os.path.join(fastadir,
-                                           "peptides_{mhc}_{plength}_{distance}.fasta")).plength
-    distance=glob_wildcards(os.path.join(fastadir,
-                                           "peptides_{mhc}_{plength}_{distance}.fasta")).distance
-    return expand("data/predictions/netMHCpan_{mhc}_{plength}_{distance}_formated.csv",
+                                           "peptides_{mhc}_{plength}.fasta")).plength
+    distance = re.search(".*/(.*)", fastadir).group(1)
+    distance = [distance for x in range(len(mhc))]
+    print(plength)
+    print(distance)
+    return expand("data/predictions/{distance}/netMHCpan_{mhc}_{plength}_formated.csv",
                 zip,
                 mhc=mhc,
                 plength=plength,
                 distance=distance
                 )
+
+def find_class(wildcards):
+    mhc = wildcards.mhc
+    r = re.compile('(.*)-(.*)')
+    if "I" in r.search(mhc).group(1) or  "DR" in r.search(mhc).group(2):
+        return "classII"
+    else:
+        return "classI"
 
 ##### wildcards #####
 wildcard_constraints:
@@ -36,11 +46,12 @@ rule all:
     input:
         #"data/predictions/netMHCpan_formated_{distance}.csv",
         expand("data/sanitycheck_peptides_predictions_{distance}.txt",
-            distance=['1dhamming', 'multihamming'])
+            #distance=['mhci-1dhamming', 'mhci-multihamming', 'mhcii-multihamming'])
+            distance=[ 'mhcii-1dhamming'])
 
 checkpoint split_fasta_files:
     input:
-        peptides="data/netmhcpan_inputs_mhci_{distance}.csv"
+        peptides="data/netmhcpan_inputs_{distance}.csv"
     output:
         directory("data/fastafiles/{distance}")
     resources:
@@ -52,18 +63,28 @@ checkpoint split_fasta_files:
 
 rule netmhcpan:
     input:
-        peptides="data/fastafiles/{distance}/peptides_{mhc}_{plength}.fasta",
+        peptides="data/fastafiles/{distance}/peptides_{mhc}_{plength}.fasta"
     output:
-        "data/predictions/{distance}/netMHCpan_{mhc}_{plength}.txt",
+        "data/predictions/{distance}/netMHCpan_{mhc}_{plength}.txt"
     resources:
         mem_mb = 10000
+    params:
+        mhcclass = lambda wildcards: find_class(wildcards)
     shell:
         """
-        netMHCpan -f {input.peptides} \
-            -l {wildcards.plength} \
-            -a  {wildcards.mhc} \
-            -BA \
-            > {output}
+        if [[ {params.mhcclass} == "classII" ]]; then
+            netMHCIIpan -f {input.peptides} \
+                -length {wildcards.plength} \
+                -a  {wildcards.mhc} \
+                -BA \
+                > {output}
+        else
+            netMHCpan -f {input.peptides} \
+                -l {wildcards.plength} \
+                -a  {wildcards.mhc} \
+                -BA \
+                > {output}
+        fi
         """
 
 rule format:
@@ -100,7 +121,7 @@ rule combine:
 
 rule sanitycheck_io:
     input:
-        pred="data/netmhcpan_inputs_mhci_{distance}.csv",
+        pred="data/netmhcpan_inputs_{distance}.csv",
         pep="data/predictions/netMHCpan_formated_{distance}.csv",
     output:
         "data/sanitycheck_peptides_predictions_{distance}.txt"
