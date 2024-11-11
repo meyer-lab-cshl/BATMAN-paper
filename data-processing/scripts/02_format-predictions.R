@@ -15,13 +15,13 @@ option_list <- list(
                dest="dirpred",
                type="character", help="Path the directory with netMHCpan results
                 [default: %default].", default=NULL),
-    make_option(c("-s", "--dirseq"), action="store",
-               dest="dirseq",
-               type="character", help="Path the directory with personalised
-               peptide sequences [default: %default].", default=NULL),
     make_option(c("-i", "--sampleid"), action="store",
                dest="id",
-               type="character", help="Path the directory with netMHCpan results
+               type="character", help="sample id as indicated in filename
+                [default: %default].", default=NULL),
+    make_option(c("-c", "--class"), action="store",
+                dest="class",
+                type="character", help="MHC class
                 [default: %default].", default=NULL),
     make_option(c("--showProgress"), action="store_true",
                dest="verbose",
@@ -38,14 +38,11 @@ args <- parse_args(OptionParser(option_list=option_list))
 
 if (args$debug) {
     args <- list()
-    args$dirpred <- "/sonas-hs/meyer/hpc/home/hmeyer/data/mhc-immunogenic/simons-collection/predictions"
-    args$dirseq <- "/sonas-hs/meyer/hpc/home/hmeyer/data/mhc-immunogenic/simons-collection/personalised-sequences"
-    args$id <- "SSC00625"
+    args$dirpred <- "data-processing/data/predictions/mhcii-1dhamming"
+    args$id <- "H-2-IAb_13"
     args$verbose <- TRUE
+    args$class <- "classII"
 }
-
-#if (args$verbose) message("Read personalised peptides for ", args$id)
-#peptides <- read_csv(file.path(args$dirseq, str_c(args$id, "_overview.csv")))
 
 ################
 ## analysis ####
@@ -60,10 +57,6 @@ format_predictions <- function(args) {
     dat <- read_lines(filepath, skip_empty_rows=TRUE)
 
     if (args$verbose) message("Extract information")
-    ## Create matching peptide IDs
-    #peptides <- peptides %>%
-    #    unite(Identity, numId, variants)
-
     ## Remove comment and separator lines ####
     dat <- dat[!grepl("^#", dat)]
     dat <- dat[!grepl("^-", dat)]
@@ -77,7 +70,7 @@ format_predictions <- function(args) {
     dat <- dat[!grepl("Error", dat)]
 
     ## Extract predictions summary lines ####
-    index_proteins <- which(grepl("Protein", dat))
+    index_proteins <- which(grepl("Number of weak binders", dat))
     proteins <- dat[index_proteins]
     dat <- dat[-index_proteins]
 
@@ -86,26 +79,27 @@ format_predictions <- function(args) {
     header <- dat[1]
     dat <- dat[!grepl("Pos", dat)]
 
+    columncount <- ifelse(args$class == "classI", 17, 15)
     header <- header %>%
         str_squish() %>%
-        str_split_fixed(pattern=" ", n=17)
+        str_split_fixed(pattern=" ", n=columncount)
     dat <- dat %>%
         str_squish() %>%
-        str_split_fixed(pattern=" ", n=17)
+        str_split_fixed(pattern=" ", n=columncount)
     colnames(dat) <- header
 
     # Rank_EL and Score_EL names new in netMHCpan4.1; this formating won't work
     # for earlier netMHCpan versions
-
+    # aff column abbreviation different for netMHCpan I and II: make consistent
+    aff_column <- header[grepl("Aff", header)]
+    
     dat <- dat[1:nrow(dat),] %>%
         as_tibble %>%
         dplyr::rename(Rank_EL=`%Rank_EL`) %>%
         dplyr::rename(Rank_BA=`%Rank_BA`) %>%
-        dplyr::rename(Aff_nM=`Aff(nM)`) %>%
-        mutate_at(vars(Of, Gp, Gl, Ip, Il, starts_with("Score"),
-                       starts_with("Rank"), Aff_nM), as.numeric) %>%
+        dplyr::rename(Aff_nM={aff_column}) %>%
         mutate(BindLevel = gsub("<= ", "", BindLevel),
-               BindLevel = case_when(is.na(BindLevel) ~ "NB",
+               BindLevel = case_when(BindLevel =="" ~ "NB",
                                      TRUE ~ BindLevel))
 
 }
