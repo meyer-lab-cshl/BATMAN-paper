@@ -6,7 +6,7 @@ library(seqinr)
 #fn"data/netmhcpan_inputs_mhci_1dhamming.csv"
 fn <- snakemake@input[['peptides']]
 distance <- gsub(".*_(.*).csv", "\\1", fn)
-peptides <- read_csv(fn)[, -1]
+peptides <- read_csv(fn)
 
 fn.out <- file.path("data", "fastafiles", distance)
 if (!dir.exists(fn.out)) dir.create(fn.out, recursive=TRUE)
