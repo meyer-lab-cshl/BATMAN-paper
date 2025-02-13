@@ -12,19 +12,24 @@ library(forcats)
 ## data  ###
 ############
 
+# peptide contacts with MHC and TCR measured from pdb structures
 contacts <- readxl::read_xlsx("../data/TCR-peptide-contacts.xlsx",
                               sheet="tidy-summary")
+
+# mapping file between TCR name and pdb id
 mapping <- readxl::read_xlsx("../data/PDB_ID_list.xlsx")
 
 ################
 ## analyses ####
 ################
 
+# summarise interactions across chains for TCR and MHC
 contacts <- contacts %>%
   mutate(primary_interaction = gsub("-.*", "", primary_interaction)) %>%
   group_by(position, primary_interaction, measure, pdb_id) %>%
   summarise(interactions=sum(interactions, na.rm=TRUE))
 
+# get BATMAN inferred positional weights for TCRs with available structure
 pepweights <- lapply(mapping$tcr[mapping$pdb_id %in% contacts$pdb_id], function(tcr) {
   tmp  <- read_csv(paste0("../data/inferred_weights/inferred_weights_", tcr, ".csv"))
   tibble(tcr=as.vector(tmp[[1]]),
@@ -33,6 +38,7 @@ pepweights <- lapply(mapping$tcr[mapping$pdb_id %in% contacts$pdb_id], function(
 }) %>%
   bind_rows
 
+# subset weights for positions in structure and normalise to max weight per TCR
 pepweights <- pepweights  %>%
   filter(!(tcr == "TCR-F5" & position %in% c(1:6, 20)),
          !(tcr == "F24" & position %in% c(1:6, 20))) %>% 
@@ -41,6 +47,7 @@ pepweights <- pepweights  %>%
   group_by(tcr) %>%
   mutate(weights_norm = weights/max(weights))
 
+# create full grid of possible interactions and merge all dataframes
 allmhci <- expand.grid(c(1:9),
                         c("MHC", "TCR"),
                         c("H-bonds", "all"),
@@ -65,6 +72,7 @@ contacts <- allcombs %>%
   mutate(interactions = case_when(is.na(interactions) ~ 0,
                                   TRUE ~ interactions))
 
+# subset to interactions (H-bonds and others) with TCR 
 tcr_interactions <- contacts %>%
   filter(measure=="all", primary_interaction == "TCR")
 
