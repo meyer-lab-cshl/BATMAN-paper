@@ -20,6 +20,8 @@ peptides <- peptides %>%
         # remove * and : : cluster submission can't deal with these in filenames
                          grepl("DR", mhc) ~ gsub("\\*","_", mhc),
                          TRUE ~ mhc),
+        mhc = case_when(grepl("DR", mhc) ~ gsub("HLA-","", mhc),
+                         TRUE ~ mhc),
         mhc = gsub("[\\*:]","", mhc),
         length=nchar(peptide),
         combined = paste0(mhc, "_", length))
