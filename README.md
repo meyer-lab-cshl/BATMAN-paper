@@ -1,4 +1,9 @@
 # BATMAN: <ins>B</ins>ayesian Inference of <ins>A</ins>ctivation of <ins>T</ins>CR by <ins>M</ins>utant <ins>An</ins>tigens
+
+![BATMAN schematic diagram showing that it integrates mutational scan datasets across many TCRs to build a hierarchical Bayesian inference model. BATMAN infers
+hyperparameters from the training database and uses them to generate prior distributions for cross-TCR AA distance and TCR-specific
+positional weights, which are multiplied and used as a predictor of TCR activation by a given mutant](BATMAN_schematic_github.jpg)
+
 A single T Cell Receptor (TCR) can recognize a diverse variety of peptides, an essential property known as TCR cross-reactivity. Predicting which peptides a TCR cross-reacts to is critical for numerous applications, including predicting viral escape, cancer neoantigen immunogenicity, autoimmunity, and off-target toxicity of T-cell-based therapies. But predicting TCRnactivation is challenging due to the lack of both unbiased benchmarking datasets and
 computational methods that are sensitive to small mutations to a peptide. To address these challenges, we curated a
 comprehensive database, called BATCAVE, encompassing complete single amino acid mutational assays of more than 22000
@@ -13,9 +18,6 @@ polyclonal T cell responses.
 BATMAN predicts TCR activation by mutant peptides based on their distances to the TCR's index peptide. The peptide-to-index distance is a product of a a) learned positional weight profile vector, corresponding to effects of mutated residues at different positions in the sequence, b) a learned AA substitution distance from the index peptide amino acid to the mutant amino acid and c) an optional scalar weight, also specific for individual TCRs, corresponding to the pMHC
 binding category.
 
-![BATMAN schematic diagram showing that it integrates mutational scan datasets across many TCRs to build a hierarchical Bayesian inference model. BATMAN infers
-hyperparameters from the training database and uses them to generate prior distributions for cross-TCR AA distance and TCR-specific
-positional weights, which are multiplied and used as a predictor of TCR activation by a given mutant](BATMAN_schematic_github.jpg)
 
 BATMAN can be trained in two modes: (1) within-TCR, where the train and test peptides are associated with the same TCR, and BATMAN-inferred positional weight profiles are TCR-specific, and (2) leave-one-TCR-out, where peptides are tested for activation of a TCR left out of the training data, and BATMAN-inferred positional weight profile is common across all TCRs.
 
