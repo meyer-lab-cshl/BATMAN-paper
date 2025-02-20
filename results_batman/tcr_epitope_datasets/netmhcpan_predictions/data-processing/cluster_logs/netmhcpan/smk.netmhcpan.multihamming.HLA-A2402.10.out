@@ -1,6 +1,0 @@
-Running cluster job 9027862
------------------------------
------------------------------
-usage                 1:    wallclock=00:00:39, cpu=00:00:13, mem=79.22589 GBs, io=11.36575 GB, iow=0.000 s, ioops=1523232, vmem=12.504G, maxvmem=12.504G, rss=367.469M, pss=347.848M, smem=20.875M, pmem=346.594M, maxrss=367.469M, maxpss=347.848M
------------------------------
-EXIT_STATUS: 0
