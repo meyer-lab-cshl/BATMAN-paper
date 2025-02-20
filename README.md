@@ -70,4 +70,4 @@ For an interactive tutorial on different functions available with pyBATMAN, plea
 The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/paper_figures) in this repository contains all code and raw data to reproduce figures in the BATMAN preprint. 
 
 # Downloading BATCAVE dataset
-The fully curated database of TCR-pMHC interactions can be downloaded from the [database folder](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/results_batman/tcr_epitopes_datasets/mutational_scan_datasets/database) in this repository. 
+The fully curated database of TCR-pMHC interactions can be downloaded from the [database folder](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/tcr_epitope_datasets/mutational_scan_datasets/database) in this repository. 
