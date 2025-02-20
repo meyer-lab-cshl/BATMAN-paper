@@ -22,7 +22,8 @@ BATMAN can be trained in two modes: (1) within-TCR, where the train and test pep
 For more information, refer to our preprint! For an interactive tutorial and test input, refer to our [jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb).
 
 # Installing and running pyBATMAN
-It is advisable to install and run the Python implementation of BATMAN ('pyBATMAN') in a Conda environment with Python v=3.11. For instruction on creating and activating Conda environments, please refer to the [Conda user guide](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#). For example, execute the following in your Anaconda prompt to create and activate a new environment.
+We have implemented BATMAN as a python package, [pyBATMAN](https://pypi.org/project/pybatman/0.0.1/) ([pyBATMAN github page](https://github.com/meyer-lab-cshl/BATMAN/tree/main)).
+It is advisable to install and run the pyBATMAN in a Conda environment with Python v=3.11. For instruction on creating and activating Conda environments, please refer to the [Conda user guide](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#). For example, execute the following in your Anaconda prompt to create and activate a new environment.
 
 ```
 conda create -n BATMAN-env python=3.11
