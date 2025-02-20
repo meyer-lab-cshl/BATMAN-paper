@@ -1,7 +1,17 @@
 # BATMAN: <ins>B</ins>ayesian Inference of <ins>A</ins>ctivation of <ins>T</ins>CR by <ins>M</ins>utant <ins>An</ins>tigens
-A single T Cell Receptor (TCR) can recognize a diverse variety of peptides, an essential property known as TCR cross-reactivity. Predicting which peptides a TCR cross-reacts to is critical for numerous applications, including predicting viral escape, cancer neoantigen immunogenicity, autoimmunity, and off-target toxicity of T-cell-based therapies. But predicting TCR activation is challenging due to the lack of both unbiased benchmarking datasets and computational methods that are sensitive to small mutations to an epitope. To address these challenges, we curated a comprehensive database encompassing complete single-amino-acid mutational assays of 10,750 TCR-peptide pairs, centered around 14 immunogenic epitopes against 66 TCRs. We then developed an interpretable Bayesian model, called BATMAN, that can predict the set of epitopes that activate a TCR. When validated on our database, BATMAN outperforms existing methods by 20% and reveals important biochemical predictors of TCR-peptide interactions.
+A single T Cell Receptor (TCR) can recognize a diverse variety of peptides, an essential property known as TCR cross-reactivity. Predicting which peptides a TCR cross-reacts to is critical for numerous applications, including predicting viral escape, cancer neoantigen immunogenicity, autoimmunity, and off-target toxicity of T-cell-based therapies. But predicting TCRnactivation is challenging due to the lack of both unbiased benchmarking datasets and
+computational methods that are sensitive to small mutations to a peptide. To address these challenges, we curated a
+comprehensive database, called BATCAVE, encompassing complete single amino acid mutational assays of more than 22000
+TCR-peptide pairs, centered around 25 immunogenic human and mouse epitopes, across both major histocompatibility complex
+classes, against 151 TCRs. We then present an interpretable Bayesian model, called BATMAN, that can predict the set of
+peptides that activates a TCR. We also developed an active learning version of BATMAN, which can efficiently learn the binding
+profile of a novel TCR by selecting an informative yet small number of peptides to assay. When validated on our database,
+BATMAN outperforms existing methods and reveals important biochemical predictors of TCR-peptide interactions. Finally,
+we demonstrate the broad applicability of BATMAN, including for predicting off-target effects for TCR-based therapies and
+polyclonal T cell responses.
 
-BATMAN predicts TCR activation by mutant peptides based on their distances to the TCR's index peptide. The peptide-to-index distance is a product of a learned positional weight profile vector, corresponding to effects of mutated residues at different positions in the sequence, and a learned AA substitution distance from the index peptide amino acid to the mutant amino acid.
+BATMAN predicts TCR activation by mutant peptides based on their distances to the TCR's index peptide. The peptide-to-index distance is a product of a a) learned positional weight profile vector, corresponding to effects of mutated residues at different positions in the sequence, b) a learned AA substitution distance from the index peptide amino acid to the mutant amino acid and c) an optional scalar weight, also specific for individual TCRs, corresponding to the pMHC
+binding category.
 
 ![BATMAN schematic diagram showing that it integrates mutational scan datasets across many TCRs to build a hierarchical Bayesian inference model. BATMAN infers
 hyperparameters from the training database and uses them to generate prior distributions for cross-TCR AA distance and TCR-specific
@@ -54,7 +64,7 @@ peptide_distance = peptide2index(index_peptide,
 For an interactive tutorial on different functions available with pyBATMAN, please refer to our [jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb). The Jupyter notebook trains and validates pyBATMAN on the test data and visualizes the results.
 
 # BATMAN preprint
-The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/paper_figures) in this repository contains all codes and raw data to reproduce figures in the BATMAN preprint. 
+The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/paper_figures) in this repository contains all code and raw data to reproduce figures in the BATMAN preprint. 
 
 # Downloading BATMAN dataset
-The fully curated database of TCR-pMHC interactions can be downloaded as an excel sheet from the [data folder](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/paper_figures/data/TCR_epitope_database.xlsx) in this repository. The test input data is a subset of our database and is sourced from the paper: "Neoantigen quality predicts immunoediting in survivors of pancreatic cancer", Nature, volume 606, pages 389-395 (2022) figures 3d and 3f.
+The fully curated database of TCR-pMHC interactions can be downloaded as an excel sheet from the [data folder](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/results_batman/tcr_epitopes_datasets/TCR_epitope_database.xlsx) in this repository. 
