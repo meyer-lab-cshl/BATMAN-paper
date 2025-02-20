@@ -1,0 +1,2148 @@
+# /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -f data/fastafiles/peptides_HLA-A2402_10.fasta -l 10 -a HLA-A2402 -BA
+# Sun Sep 15 14:53:22 2024
+# User: hmeyer
+# PWD : /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing
+# Host: Linux bam13 4.18.0-348.12.2.el8_5.x86_64 x86_64
+# -f       data/fastafiles/peptides_HLA-A2402_10.fasta File name with input
+# -l       10                   Peptide length [8-11] (multiple length with ,)
+# -a       HLA-A2402            MHC allele
+# -BA      1                    Include Binding affinity prediction
+# Command line parameters set to:
+#	[-rdir filename]     /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/8893519.1.comp.q/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-A2402            MHC allele
+#	[-f filename]        data/fastafiles/peptides_HLA-A2402_10.fasta File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 0                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          10                   Peptide length [8-11] (multiple length with ,)
+#	[-xls]               0                    Save output to xls file
+#	[-xlsfile filename]  NetMHCpan_out.xls    Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/8893519.1.comp.q/netMHCpanSoFE8j
+# Input is in FSA format
+
+# Peptide length 10
+
+# Make both EL and BA predictions
+
+HLA-A2402 : Distance to training data  0.000 (using nearest neighbor HLA-A24:02)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     AWWRSGGFSF AWWSGGFSF  0  3  1  0  0   AWWRSGGFSF HLA-A24_02_10_1 0.4956570    0.312 0.631378    0.119    53.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     RWWRSGGFSF RWWSGGFSF  0  3  1  0  0   RWWRSGGFSF HLA-A24_02_10_2 0.6691660    0.181 0.754971    0.025    14.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     NWWRSGGFSF NWWSGGFSF  0  3  1  0  0   NWWRSGGFSF HLA-A24_02_10_3 0.3534720    0.463 0.612197    0.144    66.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     DWWRSGGFSF DWWSGGFSF  0  3  1  0  0   DWWRSGGFSF HLA-A24_02_10_4 0.2449100    0.653 0.492809    0.398   241.70 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     CWWRSGGFSF CWWSGGFSF  0  3  1  0  0   CWWRSGGFSF HLA-A24_02_10_5 0.1523480    0.954 0.590497    0.178    83.99 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     QWWRSGGFSF QWWSGGFSF  0  3  1  0  0   QWWRSGGFSF HLA-A24_02_10_6 0.4808430    0.326 0.639722    0.109    49.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSF EWWSGGFSF  0  3  1  0  0   EWWRSGGFSF HLA-A24_02_10_7 0.3539130    0.462 0.529562    0.290   162.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     GWWRSGGFSF GWWSGGFSF  0  3  1  0  0   GWWRSGGFSF HLA-A24_02_10_8 0.3095730    0.528 0.562416    0.223   113.81 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     HWWRSGGFSF HWWSGGFSF  0  3  1  0  0   HWWRSGGFSF HLA-A24_02_10_9 0.4745880    0.332 0.623163    0.129    58.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     IWWRSGGFSF IWWSGGFSF  0  3  1  0  0   IWWRSGGFSF HLA-A24_02_10_1 0.5861630    0.235 0.727435    0.038    19.09 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     LWWRSGGFSF LWWSGGFSF  0  3  1  0  0   LWWRSGGFSF HLA-A24_02_10_1 0.3597950    0.455 0.658792    0.089    40.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     KWWRSGGFSF KWWSGGFSF  0  3  1  0  0   KWWRSGGFSF HLA-A24_02_10_1 0.6482190    0.193 0.711135    0.052    22.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     MWWRSGGFSF MWWSGGFSF  0  3  1  0  0   MWWRSGGFSF HLA-A24_02_10_1 0.4538220    0.351 0.727138    0.038    19.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     FWWRSGGFSF FWWSGGFSF  0  3  1  0  0   FWWRSGGFSF HLA-A24_02_10_1 0.3675230    0.444 0.646950    0.100    45.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     PWWRSGGFSF PWWSGGFSF  0  3  1  0  0   PWWRSGGFSF HLA-A24_02_10_1 0.4156470    0.387 0.639893    0.109    49.22 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     SWWRSGGFSF SWWSGGFSF  0  3  1  0  0   SWWRSGGFSF HLA-A24_02_10_1 0.5846640    0.236 0.702229    0.058    25.07 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     TWWRSGGFSF TWWSGGFSF  0  3  1  0  0   TWWRSGGFSF HLA-A24_02_10_1 0.5665800    0.249 0.690562    0.066    28.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     WWWRSGGFSF WWWSGGFSF  0  3  1  0  0   WWWRSGGFSF HLA-A24_02_10_1 0.1482480    0.973 0.588407    0.181    85.91 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     YWWRSGGFSF YWWSGGFSF  0  3  1  0  0   YWWRSGGFSF HLA-A24_02_10_1 0.5572860    0.256 0.732915    0.035    17.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     VWWRSGGFSF VWWSGGFSF  0  3  1  0  0   VWWRSGGFSF HLA-A24_02_10_2 0.6234120    0.209 0.727054    0.038    19.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EAWRSGGFSF EWRSGGFSF  0  1  1  0  0   EAWRSGGFSF HLA-A24_02_10_2 0.1141410    1.162 0.287872    1.630  2219.57 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ERWRSGGFSF EWRSGGFSF  0  1  1  0  0   ERWRSGGFSF HLA-A24_02_10_2 0.1189080    1.135 0.342996    1.107  1222.48 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ENWRSGGFSF EWRSGGFSF  0  1  1  0  0   ENWRSGGFSF HLA-A24_02_10_2 0.1136530    1.165 0.270430    1.836  2680.57 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EDWRSGGFSF EWRSGGFSF  0  1  1  0  0   EDWRSGGFSF HLA-A24_02_10_2 0.1135400    1.166 0.263211    1.935  2898.34 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ECWRSGGFSF EWRSGGFSF  0  1  1  0  0   ECWRSGGFSF HLA-A24_02_10_2 0.1135950    1.165 0.286281    1.649  2258.11 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EQWRSGGFSF EWRSGGFSF  0  1  1  0  0   EQWRSGGFSF HLA-A24_02_10_2 0.1197280    1.130 0.301924    1.480  1906.51 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EEWRSGGFSF EWRSGGFSF  0  1  1  0  0   EEWRSGGFSF HLA-A24_02_10_2 0.1135630    1.166 0.263154    1.935  2900.13 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EGWRSGGFSF EWRSGGFSF  0  1  1  0  0   EGWRSGGFSF HLA-A24_02_10_2 0.1136300    1.165 0.274606    1.783  2562.15 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EHWRSGGFSF EWRSGGFSF  0  1  1  0  0   EHWRSGGFSF HLA-A24_02_10_2 0.1355340    1.039 0.300147    1.497  1943.52 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_2. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EIWRSGGFSF EWRSGGFSF  0  1  1  0  0   EIWRSGGFSF HLA-A24_02_10_3 0.1148490    1.158 0.316800    1.334  1623.07 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ELWRSGGFSF EWRSGGFSF  0  1  1  0  0   ELWRSGGFSF HLA-A24_02_10_3 0.1161950    1.150 0.299988    1.498  1946.86 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EKWRSGGFSF EWRSGGFSF  0  1  1  0  0   EKWRSGGFSF HLA-A24_02_10_3 0.1142570    1.162 0.299785    1.500  1951.14 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EMWRSGGFSF EWRSGGFSF  0  1  1  0  0   EMWRSGGFSF HLA-A24_02_10_3 0.1261950    1.093 0.363764    0.961   976.46 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EFWRSGGFSF EFWSGGFSF  0  3  1  0  0   EFWRSGGFSF HLA-A24_02_10_3 0.2844240    0.574 0.445640    0.543   402.64 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EPWRSGGFSF EWRSGGFSF  0  1  1  0  0   EPWRSGGFSF HLA-A24_02_10_3 0.1136970    1.165 0.269008    1.855  2722.13 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ESWRSGGFSF EWRSGGFSF  0  1  1  0  0   ESWRSGGFSF HLA-A24_02_10_3 0.1140770    1.163 0.304798    1.453  1848.13 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     ETWRSGGFSF EWRSGGFSF  0  1  1  0  0   ETWRSGGFSF HLA-A24_02_10_3 0.1147020    1.159 0.294448    1.556  2067.13 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EYWRSGGFSF EYWSGGFSF  0  3  1  0  0   EYWRSGGFSF HLA-A24_02_10_3 0.7396420    0.140 0.640702    0.108    48.79 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EVWRSGGFSF EWRSGGFSF  0  1  1  0  0   EVWRSGGFSF HLA-A24_02_10_3 0.1157020    1.153 0.315718    1.346  1642.18 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_3. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWARSGGFSF EWASGGFSF  0  3  1  0  0   EWARSGGFSF HLA-A24_02_10_4 0.3176580    0.513 0.454815    0.512   364.59 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWRRSGGFSF EWRSGGFSF  0  2  1  0  0   EWRRSGGFSF HLA-A24_02_10_4 0.1187020    1.136 0.288225    1.625  2211.11 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWNRSGGFSF EWNSGGFSF  0  3  1  0  0   EWNRSGGFSF HLA-A24_02_10_4 0.2485440    0.646 0.383757    0.834   786.52 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWDRSGGFSF EWDSGGFSF  0  3  1  0  0   EWDRSGGFSF HLA-A24_02_10_4 0.2602400    0.621 0.330804    1.204  1394.86 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWCRSGGFSF EWCSGGFSF  0  3  1  0  0   EWCRSGGFSF HLA-A24_02_10_4 0.1707090    0.873 0.394824    0.771   697.76 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWQRSGGFSF EWQSGGFSF  0  3  1  0  0   EWQRSGGFSF HLA-A24_02_10_4 0.3222290    0.505 0.444519    0.547   407.56 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWERSGGFSF EWRSGGFSF  0  2  1  0  0   EWERSGGFSF HLA-A24_02_10_4 0.1687990    0.880 0.309431    1.410  1757.77 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWGRSGGFSF EWGSGGFSF  0  3  1  0  0   EWGRSGGFSF HLA-A24_02_10_4 0.2743630    0.593 0.443274    0.551   413.08 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWHRSGGFSF EWHSGGFSF  0  3  1  0  0   EWHRSGGFSF HLA-A24_02_10_4 0.2927270    0.559 0.403823    0.724   633.02 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWIRSGGFSF EWISGGFSF  0  3  1  0  0   EWIRSGGFSF HLA-A24_02_10_4 0.3765750    0.433 0.497313    0.384   230.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_4. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWLRSGGFSF EWLSGGFSF  0  3  1  0  0   EWLRSGGFSF HLA-A24_02_10_5 0.3819250    0.426 0.515329    0.330   189.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWKRSGGFSF EWKSGGFSF  0  3  1  0  0   EWKRSGGFSF HLA-A24_02_10_5 0.2136350    0.727 0.308320    1.421  1779.03 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWMRSGGFSF EWMSGGFSF  0  3  1  0  0   EWMRSGGFSF HLA-A24_02_10_5 0.3879770    0.418 0.585656    0.185    88.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWFRSGGFSF EWFSGGFSF  0  3  1  0  0   EWFRSGGFSF HLA-A24_02_10_5 0.5091890    0.300 0.587854    0.182    86.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWPRSGGFSF EWPSGGFSF  0  3  1  0  0   EWPRSGGFSF HLA-A24_02_10_5 0.4393590    0.365 0.431528    0.592   469.06 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWSRSGGFSF EWSSGGFSF  0  3  1  0  0   EWSRSGGFSF HLA-A24_02_10_5 0.2891060    0.566 0.423734    0.626   510.34 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWTRSGGFSF EWTSGGFSF  0  3  1  0  0   EWTRSGGFSF HLA-A24_02_10_5 0.2143260    0.725 0.382171    0.844   800.13 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWYRSGGFSF EWYSGGFSF  0  3  1  0  0   EWYRSGGFSF HLA-A24_02_10_5 0.5369400    0.275 0.577918    0.197    96.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWVRSGGFSF EWVSGGFSF  0  3  1  0  0   EWVRSGGFSF HLA-A24_02_10_5 0.2483330    0.646 0.424786    0.621   504.56 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWASGGFSF EWWSGGFSF  0  3  1  0  0   EWWASGGFSF HLA-A24_02_10_5 0.3569970    0.458 0.527180    0.296   166.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_5. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWNSGGFSF EWWSGGFSF  0  3  1  0  0   EWWNSGGFSF HLA-A24_02_10_6 0.3509370    0.466 0.510606    0.344   199.36 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWDSGGFSF EWWDGGFSF  0  4  1  0  0   EWWDSGGFSF HLA-A24_02_10_6 0.4181340    0.385 0.492166    0.399   243.39 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWCSGGFSF EWWSGGFSF  0  3  1  0  0   EWWCSGGFSF HLA-A24_02_10_6 0.3043960    0.538 0.517935    0.322   184.17 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWQSGGFSF EWWSGGFSF  0  3  1  0  0   EWWQSGGFSF HLA-A24_02_10_6 0.3910040    0.414 0.511723    0.341   196.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWESGGFSF EWWEGGFSF  0  4  1  0  0   EWWESGGFSF HLA-A24_02_10_6 0.3815910    0.426 0.495340    0.390   235.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWGSGGFSF EWWSGGFSF  0  3  1  0  0   EWWGSGGFSF HLA-A24_02_10_6 0.3605490    0.454 0.507940    0.352   205.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWHSGGFSF EWWSGGFSF  0  3  1  0  0   EWWHSGGFSF HLA-A24_02_10_6 0.3668620    0.445 0.515246    0.330   189.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWISGGFSF EWISGGFSF  0  1  1  0  0   EWWISGGFSF HLA-A24_02_10_6 0.3756810    0.434 0.516070    0.328   187.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWLSGGFSF EWLSGGFSF  0  1  1  0  0   EWWLSGGFSF HLA-A24_02_10_6 0.3754820    0.434 0.521499    0.312   177.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWKSGGFSF EWWKGGFSF  0  4  1  0  0   EWWKSGGFSF HLA-A24_02_10_6 0.3800790    0.428 0.506051    0.358   209.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_6. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWMSGGFSF EWMSGGFSF  0  1  1  0  0   EWWMSGGFSF HLA-A24_02_10_7 0.3823440    0.425 0.564534    0.219   111.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWFSGGFSF EWFSGGFSF  0  1  1  0  0   EWWFSGGFSF HLA-A24_02_10_7 0.4703790    0.336 0.582212    0.190    91.87 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWPSGGFSF EWWPGGFSF  0  4  1  0  0   EWWPSGGFSF HLA-A24_02_10_7 0.5898590    0.232 0.533412    0.281   155.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWSSGGFSF EWWSGGFSF  0  3  1  0  0   EWWSSGGFSF HLA-A24_02_10_7 0.3607230    0.453 0.520341    0.315   179.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWTSGGFSF EWWSGGFSF  0  3  1  0  0   EWWTSGGFSF HLA-A24_02_10_7 0.3209400    0.507 0.503001    0.367   216.46 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWWSGGFSF EWWSGGFSF  0  1  1  0  0   EWWWSGGFSF HLA-A24_02_10_7 0.3070240    0.533 0.536426    0.273   150.77 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWYSGGFSF EWYSGGFSF  0  1  1  0  0   EWWYSGGFSF HLA-A24_02_10_7 0.4779470    0.329 0.577751    0.197    96.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWVSGGFSF EWWSGGFSF  0  3  1  0  0   EWWVSGGFSF HLA-A24_02_10_7 0.3260460    0.499 0.502188    0.369   218.38 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRAGGFSF EWWRGGFSF  0  4  1  0  0   EWWRAGGFSF HLA-A24_02_10_7 0.3029790    0.540 0.526007    0.298   168.76 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRRGGFSF EWWRGGFSF  0  3  1  0  0   EWWRRGGFSF HLA-A24_02_10_7 0.2871810    0.569 0.498757    0.380   226.63 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_7. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRNGGFSF EWWRGGFSF  0  4  1  0  0   EWWRNGGFSF HLA-A24_02_10_8 0.3630520    0.450 0.551924    0.240   127.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRDGGFSF EWWDGGFSF  0  3  1  0  0   EWWRDGGFSF HLA-A24_02_10_8 0.3949980    0.409 0.505391    0.360   210.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRCGGFSF EWWRGGFSF  0  4  1  0  0   EWWRCGGFSF HLA-A24_02_10_8 0.2774510    0.587 0.512969    0.337   194.33 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRQGGFSF EWWQGGFSF  0  3  1  0  0   EWWRQGGFSF HLA-A24_02_10_8 0.3330080    0.489 0.500914    0.373   221.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWREGGFSF EWWEGGFSF  0  3  1  0  0   EWWREGGFSF HLA-A24_02_10_8 0.3844470    0.422 0.508001    0.352   205.06 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRGGGFSF EWWRGGFSF  0  4  1  0  0   EWWRGGGFSF HLA-A24_02_10_8 0.3311400    0.492 0.497745    0.383   229.13 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRHGGFSF EWWRGGFSF  0  4  1  0  0   EWWRHGGFSF HLA-A24_02_10_8 0.3178050    0.513 0.513690    0.335   192.82 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRIGGFSF EWWRGGFSF  0  4  1  0  0   EWWRIGGFSF HLA-A24_02_10_8 0.2860400    0.571 0.506413    0.357   208.62 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRLGGFSF EWWRGGFSF  0  4  1  0  0   EWWRLGGFSF HLA-A24_02_10_8 0.2851070    0.573 0.507498    0.354   206.18 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRKGGFSF EWWKGGFSF  0  3  1  0  0   EWWRKGGFSF HLA-A24_02_10_8 0.3409320    0.479 0.497472    0.384   229.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_8. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRMGGFSF EWWRGGFSF  0  4  1  0  0   EWWRMGGFSF HLA-A24_02_10_9 0.2844990    0.574 0.525171    0.301   170.30 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRFGGFSF EWWRGGFSF  0  4  1  0  0   EWWRFGGFSF HLA-A24_02_10_9 0.2840760    0.575 0.520204    0.315   179.70 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRPGGFSF EWWPGGFSF  0  3  1  0  0   EWWRPGGFSF HLA-A24_02_10_9 0.5340620    0.277 0.526003    0.299   168.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRTGGFSF EWWRGGFSF  0  4  1  0  0   EWWRTGGFSF HLA-A24_02_10_9 0.3125980    0.523 0.522774    0.308   174.77 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRWGGFSF EWWRGGFSF  0  4  1  0  0   EWWRWGGFSF HLA-A24_02_10_9 0.2890310    0.566 0.545706    0.251   136.37 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRYGGFSF EWWRGGFSF  0  4  1  0  0   EWWRYGGFSF HLA-A24_02_10_9 0.2837070    0.575 0.521417    0.312   177.36 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRVGGFSF EWWRGGFSF  0  4  1  0  0   EWWRVGGFSF HLA-A24_02_10_9 0.2858940    0.571 0.507492    0.354   206.20 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSAGFSF EWWRSGFSF  0  5  1  0  0   EWWRSAGFSF HLA-A24_02_10_9 0.2667150    0.608 0.553728    0.237   125.03 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSRGFSF EWWRSGFSF  0  5  1  0  0   EWWRSRGFSF HLA-A24_02_10_9 0.2672960    0.606 0.527236    0.296   166.53 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSNGFSF EWWSNGFSF  0  3  1  0  0   EWWRSNGFSF HLA-A24_02_10_9 0.3360240    0.486 0.570309    0.209   104.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_9. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSDGFSF EWWSDGFSF  0  3  1  0  0   EWWRSDGFSF HLA-A24_02_10_1 0.3088370    0.529 0.529705    0.290   162.14 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSCGFSF EWWRSGFSF  0  5  1  0  0   EWWRSCGFSF HLA-A24_02_10_1 0.2209970    0.705 0.541536    0.261   142.66 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSQGFSF EWWRSQFSF  0  6  1  0  0   EWWRSQGFSF HLA-A24_02_10_1 0.3048300    0.537 0.542218    0.260   141.61 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSEGFSF EWWSEGFSF  0  3  1  0  0   EWWRSEGFSF HLA-A24_02_10_1 0.3143240    0.519 0.527593    0.295   165.89 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSHGFSF EWWSHGFSF  0  3  1  0  0   EWWRSHGFSF HLA-A24_02_10_1 0.3197650    0.509 0.564769    0.219   110.95 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSIGFSF EWWRSGFSF  0  5  1  0  0   EWWRSIGFSF HLA-A24_02_10_1 0.2640170    0.613 0.548555    0.246   132.23 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSLGFSF EWWRSGFSF  0  5  1  0  0   EWWRSLGFSF HLA-A24_02_10_1 0.2436820    0.656 0.546512    0.249   135.18 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSKGFSF EWWSKGFSF  0  3  1  0  0   EWWRSKGFSF HLA-A24_02_10_1 0.3272850    0.497 0.516850    0.326   186.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSMGFSF EWWRSGFSF  0  5  1  0  0   EWWRSMGFSF HLA-A24_02_10_1 0.2337730    0.677 0.552235    0.240   127.07 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSFGFSF EWWRSGFSF  0  5  1  0  0   EWWRSFGFSF HLA-A24_02_10_1 0.2497110    0.643 0.590516    0.178    83.98 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSPGFSF EWWRSPFSF  0  6  1  0  0   EWWRSPGFSF HLA-A24_02_10_1 0.4442320    0.360 0.573022    0.205   101.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSSGFSF EWWSSGFSF  0  3  1  0  0   EWWRSSGFSF HLA-A24_02_10_1 0.3034690    0.539 0.560533    0.226   116.16 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSTGFSF EWWRSGFSF  0  5  1  0  0   EWWRSTGFSF HLA-A24_02_10_1 0.2941550    0.556 0.571339    0.207   103.34 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSWGFSF EWWRSGFSF  0  5  1  0  0   EWWRSWGFSF HLA-A24_02_10_1 0.2515040    0.639 0.607864    0.149    69.60 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSYGFSF EWWRSGFSF  0  5  1  0  0   EWWRSYGFSF HLA-A24_02_10_1 0.2483840    0.646 0.591192    0.177    83.36 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSVGFSF EWWRSGFSF  0  5  1  0  0   EWWRSVGFSF HLA-A24_02_10_1 0.2578210    0.626 0.548085    0.247   132.90 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGAFSF EWWSGAFSF  0  3  1  0  0   EWWRSGAFSF HLA-A24_02_10_1 0.3264290    0.498 0.569160    0.211   105.80 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGRFSF EWWRSGFSF  0  6  1  0  0   EWWRSGRFSF HLA-A24_02_10_1 0.2929920    0.558 0.524493    0.303   171.55 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGNFSF EWWSGNFSF  0  3  1  0  0   EWWRSGNFSF HLA-A24_02_10_1 0.3526940    0.464 0.544615    0.254   137.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGDFSF EWWRSGFSF  0  6  1  0  0   EWWRSGDFSF HLA-A24_02_10_1 0.3115140    0.525 0.540580    0.263   144.15 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGCFSF EWWRSGFSF  0  6  1  0  0   EWWRSGCFSF HLA-A24_02_10_1 0.2303420    0.684 0.541096    0.262   143.34 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGQFSF EWWSGQFSF  0  3  1  0  0   EWWRSGQFSF HLA-A24_02_10_1 0.4219380    0.381 0.558999    0.228   118.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGEFSF EWWRSGFSF  0  6  1  0  0   EWWRSGEFSF HLA-A24_02_10_1 0.3311530    0.492 0.528790    0.292   163.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGHFSF EWWSGHFSF  0  3  1  0  0   EWWRSGHFSF HLA-A24_02_10_1 0.4619580    0.344 0.594837    0.171    80.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGIFSF EWWSGIFSF  0  3  1  0  0   EWWRSGIFSF HLA-A24_02_10_1 0.3685250    0.443 0.555923    0.234   122.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGLFSF EWWRSGLSF  0  7  1  0  0   EWWRSGLFSF HLA-A24_02_10_1 0.3444560    0.475 0.559360    0.228   117.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGKFSF EWWSGKFSF  0  3  1  0  0   EWWRSGKFSF HLA-A24_02_10_1 0.3410940    0.479 0.513402    0.336   193.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGMFSF EWWRSGFSF  0  6  1  0  0   EWWRSGMFSF HLA-A24_02_10_1 0.2907340    0.563 0.549686    0.244   130.62 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGFFSF EWWSGFFSF  0  3  1  0  0   EWWRSGFFSF HLA-A24_02_10_1 0.3295180    0.494 0.608714    0.148    68.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGPFSF EWWSGPFSF  0  3  1  0  0   EWWRSGPFSF HLA-A24_02_10_1 0.5639530    0.250 0.595330    0.170    79.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGSFSF EWWSGSFSF  0  3  1  0  0   EWWRSGSFSF HLA-A24_02_10_1 0.3884640    0.417 0.577493    0.197    96.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGTFSF EWWSGTFSF  0  3  1  0  0   EWWRSGTFSF HLA-A24_02_10_1 0.4134940    0.389 0.582334    0.190    91.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGWFSF EWWRSGWSF  0  7  1  0  0   EWWRSGWFSF HLA-A24_02_10_1 0.3261530    0.498 0.630312    0.120    54.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGYFSF EWWRSGYSF  0  7  1  0  0   EWWRSGYFSF HLA-A24_02_10_1 0.3414060    0.479 0.614024    0.141    65.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGVFSF EWWSGVFSF  0  3  1  0  0   EWWRSGVFSF HLA-A24_02_10_1 0.3665140    0.446 0.557651    0.231   119.84 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGASF EWWSGGASF  0  3  1  0  0   EWWRSGGASF HLA-A24_02_10_1 0.2380670    0.668 0.405370    0.716   622.51 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGRSF EWWSGGRSF  0  3  1  0  0   EWWRSGGRSF HLA-A24_02_10_1 0.1901990    0.797 0.320339    1.298  1562.09 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGNSF EWWSGGNSF  0  3  1  0  0   EWWRSGGNSF HLA-A24_02_10_1 0.2602810    0.621 0.372475    0.903   888.63 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGDSF EWWSGGDSF  0  3  1  0  0   EWWRSGGDSF HLA-A24_02_10_1 0.1732700    0.863 0.360761    0.981  1008.71 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGCSF EWWSGGCSF  0  3  1  0  0   EWWRSGGCSF HLA-A24_02_10_1 0.1018170    1.242 0.376328    0.879   852.35 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGQSF EWWSGGQSF  0  3  1  0  0   EWWRSGGQSF HLA-A24_02_10_1 0.3352200    0.487 0.380941    0.851   810.85 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGESF EWWSGGESF  0  3  1  0  0   EWWRSGGESF HLA-A24_02_10_1 0.2971570    0.551 0.387009    0.814   759.32 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGGSF EWWSGGGSF  0  3  1  0  0   EWWRSGGGSF HLA-A24_02_10_1 0.0937480    1.300 0.301665    1.483  1911.86 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGHSF EWWSGGHSF  0  3  1  0  0   EWWRSGGHSF HLA-A24_02_10_1 0.4456870    0.359 0.438566    0.567   434.67 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGISF EWWSGGISF  0  3  1  0  0   EWWRSGGISF HLA-A24_02_10_1 0.3191130    0.511 0.419398    0.647   534.85 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGLSF EWWSGGLSF  0  3  1  0  0   EWWRSGGLSF HLA-A24_02_10_1 0.3695010    0.442 0.481315    0.432   273.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGKSF EWWSGGKSF  0  3  1  0  0   EWWRSGGKSF HLA-A24_02_10_1 0.1546610    0.943 0.295053    1.550  2053.64 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGMSF EWWSGGMSF  0  3  1  0  0   EWWRSGGMSF HLA-A24_02_10_1 0.3152910    0.518 0.458190    0.500   351.52 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGPSF EWWSGGPSF  0  3  1  0  0   EWWRSGGPSF HLA-A24_02_10_1 0.3175700    0.513 0.383126    0.838   791.90 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGSSF EWWSGGSSF  0  3  1  0  0   EWWRSGGSSF HLA-A24_02_10_1 0.2158330    0.720 0.353844    1.028  1087.10 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGTSF EWWSGGTSF  0  3  1  0  0   EWWRSGGTSF HLA-A24_02_10_1 0.2794580    0.583 0.386847    0.815   760.65 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGWSF EWWSGGWSF  0  3  1  0  0   EWWRSGGWSF HLA-A24_02_10_1 0.3518150    0.465 0.533230    0.281   156.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGYSF EWWSGGYSF  0  3  1  0  0   EWWRSGGYSF HLA-A24_02_10_1 0.3761590    0.433 0.520562    0.314   179.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGVSF EWWSGGVSF  0  3  1  0  0   EWWRSGGVSF HLA-A24_02_10_1 0.3340140    0.488 0.415113    0.668   560.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFAF EWWSGGFAF  0  3  1  0  0   EWWRSGGFAF HLA-A24_02_10_1 0.2006000    0.766 0.482124    0.429   271.32 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFRF EWWSGGFRF  0  3  1  0  0   EWWRSGGFRF HLA-A24_02_10_1 0.3619510    0.452 0.506204    0.357   209.09 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFNF EWWSGGFNF  0  3  1  0  0   EWWRSGGFNF HLA-A24_02_10_1 0.3058200    0.535 0.512600    0.338   195.11 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFDF EWWSGGFDF  0  3  1  0  0   EWWRSGGFDF HLA-A24_02_10_1 0.1023910    1.238 0.443534    0.550   411.92 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFCF EWWSGGFCF  0  3  1  0  0   EWWRSGGFCF HLA-A24_02_10_1 0.1363760    1.035 0.469512    0.467   310.99 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFQF EWWSGGFQF  0  3  1  0  0   EWWRSGGFQF HLA-A24_02_10_1 0.4254560    0.378 0.519858    0.317   180.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFEF EWWSGGFEF  0  3  1  0  0   EWWRSGGFEF HLA-A24_02_10_1 0.3610630    0.453 0.536647    0.273   150.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFGF EWWSGGFGF  0  3  1  0  0   EWWRSGGFGF HLA-A24_02_10_1 0.1543870    0.944 0.432760    0.587   462.85 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFHF EWWSGGFHF  0  3  1  0  0   EWWRSGGFHF HLA-A24_02_10_1 0.4711700    0.335 0.541610    0.261   142.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFIF EWWSGGFIF  0  3  1  0  0   EWWRSGGFIF HLA-A24_02_10_1 0.2496610    0.643 0.541982    0.260   141.98 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFLF EWWSGGFLF  0  3  1  0  0   EWWRSGGFLF HLA-A24_02_10_1 0.4361560    0.368 0.626690    0.125    56.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFKF EWWSGGFKF  0  3  1  0  0   EWWRSGGFKF HLA-A24_02_10_1 0.4145970    0.388 0.510141    0.346   200.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFMF EWWSGGFMF  0  3  1  0  0   EWWRSGGFMF HLA-A24_02_10_1 0.2962240    0.553 0.528307    0.293   164.62 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFFF EWWSGGFFF  0  3  1  0  0   EWWRSGGFFF HLA-A24_02_10_1 0.2743570    0.593 0.550952    0.242   128.84 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFPF EWWSGGFPF  0  3  1  0  0   EWWRSGGFPF HLA-A24_02_10_1 0.1226750    1.113 0.518247    0.321   183.55 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFTF EWWSGGFTF  0  3  1  0  0   EWWRSGGFTF HLA-A24_02_10_1 0.5342570    0.277 0.617622    0.137    62.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFWF EWWSGGFWF  0  3  1  0  0   EWWRSGGFWF HLA-A24_02_10_1 0.0972470    1.275 0.450405    0.527   382.41 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFYF EWWSGGFYF  0  3  1  0  0   EWWRSGGFYF HLA-A24_02_10_1 0.3215290    0.506 0.547073    0.248   134.37 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFVF EWWSGGFVF  0  3  1  0  0   EWWRSGGFVF HLA-A24_02_10_1 0.3008220    0.544 0.556457    0.233   121.39 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSA EWWSGGFSA  0  3  1  0  0   EWWRSGGFSA HLA-A24_02_10_1 0.0005470   13.946 0.094929    9.532 17902.00
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSR EWWSGGFSR  0  3  1  0  0   EWWRSGGFSR HLA-A24_02_10_1 0.0005310   14.111 0.059518   17.113 26260.12
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSN EWWRGGFSN  0  4  1  0  0   EWWRSGGFSN HLA-A24_02_10_1 0.0000600   31.333 0.066310   15.008 24399.52
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSD EWWSGGFSD  0  3  1  0  0   EWWRSGGFSD HLA-A24_02_10_1 0.0000410   35.500 0.072958   13.385 22706.10
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSC EWWSGGFSC  0  3  1  0  0   EWWRSGGFSC HLA-A24_02_10_1 0.0005450   13.964 0.083167   11.379 20331.56
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSQ EWWSGGFSQ  0  3  1  0  0   EWWRSGGFSQ HLA-A24_02_10_1 0.0001690   21.773 0.043122   24.624 31357.47
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSE EWWSGGFSE  0  3  1  0  0   EWWRSGGFSE HLA-A24_02_10_1 0.0001910   20.815 0.057087   17.952 26960.00
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSG EWWSGGFSG  0  3  1  0  0   EWWRSGGFSG HLA-A24_02_10_1 0.0001280   24.071 0.098615    9.048 17202.09
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSH EWWRGGFSH  0  4  1  0  0   EWWRSGGFSH HLA-A24_02_10_1 0.0003280   16.982 0.042301   25.153 31637.26
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSI EWWSGGFSI  0  3  1  0  0   EWWRSGGFSI HLA-A24_02_10_1 0.0236330    2.739 0.335990    1.163  1318.75
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSL EWWSGGFSL  0  3  1  0  0   EWWRSGGFSL HLA-A24_02_10_1 0.0335050    2.303 0.289816    1.606  2173.37
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSK EWWSGGFSK  0  3  1  0  0   EWWRSGGFSK HLA-A24_02_10_1 0.0006720   12.861 0.077653   12.419 21581.46
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSM EWWSGGFSM  0  3  1  0  0   EWWRSGGFSM HLA-A24_02_10_1 0.0138790    3.485 0.226278    2.550  4322.12
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSP EWWSGGFSP  0  3  1  0  0   EWWRSGGFSP HLA-A24_02_10_1 0.0004210   15.435 0.080539   11.860 20917.98
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSS EWWSGGFSS  0  3  1  0  0   EWWRSGGFSS HLA-A24_02_10_1 0.0001550   22.474 0.073525   13.260 22567.23
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFST EWWSGGFST  0  3  1  0  0   EWWRSGGFST HLA-A24_02_10_1 0.0002510   18.816 0.077334   12.482 21656.08
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSW EWWSGGFSW  0  3  1  0  0   EWWRSGGFSW HLA-A24_02_10_1 0.2040070    0.756 0.424620    0.622   505.47 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSY EWWSGGFSY  0  3  1  0  0   EWWRSGGFSY HLA-A24_02_10_1 0.0069310    4.770 0.130500    6.106 12183.00
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-A*2402     EWWRSGGFSV EWWSGGFSV  0  3  1  0  0   EWWRSGGFSV HLA-A24_02_10_1 0.0042500    5.967 0.192239    3.353  6246.62
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-A24_02_10_1. Allele HLA-A*2402. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------

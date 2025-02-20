@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=5000, mem_mib=4769, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Fri Nov  8 17:15:27 2024]
+rule format:
+    input: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1∗0401_20.txt
+    output: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1∗0401_20_formated.csv
+    jobid: 0
+    reason: Missing output files: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1∗0401_20_formated.csv
+    wildcards: distance=mhcii-1dhamming, mhc=HLA-DRB1∗0401, plength=20
+    resources: mem_mb=5000, mem_mib=4769, disk_mb=1000, disk_mib=954, tmpdir=/tmp/9042286.1.comp.q
+
+
+        Rscript scripts/02_format-predictions.R              --dirpred data/predictions/mhcii-1dhamming             --dirseq data/fastafiles/mhcii-1dhamming             --sampleid HLA-DRB1∗0401_20
+        
+Activating conda environment: .snakemake/conda/a1d5a5f7cee8556dbef9cdf36ee9e95b_
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.3     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Error in dat[1:nrow(dat), ] : subscript out of bounds
+Calls: format_predictions ... <Anonymous> -> <Anonymous> -> <Anonymous> -> as_tibble
+Execution halted
+[Fri Nov  8 17:15:40 2024]
+Error in rule format:
+    jobid: 0
+    input: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1∗0401_20.txt
+    output: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1∗0401_20_formated.csv
+    conda-env: /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing/.snakemake/conda/a1d5a5f7cee8556dbef9cdf36ee9e95b_
+    shell:
+        
+        Rscript scripts/02_format-predictions.R              --dirpred data/predictions/mhcii-1dhamming             --dirseq data/fastafiles/mhcii-1dhamming             --sampleid HLA-DRB1∗0401_20
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message

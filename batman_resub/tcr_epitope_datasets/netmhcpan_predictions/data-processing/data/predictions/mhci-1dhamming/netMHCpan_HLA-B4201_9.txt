@@ -1,0 +1,1939 @@
+# /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -f data/fastafiles/peptides_HLA-B4201_9.fasta -l 9 -a HLA-B4201 -BA
+# Sun Sep 15 14:53:31 2024
+# User: hmeyer
+# PWD : /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing
+# Host: Linux bam06 4.18.0-348.12.2.el8_5.x86_64 x86_64
+# -f       data/fastafiles/peptides_HLA-B4201_9.fasta File name with input
+# -l       9                    Peptide length [8-11] (multiple length with ,)
+# -a       HLA-B4201            MHC allele
+# -BA      1                    Include Binding affinity prediction
+# Command line parameters set to:
+#	[-rdir filename]     /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/8893517.1.comp.q/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-B4201            MHC allele
+#	[-f filename]        data/fastafiles/peptides_HLA-B4201_9.fasta File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 0                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          9                    Peptide length [8-11] (multiple length with ,)
+#	[-xls]               0                    Save output to xls file
+#	[-xlsfile filename]  NetMHCpan_out.xls    Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/8893517.1.comp.q/netMHCpan7dzOA8
+# Input is in FSA format
+
+# Peptide length 9
+
+# Make both EL and BA predictions
+
+HLA-B4201 : Distance to training data  0.000 (using nearest neighbor HLA-B42:01)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      APQDLNTML APQDLNTML  0  0  0  0  0    APQDLNTML  HLA-B42_01_9_1 0.9377640    0.061 0.654523    0.211    42.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_1. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      CPQDLNTML CPQDLNTML  0  0  0  0  0    CPQDLNTML  HLA-B42_01_9_2 0.7248840    0.292 0.637278    0.254    50.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_2. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      DPQDLNTML DPQDLNTML  0  0  0  0  0    DPQDLNTML  HLA-B42_01_9_3 0.4530370    0.697 0.292650    3.042  2107.74 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_3. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      EPQDLNTML EPQDLNTML  0  0  0  0  0    EPQDLNTML  HLA-B42_01_9_4 0.6884590    0.337 0.417866    1.323   543.79 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_4. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      FPQDLNTML FPQDLNTML  0  0  0  0  0    FPQDLNTML  HLA-B42_01_9_5 0.9458200    0.054 0.727554    0.094    19.06 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_5. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      GPQDLNTML GPQDLNTML  0  0  0  0  0    GPQDLNTML  HLA-B42_01_9_6 0.8291340    0.170 0.558182    0.519   119.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_6. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      HPQDLNTML HPQDLNTML  0  0  0  0  0    HPQDLNTML  HLA-B42_01_9_7 0.9670730    0.032 0.702863    0.130    24.90 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_7. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      IPQDLNTML IPQDLNTML  0  0  0  0  0    IPQDLNTML  HLA-B42_01_9_8 0.9425780    0.057 0.673382    0.177    34.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_8. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      KPQDLNTML KPQDLNTML  0  0  0  0  0    KPQDLNTML  HLA-B42_01_9_9 0.9534500    0.047 0.701308    0.132    25.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_9. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      LPQDLNTML LPQDLNTML  0  0  0  0  0    LPQDLNTML HLA-B42_01_9_10 0.9357030    0.063 0.703751    0.129    24.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      MPQDLNTML MPQDLNTML  0  0  0  0  0    MPQDLNTML HLA-B42_01_9_11 0.9665550    0.033 0.792274    0.031     9.46 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      NPQDLNTML NPQDLNTML  0  0  0  0  0    NPQDLNTML HLA-B42_01_9_12 0.8732310    0.120 0.589364    0.394    85.03 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      PPQDLNTML PPQDLNTML  0  0  0  0  0    PPQDLNTML HLA-B42_01_9_13 0.2293300    1.401 0.246342    4.273  3478.69 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      QPQDLNTML QPQDLNTML  0  0  0  0  0    QPQDLNTML HLA-B42_01_9_14 0.9182430    0.078 0.601191    0.360    74.82 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      RPQDLNTML RPQDLNTML  0  0  0  0  0    RPQDLNTML HLA-B42_01_9_15 0.9693860    0.030 0.774339    0.042    11.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      SPQDLNTML SPQDLNTML  0  0  0  0  0    SPQDLNTML HLA-B42_01_9_16 0.9550040    0.045 0.694440    0.143    27.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTML TPQDLNTML  0  0  0  0  0    TPQDLNTML HLA-B42_01_9_17 0.9286300    0.069 0.639830    0.247    49.25 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_17. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      VPQDLNTML VPQDLNTML  0  0  0  0  0    VPQDLNTML HLA-B42_01_9_18 0.9383540    0.061 0.659877    0.199    39.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_18. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      WPQDLNTML WPQDLNTML  0  0  0  0  0    WPQDLNTML HLA-B42_01_9_19 0.8864560    0.108 0.725907    0.095    19.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_19. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      YPQDLNTML YPQDLNTML  0  0  0  0  0    YPQDLNTML HLA-B42_01_9_20 0.9597330    0.040 0.739921    0.080    16.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_20. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TAQDLNTML TAQDLNTML  0  0  0  0  0    TAQDLNTML HLA-B42_01_9_21 0.1749840    1.753 0.254077    4.027  3199.41 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_21. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TCQDLNTML TCQDLNTML  0  0  0  0  0    TCQDLNTML HLA-B42_01_9_22 0.0220990    6.243 0.121587   13.716 13416.41
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_22. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TDQDLNTML TDQDLNTML  0  0  0  0  0    TDQDLNTML HLA-B42_01_9_23 0.0123830    8.288 0.071705   26.805 23016.03
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_23. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TEQDLNTML TEQDLNTML  0  0  0  0  0    TEQDLNTML HLA-B42_01_9_24 0.0284340    5.455 0.098619   18.123 17201.34
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_24. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TFQDLNTML TFQDLNTML  0  0  0  0  0    TFQDLNTML HLA-B42_01_9_25 0.0478450    4.086 0.152130    9.735  9640.86
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_25. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TGQDLNTML TGQDLNTML  0  0  0  0  0    TGQDLNTML HLA-B42_01_9_26 0.0320770    5.126 0.134818   11.748 11626.91
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_26. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      THQDLNTML THQDLNTML  0  0  0  0  0    THQDLNTML HLA-B42_01_9_27 0.0137980    7.858 0.090373   20.224 18806.59
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_27. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TIQDLNTML TIQDLNTML  0  0  0  0  0    TIQDLNTML HLA-B42_01_9_28 0.1074470    2.485 0.228560    4.892  4216.71
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_28. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TKQDLNTML TKQDLNTML  0  0  0  0  0    TKQDLNTML HLA-B42_01_9_29 0.0119150    8.438 0.096718   18.590 17558.80
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_29. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TLQDLNTML TLQDLNTML  0  0  0  0  0    TLQDLNTML HLA-B42_01_9_30 0.0651730    3.429 0.205534    5.923  5409.69
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_30. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TMQDLNTML TMQDLNTML  0  0  0  0  0    TMQDLNTML HLA-B42_01_9_31 0.0645310    3.447 0.234270    4.682  3964.08
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_31. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TNQDLNTML TNQDLNTML  0  0  0  0  0    TNQDLNTML HLA-B42_01_9_32 0.0127810    8.160 0.095296   18.939 17831.05
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_32. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TQQDLNTML TQQDLNTML  0  0  0  0  0    TQQDLNTML HLA-B42_01_9_33 0.0334650    5.001 0.143024   10.711 10639.09
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_33. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TRQDLNTML TRQDLNTML  0  0  0  0  0    TRQDLNTML HLA-B42_01_9_34 0.0104900    9.015 0.106959   16.282 15717.12
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_34. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TSQDLNTML TSQDLNTML  0  0  0  0  0    TSQDLNTML HLA-B42_01_9_35 0.0461600    4.179 0.158539    9.133  8994.98
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_35. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TTQDLNTML TTQDLNTML  0  0  0  0  0    TTQDLNTML HLA-B42_01_9_36 0.0506170    3.954 0.167213    8.374  8189.20
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_36. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TVQDLNTML TVQDLNTML  0  0  0  0  0    TVQDLNTML HLA-B42_01_9_37 0.1262610    2.252 0.231122    4.798  4101.42
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_37. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TWQDLNTML TWQDLNTML  0  0  0  0  0    TWQDLNTML HLA-B42_01_9_38 0.0257630    5.762 0.117909   14.308 13961.08
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_38. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TYQDLNTML TYQDLNTML  0  0  0  0  0    TYQDLNTML HLA-B42_01_9_39 0.0323600    5.101 0.117818   14.324 13974.84
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_39. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPADLNTML TPADLNTML  0  0  0  0  0    TPADLNTML HLA-B42_01_9_40 0.9429400    0.057 0.672859    0.178    34.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_40. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPCDLNTML TPCDLNTML  0  0  0  0  0    TPCDLNTML HLA-B42_01_9_41 0.7006060    0.322 0.474155    0.928   295.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_41. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPDDLNTML TPDDLNTML  0  0  0  0  0    TPDDLNTML HLA-B42_01_9_42 0.8206430    0.179 0.449546    1.079   385.98 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_42. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPEDLNTML TPEDLNTML  0  0  0  0  0    TPEDLNTML HLA-B42_01_9_43 0.7460640    0.267 0.453776    1.052   368.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_43. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPFDLNTML TPFDLNTML  0  0  0  0  0    TPFDLNTML HLA-B42_01_9_44 0.9101630    0.086 0.608337    0.340    69.25 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_44. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPGDLNTML TPGDLNTML  0  0  0  0  0    TPGDLNTML HLA-B42_01_9_45 0.8332030    0.166 0.542510    0.581   141.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_45. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPHDLNTML TPHDLNTML  0  0  0  0  0    TPHDLNTML HLA-B42_01_9_46 0.9655790    0.034 0.685015    0.158    30.21 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_46. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPIDLNTML TPIDLNTML  0  0  0  0  0    TPIDLNTML HLA-B42_01_9_47 0.9184850    0.078 0.615033    0.321    64.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_47. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPKDLNTML TPKDLNTML  0  0  0  0  0    TPKDLNTML HLA-B42_01_9_48 0.9755990    0.024 0.706062    0.125    24.06 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_48. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPLDLNTML TPLDLNTML  0  0  0  0  0    TPLDLNTML HLA-B42_01_9_49 0.9095050    0.087 0.615952    0.318    63.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_49. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPMDLNTML TPMDLNTML  0  0  0  0  0    TPMDLNTML HLA-B42_01_9_50 0.9653350    0.034 0.765803    0.048    12.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_50. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPNDLNTML TPNDLNTML  0  0  0  0  0    TPNDLNTML HLA-B42_01_9_51 0.9579590    0.042 0.663890    0.192    37.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_51. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPPDLNTML TPPDLNTML  0  0  0  0  0    TPPDLNTML HLA-B42_01_9_52 0.7209320    0.297 0.440438    1.148   425.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_52. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPRDLNTML TPRDLNTML  0  0  0  0  0    TPRDLNTML HLA-B42_01_9_53 0.9873760    0.013 0.794319    0.027     9.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_53. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPSDLNTML TPSDLNTML  0  0  0  0  0    TPSDLNTML HLA-B42_01_9_54 0.9404630    0.059 0.644136    0.237    47.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_54. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPTDLNTML TPTDLNTML  0  0  0  0  0    TPTDLNTML HLA-B42_01_9_55 0.8925210    0.103 0.590046    0.392    84.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_55. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPVDLNTML TPVDLNTML  0  0  0  0  0    TPVDLNTML HLA-B42_01_9_56 0.8875150    0.107 0.584501    0.411    89.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_56. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPWDLNTML TPWDLNTML  0  0  0  0  0    TPWDLNTML HLA-B42_01_9_57 0.8990700    0.097 0.650604    0.221    43.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_57. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPYDLNTML TPYDLNTML  0  0  0  0  0    TPYDLNTML HLA-B42_01_9_58 0.9464030    0.054 0.659122    0.200    39.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_58. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQALNTML TPQALNTML  0  0  0  0  0    TPQALNTML HLA-B42_01_9_59 0.9389960    0.060 0.725949    0.095    19.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_59. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQCLNTML TPQCLNTML  0  0  0  0  0    TPQCLNTML HLA-B42_01_9_60 0.7721580    0.237 0.735044    0.086    17.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_60. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQELNTML TPQELNTML  0  0  0  0  0    TPQELNTML HLA-B42_01_9_61 0.9507740    0.049 0.675233    0.174    33.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_61. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQFLNTML TPQFLNTML  0  0  0  0  0    TPQFLNTML HLA-B42_01_9_62 0.9270880    0.070 0.746874    0.074    15.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_62. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQGLNTML TPQGLNTML  0  0  0  0  0    TPQGLNTML HLA-B42_01_9_63 0.9374790    0.062 0.689752    0.150    28.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_63. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQHLNTML TPQHLNTML  0  0  0  0  0    TPQHLNTML HLA-B42_01_9_64 0.9426650    0.057 0.717775    0.103    21.19 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_64. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQILNTML TPQILNTML  0  0  0  0  0    TPQILNTML HLA-B42_01_9_65 0.9382000    0.061 0.724284    0.096    19.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_65. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQKLNTML TPQKLNTML  0  0  0  0  0    TPQKLNTML HLA-B42_01_9_66 0.9680570    0.031 0.737933    0.082    17.04 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_66. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQLLNTML TPQLLNTML  0  0  0  0  0    TPQLLNTML HLA-B42_01_9_67 0.9435410    0.056 0.729250    0.092    18.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_67. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQMLNTML TPQMLNTML  0  0  0  0  0    TPQMLNTML HLA-B42_01_9_68 0.9335950    0.065 0.745814    0.075    15.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_68. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQNLNTML TPQNLNTML  0  0  0  0  0    TPQNLNTML HLA-B42_01_9_69 0.9236640    0.073 0.702545    0.130    24.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_69. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQPLNTML TPQPLNTML  0  0  0  0  0    TPQPLNTML HLA-B42_01_9_70 0.9775530    0.022 0.726801    0.094    19.22 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_70. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQQLNTML TPQQLNTML  0  0  0  0  0    TPQQLNTML HLA-B42_01_9_71 0.9555910    0.044 0.710980    0.116    22.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_71. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQRLNTML TPQRLNTML  0  0  0  0  0    TPQRLNTML HLA-B42_01_9_72 0.9474240    0.053 0.743929    0.076    15.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_72. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQSLNTML TPQSLNTML  0  0  0  0  0    TPQSLNTML HLA-B42_01_9_73 0.9441860    0.056 0.715151    0.108    21.80 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_73. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQTLNTML TPQTLNTML  0  0  0  0  0    TPQTLNTML HLA-B42_01_9_74 0.9345700    0.064 0.701258    0.132    25.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_74. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQVLNTML TPQVLNTML  0  0  0  0  0    TPQVLNTML HLA-B42_01_9_75 0.9331090    0.065 0.719223    0.100    20.86 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_75. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQWLNTML TPQWLNTML  0  0  0  0  0    TPQWLNTML HLA-B42_01_9_76 0.9186620    0.078 0.758242    0.056    13.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_76. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQYLNTML TPQYLNTML  0  0  0  0  0    TPQYLNTML HLA-B42_01_9_77 0.9218490    0.075 0.736805    0.084    17.25 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_77. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDANTML TPQDANTML  0  0  0  0  0    TPQDANTML HLA-B42_01_9_78 0.9024130    0.094 0.603846    0.353    72.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_78. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDCNTML TPQDCNTML  0  0  0  0  0    TPQDCNTML HLA-B42_01_9_79 0.7578390    0.253 0.597671    0.370    77.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_79. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDDNTML TPQDDNTML  0  0  0  0  0    TPQDDNTML HLA-B42_01_9_80 0.7273710    0.289 0.436762    1.179   443.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_80. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDENTML TPQDENTML  0  0  0  0  0    TPQDENTML HLA-B42_01_9_81 0.7965460    0.209 0.462800    0.995   334.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_81. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDFNTML TPQDFNTML  0  0  0  0  0    TPQDFNTML HLA-B42_01_9_82 0.8966110    0.099 0.630015    0.276    54.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_82. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDGNTML TPQDGNTML  0  0  0  0  0    TPQDGNTML HLA-B42_01_9_83 0.9085440    0.088 0.589508    0.393    84.90 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_83. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDHNTML TPQDHNTML  0  0  0  0  0    TPQDHNTML HLA-B42_01_9_84 0.9649040    0.035 0.705376    0.126    24.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_84. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDINTML TPQDINTML  0  0  0  0  0    TPQDINTML HLA-B42_01_9_85 0.9437490    0.056 0.647843    0.228    45.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_85. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDKNTML TPQDKNTML  0  0  0  0  0    TPQDKNTML HLA-B42_01_9_86 0.9691960    0.030 0.666170    0.189    37.04 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_86. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDMNTML TPQDMNTML  0  0  0  0  0    TPQDMNTML HLA-B42_01_9_87 0.9096120    0.087 0.655159    0.210    41.73 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_87. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDNNTML TPQDNNTML  0  0  0  0  0    TPQDNNTML HLA-B42_01_9_88 0.8724790    0.121 0.567495    0.481   107.73 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_88. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDPNTML TPQDPNTML  0  0  0  0  0    TPQDPNTML HLA-B42_01_9_89 0.9470350    0.053 0.589455    0.394    84.95 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_89. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDQNTML TPQDQNTML  0  0  0  0  0    TPQDQNTML HLA-B42_01_9_90 0.9101380    0.086 0.584592    0.411    89.53 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_90. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDRNTML TPQDRNTML  0  0  0  0  0    TPQDRNTML HLA-B42_01_9_91 0.9742300    0.025 0.721645    0.098    20.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_91. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDSNTML TPQDSNTML  0  0  0  0  0    TPQDSNTML HLA-B42_01_9_92 0.9072460    0.089 0.593950    0.381    80.91 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_92. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDTNTML TPQDTNTML  0  0  0  0  0    TPQDTNTML HLA-B42_01_9_93 0.9147100    0.082 0.598824    0.367    76.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_93. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDVNTML TPQDVNTML  0  0  0  0  0    TPQDVNTML HLA-B42_01_9_94 0.9399050    0.060 0.636494    0.257    51.06 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_94. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDWNTML TPQDWNTML  0  0  0  0  0    TPQDWNTML HLA-B42_01_9_95 0.8756330    0.118 0.619558    0.308    61.33 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_95. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDYNTML TPQDYNTML  0  0  0  0  0    TPQDYNTML HLA-B42_01_9_96 0.8974240    0.099 0.649330    0.224    44.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_96. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLATML TPQDLATML  0  0  0  0  0    TPQDLATML HLA-B42_01_9_97 0.9286040    0.069 0.626798    0.286    56.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_97. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLCTML TPQDLCTML  0  0  0  0  0    TPQDLCTML HLA-B42_01_9_98 0.7925030    0.214 0.586072    0.405    88.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_98. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLDTML TPQDLDTML  0  0  0  0  0    TPQDLDTML HLA-B42_01_9_99 0.7380390    0.277 0.483884    0.874   266.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_99. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLETML TPQDLETML  0  0  0  0  0    TPQDLETML HLA-B42_01_9_10 0.8490590    0.152 0.512175    0.732   196.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLFTML TPQDLFTML  0  0  0  0  0    TPQDLFTML HLA-B42_01_9_10 0.9469470    0.053 0.700020    0.134    25.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLGTML TPQDLGTML  0  0  0  0  0    TPQDLGTML HLA-B42_01_9_10 0.9400640    0.060 0.651708    0.218    43.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLHTML TPQDLHTML  0  0  0  0  0    TPQDLHTML HLA-B42_01_9_10 0.9765690    0.023 0.740031    0.079    16.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLITML TPQDLITML  0  0  0  0  0    TPQDLITML HLA-B42_01_9_10 0.9481240    0.052 0.629753    0.277    54.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLKTML TPQDLKTML  0  0  0  0  0    TPQDLKTML HLA-B42_01_9_10 0.9685650    0.031 0.670586    0.182    35.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLLTML TPQDLLTML  0  0  0  0  0    TPQDLLTML HLA-B42_01_9_10 0.9387960    0.061 0.646765    0.230    45.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLMTML TPQDLMTML  0  0  0  0  0    TPQDLMTML HLA-B42_01_9_10 0.9309970    0.067 0.640171    0.246    49.07 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLPTML TPQDLPTML  0  0  0  0  0    TPQDLPTML HLA-B42_01_9_10 0.9590720    0.041 0.603421    0.354    73.03 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLQTML TPQDLQTML  0  0  0  0  0    TPQDLQTML HLA-B42_01_9_10 0.9373420    0.062 0.611362    0.331    67.02 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_10. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLRTML TPQDLRTML  0  0  0  0  0    TPQDLRTML HLA-B42_01_9_11 0.9831460    0.017 0.775470    0.041    11.35 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLSTML TPQDLSTML  0  0  0  0  0    TPQDLSTML HLA-B42_01_9_11 0.9451390    0.055 0.660079    0.199    39.56 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLTTML TPQDLTTML  0  0  0  0  0    TPQDLTTML HLA-B42_01_9_11 0.9598180    0.040 0.674908    0.175    33.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLVTML TPQDLVTML  0  0  0  0  0    TPQDLVTML HLA-B42_01_9_11 0.9491660    0.051 0.630497    0.275    54.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLWTML TPQDLWTML  0  0  0  0  0    TPQDLWTML HLA-B42_01_9_11 0.9029380    0.093 0.674291    0.176    33.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLYTML TPQDLYTML  0  0  0  0  0    TPQDLYTML HLA-B42_01_9_11 0.9266150    0.070 0.658540    0.202    40.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNAML TPQDLNAML  0  0  0  0  0    TPQDLNAML HLA-B42_01_9_11 0.9037460    0.093 0.652737    0.216    42.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNCML TPQDLNCML  0  0  0  0  0    TPQDLNCML HLA-B42_01_9_11 0.7803310    0.228 0.604446    0.351    72.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNDML TPQDLNDML  0  0  0  0  0    TPQDLNDML HLA-B42_01_9_11 0.6160990    0.432 0.452436    1.060   374.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNEML TPQDLNEML  0  0  0  0  0    TPQDLNEML HLA-B42_01_9_11 0.7857280    0.222 0.503824    0.772   214.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_11. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNFML TPQDLNFML  0  0  0  0  0    TPQDLNFML HLA-B42_01_9_12 0.8711360    0.122 0.648555    0.226    44.82 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNGML TPQDLNGML  0  0  0  0  0    TPQDLNGML HLA-B42_01_9_12 0.7816760    0.226 0.588361    0.397    85.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNHML TPQDLNHML  0  0  0  0  0    TPQDLNHML HLA-B42_01_9_12 0.9607570    0.039 0.680733    0.165    31.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNIML TPQDLNIML  0  0  0  0  0    TPQDLNIML HLA-B42_01_9_12 0.9228930    0.074 0.630287    0.276    54.61 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNKML TPQDLNKML  0  0  0  0  0    TPQDLNKML HLA-B42_01_9_12 0.9056720    0.091 0.597281    0.371    78.05 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNLML TPQDLNLML  0  0  0  0  0    TPQDLNLML HLA-B42_01_9_12 0.9210830    0.075 0.642736    0.240    47.73 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNMML TPQDLNMML  0  0  0  0  0    TPQDLNMML HLA-B42_01_9_12 0.9297750    0.068 0.675883    0.173    33.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNNML TPQDLNNML  0  0  0  0  0    TPQDLNNML HLA-B42_01_9_12 0.9003210    0.096 0.618910    0.310    61.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNPML TPQDLNPML  0  0  0  0  0    TPQDLNPML HLA-B42_01_9_12 0.9162030    0.080 0.600720    0.362    75.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNQML TPQDLNQML  0  0  0  0  0    TPQDLNQML HLA-B42_01_9_12 0.9178190    0.078 0.597466    0.371    77.89 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_12. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNRML TPQDLNRML  0  0  0  0  0    TPQDLNRML HLA-B42_01_9_13 0.9286690    0.068 0.653778    0.213    42.35 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNSML TPQDLNSML  0  0  0  0  0    TPQDLNSML HLA-B42_01_9_13 0.9204220    0.076 0.658109    0.203    40.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNVML TPQDLNVML  0  0  0  0  0    TPQDLNVML HLA-B42_01_9_13 0.9307390    0.067 0.639035    0.249    49.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNWML TPQDLNWML  0  0  0  0  0    TPQDLNWML HLA-B42_01_9_13 0.7965380    0.209 0.580287    0.428    93.80 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNYML TPQDLNYML  0  0  0  0  0    TPQDLNYML HLA-B42_01_9_13 0.9012580    0.095 0.662618    0.194    38.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTAL TPQDLNTAL  0  0  0  0  0    TPQDLNTAL HLA-B42_01_9_13 0.9813760    0.019 0.759167    0.055    13.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTCL TPQDLNTCL  0  0  0  0  0    TPQDLNTCL HLA-B42_01_9_13 0.8900100    0.105 0.633058    0.267    53.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTDL TPQDLNTDL  0  0  0  0  0    TPQDLNTDL HLA-B42_01_9_13 0.8037070    0.201 0.545581    0.569   136.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTEL TPQDLNTEL  0  0  0  0  0    TPQDLNTEL HLA-B42_01_9_13 0.9624230    0.037 0.664912    0.191    37.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTFL TPQDLNTFL  0  0  0  0  0    TPQDLNTFL HLA-B42_01_9_13 0.8923660    0.103 0.644699    0.235    46.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_13. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTGL TPQDLNTGL  0  0  0  0  0    TPQDLNTGL HLA-B42_01_9_14 0.8976390    0.098 0.621635    0.302    59.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTHL TPQDLNTHL  0  0  0  0  0    TPQDLNTHL HLA-B42_01_9_14 0.9300640    0.067 0.600202    0.363    75.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTIL TPQDLNTIL  0  0  0  0  0    TPQDLNTIL HLA-B42_01_9_14 0.9380420    0.061 0.671465    0.180    34.98 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTKL TPQDLNTKL  0  0  0  0  0    TPQDLNTKL HLA-B42_01_9_14 0.9449200    0.055 0.602082    0.358    74.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTLL TPQDLNTLL  0  0  0  0  0    TPQDLNTLL HLA-B42_01_9_14 0.9150250    0.081 0.644273    0.236    46.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTNL TPQDLNTNL  0  0  0  0  0    TPQDLNTNL HLA-B42_01_9_14 0.9218800    0.075 0.615617    0.319    64.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTPL TPQDLNTPL  0  0  0  0  0    TPQDLNTPL HLA-B42_01_9_14 0.9546430    0.045 0.769697    0.045    12.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTQL TPQDLNTQL  0  0  0  0  0    TPQDLNTQL HLA-B42_01_9_14 0.9611650    0.039 0.647634    0.228    45.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTRL TPQDLNTRL  0  0  0  0  0    TPQDLNTRL HLA-B42_01_9_14 0.9205020    0.076 0.599958    0.364    75.82 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTSL TPQDLNTSL  0  0  0  0  0    TPQDLNTSL HLA-B42_01_9_14 0.9825210    0.018 0.743136    0.077    16.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_14. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTTL TPQDLNTTL  0  0  0  0  0    TPQDLNTTL HLA-B42_01_9_15 0.9762630    0.023 0.703298    0.129    24.79 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTVL TPQDLNTVL  0  0  0  0  0    TPQDLNTVL HLA-B42_01_9_15 0.9680910    0.031 0.714887    0.108    21.86 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTWL TPQDLNTWL  0  0  0  0  0    TPQDLNTWL HLA-B42_01_9_15 0.7811940    0.227 0.607039    0.344    70.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTYL TPQDLNTYL  0  0  0  0  0    TPQDLNTYL HLA-B42_01_9_15 0.9203970    0.076 0.649124    0.225    44.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMA TPQDLNTMA  0  0  0  0  0    TPQDLNTMA HLA-B42_01_9_15 0.2694900    1.201 0.356535    1.986  1055.90 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMC TPQDLNTMC  0  0  0  0  0    TPQDLNTMC HLA-B42_01_9_15 0.2143970    1.486 0.285443    3.210  2278.67 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMD TPQDLNTMD  0  0  0  0  0    TPQDLNTMD HLA-B42_01_9_15 0.0023780   17.046 0.085996   21.538 19718.65
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTME TPQDLNTME  0  0  0  0  0    TPQDLNTME HLA-B42_01_9_15 0.0195460    6.627 0.131375   12.233 12068.21
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMF TPQDLNTMF  0  0  0  0  0    TPQDLNTMF HLA-B42_01_9_15 0.7658460    0.244 0.506629    0.758   208.13 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMG TPQDLNTMG  0  0  0  0  0    TPQDLNTMG HLA-B42_01_9_15 0.0237840    6.001 0.186575    6.946  6641.40
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_15. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMH TPQDLNTMH  0  0  0  0  0    TPQDLNTMH HLA-B42_01_9_16 0.0675520    3.363 0.139801   11.084 11016.64
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMI TPQDLNTMI  0  0  0  0  0    TPQDLNTMI HLA-B42_01_9_16 0.6785360    0.349 0.523330    0.676   173.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMK TPQDLNTMK  0  0  0  0  0    TPQDLNTMK HLA-B42_01_9_16 0.0306310    5.257 0.133809   11.882 11754.54
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMM TPQDLNTMM  0  0  0  0  0    TPQDLNTMM HLA-B42_01_9_16 0.8499130    0.151 0.586436    0.403    87.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMN TPQDLNTMN  0  0  0  0  0    TPQDLNTMN HLA-B42_01_9_16 0.0051230   12.454 0.104281   16.857 16179.19
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMP TPQDLNTMP  0  0  0  0  0    TPQDLNTMP HLA-B42_01_9_16 0.0289800    5.406 0.133749   11.890 11762.17
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMQ TPQDLNTMQ  0  0  0  0  0    TPQDLNTMQ HLA-B42_01_9_16 0.0249030    5.866 0.118990   14.126 13798.74
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMR TPQDLNTMR  0  0  0  0  0    TPQDLNTMR HLA-B42_01_9_16 0.0282100    5.475 0.108377   15.981 15477.82
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMS TPQDLNTMS  0  0  0  0  0    TPQDLNTMS HLA-B42_01_9_16 0.0271210    5.598 0.177386    7.578  7335.65
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMT TPQDLNTMT  0  0  0  0  0    TPQDLNTMT HLA-B42_01_9_16 0.0936810    2.745 0.235649    4.631  3905.37
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_16. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMV TPQDLNTMV  0  0  0  0  0    TPQDLNTMV HLA-B42_01_9_17 0.6342640    0.405 0.495223    0.814   235.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_17. Allele HLA-B*4201. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMW TPQDLNTMW  0  0  0  0  0    TPQDLNTMW HLA-B42_01_9_17 0.3460020    0.945 0.288461    3.140  2205.47 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_17. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*4201      TPQDLNTMY TPQDLNTMY  0  0  0  0  0    TPQDLNTMY HLA-B42_01_9_17 0.2481240    1.302 0.225707    4.997  4348.90 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B42_01_9_17. Allele HLA-B*4201. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------

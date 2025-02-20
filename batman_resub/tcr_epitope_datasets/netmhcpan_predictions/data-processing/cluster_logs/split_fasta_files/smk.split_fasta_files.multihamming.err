@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Fri Nov  1 14:58:24 2024]
+checkpoint split_fasta_files:
+    input: data/netmhcpan_inputs_mhci_multihamming.csv
+    output: data/fastafiles/multihamming
+    jobid: 0
+    reason: Missing output files: data/fastafiles/multihamming
+    wildcards: distance=multihamming
+    resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954, tmpdir=/tmp/9027860.1.comp.q
+DAG of jobs will be updated after completion.
+
+Rscript --vanilla /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing/.snakemake/scripts/tmp1qstmgrk.01_generate-fasta.R
+Activating conda environment: .snakemake/conda/abe0a7eb66d3c5263fa42f24ff009a77_
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘seqinr’
+
+The following object is masked from ‘package:dplyr’:
+
+    count
+
+New names:
+• `` -> `...1`
+Rows: 19091 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (2): mhc, peptide
+dbl (1): ...1
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Not cleaning up /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing/.snakemake/scripts/tmp1qstmgrk.01_generate-fasta.R
+[Fri Nov  1 14:58:28 2024]
+Finished job 0.
+1 of 1 steps (100%) done

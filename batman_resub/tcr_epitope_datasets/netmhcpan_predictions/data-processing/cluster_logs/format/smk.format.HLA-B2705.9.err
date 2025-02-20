@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=5000, mem_mib=4769, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Sun Sep 15 14:53:55 2024]
+rule format:
+    input: data/predictions/netMHCpan_HLA-B2705_9.txt
+    output: data/predictions/netMHCpan_HLA-B2705_9_formated.csv
+    jobid: 0
+    reason: Missing output files: data/predictions/netMHCpan_HLA-B2705_9_formated.csv
+    wildcards: mhc=HLA-B2705, plength=9
+    resources: mem_mb=5000, mem_mib=4769, disk_mb=1000, disk_mib=954, tmpdir=/tmp/8893532.1.comp.q
+
+
+        Rscript scripts/02_format-predictions.R              --dirpred data/predictions             --dirseq data/fastafiles             --sampleid HLA-B2705_9
+        
+Activating conda environment: .snakemake/conda/a1d5a5f7cee8556dbef9cdf36ee9e95b_
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.3     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+[Sun Sep 15 14:54:00 2024]
+Finished job 0.
+1 of 1 steps (100%) done

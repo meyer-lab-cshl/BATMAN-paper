@@ -1,0 +1,33 @@
+name: atmtcr-env
+channels:
+  - defaults
+dependencies:
+  - ca-certificates=2024.12.31=haa95532_0
+  - openssl=1.1.1w=h2bbff1b_0
+  - pip=24.2=py38haa95532_0
+  - python=3.8.10=hdbf39b2_7
+  - setuptools=75.1.0=py38haa95532_0
+  - sqlite=3.45.3=h2bbff1b_0
+  - vc=14.40=haa95532_2
+  - vs2015_runtime=14.42.34433=h9531ae6_2
+  - wheel=0.44.0=py38haa95532_0
+  - pip:
+      - certifi==2020.12.5
+      - chardet==4.0.0
+      - idna==2.10
+      - joblib==1.1.1
+      - numpy==1.20.1
+      - protobuf==3.15.1
+      - requests==2.25.1
+      - scikit-learn==0.24.1
+      - scipy==1.6.1
+      - six==1.15.0
+      - sklearn==0.0
+      - tensorboardx==2.1
+      - threadpoolctl==2.1.0
+      - torch==1.10.0
+      - torchtext==0.11.0
+      - tqdm==4.57.0
+      - typing-extensions==3.7.4.3
+      - urllib3==1.26.3
+prefix: C:\Users\amita\miniconda3\envs\atmtcr-env

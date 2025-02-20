@@ -1,0 +1,1939 @@
+# /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -f data/fastafiles/peptides_HLA-B8101_9.fasta -l 9 -a HLA-B8101 -BA
+# Sun Sep 15 14:53:21 2024
+# User: hmeyer
+# PWD : /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing
+# Host: Linux bam14 4.18.0-348.12.2.el8_5.x86_64 x86_64
+# -f       data/fastafiles/peptides_HLA-B8101_9.fasta File name with input
+# -l       9                    Peptide length [8-11] (multiple length with ,)
+# -a       HLA-B8101            MHC allele
+# -BA      1                    Include Binding affinity prediction
+# Command line parameters set to:
+#	[-rdir filename]     /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/8893512.1.comp.q/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-B8101            MHC allele
+#	[-f filename]        data/fastafiles/peptides_HLA-B8101_9.fasta File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 0                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          9                    Peptide length [8-11] (multiple length with ,)
+#	[-xls]               0                    Save output to xls file
+#	[-xlsfile filename]  NetMHCpan_out.xls    Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/8893512.1.comp.q/netMHCpanlnNsE0
+# Input is in FSA format
+
+# Peptide length 9
+
+# Make both EL and BA predictions
+
+HLA-B8101 : Distance to training data  0.146 (using nearest neighbor HLA-B42:01)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      APQDLNTML APQDLNTML  0  0  0  0  0    APQDLNTML  HLA-B81_01_9_1 0.7843740    0.036 0.463320    0.113   332.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_1. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      CPQDLNTML CPQDLNTML  0  0  0  0  0    CPQDLNTML  HLA-B81_01_9_2 0.4510800    0.172 0.453120    0.121   371.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_2. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      DPQDLNTML DPQDLNTML  0  0  0  0  0    DPQDLNTML  HLA-B81_01_9_3 0.2082130    0.470 0.187382    1.332  6583.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_3. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      EPQDLNTML EPQDLNTML  0  0  0  0  0    EPQDLNTML  HLA-B81_01_9_4 0.3678210    0.228 0.265629    0.622  2823.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_4. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      FPQDLNTML FPQDLNTML  0  0  0  0  0    FPQDLNTML  HLA-B81_01_9_5 0.8534720    0.023 0.610007    0.024    68.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_5. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      GPQDLNTML GPQDLNTML  0  0  0  0  0    GPQDLNTML  HLA-B81_01_9_6 0.6326320    0.077 0.392747    0.206   713.61 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_6. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      HPQDLNTML HPQDLNTML  0  0  0  0  0    HPQDLNTML  HLA-B81_01_9_7 0.8818700    0.018 0.564541    0.040   111.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_7. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      IPQDLNTML IPQDLNTML  0  0  0  0  0    IPQDLNTML  HLA-B81_01_9_8 0.7953980    0.034 0.523121    0.063   174.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_8. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      KPQDLNTML KPQDLNTML  0  0  0  0  0    KPQDLNTML  HLA-B81_01_9_9 0.8259660    0.030 0.505132    0.076   211.53 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_9. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      LPQDLNTML LPQDLNTML  0  0  0  0  0    LPQDLNTML HLA-B81_01_9_10 0.7580510    0.039 0.538956    0.055   146.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      MPQDLNTML MPQDLNTML  0  0  0  0  0    MPQDLNTML HLA-B81_01_9_11 0.8698190    0.020 0.659897    0.010    39.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      NPQDLNTML NPQDLNTML  0  0  0  0  0    NPQDLNTML HLA-B81_01_9_12 0.6067410    0.089 0.413827    0.168   568.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      PPQDLNTML PPQDLNTML  0  0  0  0  0    PPQDLNTML HLA-B81_01_9_13 0.0716530    1.161 0.128381    2.786 12465.55 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      QPQDLNTML QPQDLNTML  0  0  0  0  0    QPQDLNTML HLA-B81_01_9_14 0.7364200    0.045 0.426709    0.148   494.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      RPQDLNTML RPQDLNTML  0  0  0  0  0    RPQDLNTML HLA-B81_01_9_15 0.8955400    0.015 0.602219    0.026    73.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      SPQDLNTML SPQDLNTML  0  0  0  0  0    SPQDLNTML HLA-B81_01_9_16 0.8518400    0.023 0.528781    0.060   163.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTML TPQDLNTML  0  0  0  0  0    TPQDLNTML HLA-B81_01_9_17 0.7545360    0.040 0.469639    0.107   310.56 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_17. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      VPQDLNTML VPQDLNTML  0  0  0  0  0    VPQDLNTML HLA-B81_01_9_18 0.7857870    0.036 0.500796    0.081   221.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_18. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      WPQDLNTML WPQDLNTML  0  0  0  0  0    WPQDLNTML HLA-B81_01_9_19 0.7136530    0.052 0.575977    0.036    98.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_19. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      YPQDLNTML YPQDLNTML  0  0  0  0  0    YPQDLNTML HLA-B81_01_9_20 0.8862980    0.017 0.619189    0.022    61.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_20. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TAQDLNTML TAQDLNTML  0  0  0  0  0    TAQDLNTML HLA-B81_01_9_21 0.0891070    0.966 0.159352    1.838  8916.20 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_21. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TCQDLNTML TCQDLNTML  0  0  0  0  0    TCQDLNTML HLA-B81_01_9_22 0.0078760    4.671 0.064947    8.675 24762.01
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_22. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TDQDLNTML TDQDLNTML  0  0  0  0  0    TDQDLNTML HLA-B81_01_9_23 0.0037870    6.733 0.034173   21.101 34545.54
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_23. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TEQDLNTML TEQDLNTML  0  0  0  0  0    TEQDLNTML HLA-B81_01_9_24 0.0268790    2.258 0.063217    9.048 25229.89
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_24. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TFQDLNTML TFQDLNTML  0  0  0  0  0    TFQDLNTML HLA-B81_01_9_25 0.0266110    2.271 0.096350    4.615 17628.86
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_25. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TGQDLNTML TGQDLNTML  0  0  0  0  0    TGQDLNTML HLA-B81_01_9_26 0.0212260    2.586 0.072508    7.306 22816.93
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_26. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      THQDLNTML THQDLNTML  0  0  0  0  0    THQDLNTML HLA-B81_01_9_27 0.0169390    2.984 0.082110    5.979 20565.42
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_27. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TIQDLNTML TIQDLNTML  0  0  0  0  0    TIQDLNTML HLA-B81_01_9_28 0.0472110    1.543 0.125849    2.885 12811.77 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_28. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TKQDLNTML TKQDLNTML  0  0  0  0  0    TKQDLNTML HLA-B81_01_9_29 0.0123280    3.623 0.066026    8.453 24474.62
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_29. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TLQDLNTML TLQDLNTML  0  0  0  0  0    TLQDLNTML HLA-B81_01_9_30 0.0389430    1.747 0.121374    3.080 13447.36 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_30. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TMQDLNTML TMQDLNTML  0  0  0  0  0    TMQDLNTML HLA-B81_01_9_31 0.0374250    1.791 0.142565    2.299 10692.06 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_31. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TNQDLNTML TNQDLNTML  0  0  0  0  0    TNQDLNTML HLA-B81_01_9_32 0.0073100    4.857 0.048358   13.395 29630.37
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_32. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TQQDLNTML TQQDLNTML  0  0  0  0  0    TQQDLNTML HLA-B81_01_9_33 0.0380430    1.773 0.094573    4.761 17971.08 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_33. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TRQDLNTML TRQDLNTML  0  0  0  0  0    TRQDLNTML HLA-B81_01_9_34 0.0114940    3.782 0.083347    5.840 20292.00
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_34. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TSQDLNTML TSQDLNTML  0  0  0  0  0    TSQDLNTML HLA-B81_01_9_35 0.0182280    2.864 0.081901    6.003 20611.97
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_35. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TTQDLNTML TTQDLNTML  0  0  0  0  0    TTQDLNTML HLA-B81_01_9_36 0.0240020    2.405 0.090565    5.103 18767.55
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_36. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TVQDLNTML TVQDLNTML  0  0  0  0  0    TVQDLNTML HLA-B81_01_9_37 0.0629580    1.272 0.134479    2.546 11669.63 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_37. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TWQDLNTML TWQDLNTML  0  0  0  0  0    TWQDLNTML HLA-B81_01_9_38 0.0083870    4.503 0.065386    8.582 24644.68
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_38. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TYQDLNTML TYQDLNTML  0  0  0  0  0    TYQDLNTML HLA-B81_01_9_39 0.0233340    2.440 0.081513    6.053 20698.69
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_39. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPADLNTML TPADLNTML  0  0  0  0  0    TPADLNTML HLA-B81_01_9_40 0.8485850    0.024 0.566476    0.040   108.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_40. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPCDLNTML TPCDLNTML  0  0  0  0  0    TPCDLNTML HLA-B81_01_9_41 0.5056040    0.141 0.365950    0.265   953.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_41. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPDDLNTML TPDDLNTML  0  0  0  0  0    TPDDLNTML HLA-B81_01_9_42 0.5286450    0.126 0.323238    0.383  1513.85 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_42. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPEDLNTML TPEDLNTML  0  0  0  0  0    TPEDLNTML HLA-B81_01_9_43 0.4400180    0.178 0.308025    0.438  1784.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_43. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPFDLNTML TPFDLNTML  0  0  0  0  0    TPFDLNTML HLA-B81_01_9_44 0.8606700    0.022 0.554721    0.046   123.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_44. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPGDLNTML TPGDLNTML  0  0  0  0  0    TPGDLNTML HLA-B81_01_9_45 0.5748470    0.101 0.379309    0.235   825.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_45. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPHDLNTML TPHDLNTML  0  0  0  0  0    TPHDLNTML HLA-B81_01_9_46 0.8704240    0.020 0.554052    0.047   124.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_46. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPIDLNTML TPIDLNTML  0  0  0  0  0    TPIDLNTML HLA-B81_01_9_47 0.8398500    0.025 0.529411    0.060   162.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_47. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPKDLNTML TPKDLNTML  0  0  0  0  0    TPKDLNTML HLA-B81_01_9_48 0.8591700    0.022 0.495552    0.089   234.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_48. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPLDLNTML TPLDLNTML  0  0  0  0  0    TPLDLNTML HLA-B81_01_9_49 0.7821160    0.036 0.489403    0.093   250.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_49. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPMDLNTML TPMDLNTML  0  0  0  0  0    TPMDLNTML HLA-B81_01_9_50 0.9039140    0.014 0.646920    0.015    45.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_50. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPNDLNTML TPNDLNTML  0  0  0  0  0    TPNDLNTML HLA-B81_01_9_51 0.8373980    0.026 0.529463    0.060   162.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_51. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPPDLNTML TPPDLNTML  0  0  0  0  0    TPPDLNTML HLA-B81_01_9_52 0.4966580    0.147 0.312918    0.418  1692.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_52. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPRDLNTML TPRDLNTML  0  0  0  0  0    TPRDLNTML HLA-B81_01_9_53 0.9087700    0.013 0.609474    0.024    68.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_53. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPSDLNTML TPSDLNTML  0  0  0  0  0    TPSDLNTML HLA-B81_01_9_54 0.8357240    0.027 0.541715    0.054   142.39 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_54. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPTDLNTML TPTDLNTML  0  0  0  0  0    TPTDLNTML HLA-B81_01_9_55 0.7481210    0.042 0.487429    0.094   256.19 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_55. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPVDLNTML TPVDLNTML  0  0  0  0  0    TPVDLNTML HLA-B81_01_9_56 0.7809580    0.036 0.499624    0.083   224.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_56. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPWDLNTML TPWDLNTML  0  0  0  0  0    TPWDLNTML HLA-B81_01_9_57 0.8006340    0.034 0.554809    0.046   123.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_57. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPYDLNTML TPYDLNTML  0  0  0  0  0    TPYDLNTML HLA-B81_01_9_58 0.8900260    0.016 0.583603    0.033    90.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_58. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQALNTML TPQALNTML  0  0  0  0  0    TPQALNTML HLA-B81_01_9_59 0.7444110    0.043 0.530194    0.059   161.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_59. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQCLNTML TPQCLNTML  0  0  0  0  0    TPQCLNTML HLA-B81_01_9_60 0.4527480    0.171 0.503209    0.078   215.98 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_60. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQELNTML TPQELNTML  0  0  0  0  0    TPQELNTML HLA-B81_01_9_61 0.7779380    0.037 0.493188    0.091   240.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_61. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQFLNTML TPQFLNTML  0  0  0  0  0    TPQFLNTML HLA-B81_01_9_62 0.7016700    0.057 0.542201    0.053   141.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_62. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQGLNTML TPQGLNTML  0  0  0  0  0    TPQGLNTML HLA-B81_01_9_63 0.7813700    0.036 0.512066    0.069   196.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_63. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQHLNTML TPQHLNTML  0  0  0  0  0    TPQHLNTML HLA-B81_01_9_64 0.7090950    0.054 0.498440    0.085   227.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_64. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQILNTML TPQILNTML  0  0  0  0  0    TPQILNTML HLA-B81_01_9_65 0.6816490    0.063 0.489575    0.093   250.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_65. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQKLNTML TPQKLNTML  0  0  0  0  0    TPQKLNTML HLA-B81_01_9_66 0.7978610    0.034 0.509885    0.070   200.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_66. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQLLNTML TPQLLNTML  0  0  0  0  0    TPQLLNTML HLA-B81_01_9_67 0.7088580    0.054 0.503557    0.078   215.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_67. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQMLNTML TPQMLNTML  0  0  0  0  0    TPQMLNTML HLA-B81_01_9_68 0.6729740    0.065 0.507810    0.073   205.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_68. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQNLNTML TPQNLNTML  0  0  0  0  0    TPQNLNTML HLA-B81_01_9_69 0.6856130    0.062 0.480092    0.099   277.35 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_69. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQPLNTML TPQPLNTML  0  0  0  0  0    TPQPLNTML HLA-B81_01_9_70 0.8774500    0.019 0.545950    0.051   136.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_70. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQQLNTML TPQQLNTML  0  0  0  0  0    TPQQLNTML HLA-B81_01_9_71 0.7673470    0.038 0.496290    0.088   232.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_71. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQRLNTML TPQRLNTML  0  0  0  0  0    TPQRLNTML HLA-B81_01_9_72 0.7019520    0.057 0.502566    0.079   217.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_72. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQSLNTML TPQSLNTML  0  0  0  0  0    TPQSLNTML HLA-B81_01_9_73 0.7668640    0.038 0.516318    0.067   187.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_73. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQTLNTML TPQTLNTML  0  0  0  0  0    TPQTLNTML HLA-B81_01_9_74 0.6999540    0.057 0.482765    0.097   269.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_74. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQVLNTML TPQVLNTML  0  0  0  0  0    TPQVLNTML HLA-B81_01_9_75 0.6744810    0.065 0.489633    0.093   250.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_75. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQWLNTML TPQWLNTML  0  0  0  0  0    TPQWLNTML HLA-B81_01_9_76 0.7391690    0.044 0.581876    0.034    92.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_76. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQYLNTML TPQYLNTML  0  0  0  0  0    TPQYLNTML HLA-B81_01_9_77 0.6969380    0.058 0.532434    0.058   157.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_77. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDANTML TPQDANTML  0  0  0  0  0    TPQDANTML HLA-B81_01_9_78 0.6874610    0.061 0.426552    0.148   495.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_78. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDCNTML TPQDCNTML  0  0  0  0  0    TPQDCNTML HLA-B81_01_9_79 0.4278240    0.185 0.379140    0.235   826.80 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_79. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDDNTML TPQDDNTML  0  0  0  0  0    TPQDDNTML HLA-B81_01_9_80 0.4054650    0.199 0.272958    0.584  2608.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_80. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDENTML TPQDENTML  0  0  0  0  0    TPQDENTML HLA-B81_01_9_81 0.4430610    0.176 0.276659    0.569  2505.86 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_81. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDFNTML TPQDFNTML  0  0  0  0  0    TPQDFNTML HLA-B81_01_9_82 0.6826720    0.063 0.462270    0.113   336.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_82. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDGNTML TPQDGNTML  0  0  0  0  0    TPQDGNTML HLA-B81_01_9_83 0.6878200    0.061 0.403906    0.185   632.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_83. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDHNTML TPQDHNTML  0  0  0  0  0    TPQDHNTML HLA-B81_01_9_84 0.8035850    0.033 0.485721    0.096   260.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_84. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDINTML TPQDINTML  0  0  0  0  0    TPQDINTML HLA-B81_01_9_85 0.8150700    0.032 0.497792    0.086   229.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_85. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDKNTML TPQDKNTML  0  0  0  0  0    TPQDKNTML HLA-B81_01_9_86 0.7866510    0.036 0.396065    0.199   688.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_86. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDMNTML TPQDMNTML  0  0  0  0  0    TPQDMNTML HLA-B81_01_9_87 0.6884740    0.061 0.466979    0.110   319.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_87. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDNNTML TPQDNNTML  0  0  0  0  0    TPQDNNTML HLA-B81_01_9_88 0.6119410    0.086 0.380774    0.232   812.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_88. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDPNTML TPQDPNTML  0  0  0  0  0    TPQDPNTML HLA-B81_01_9_89 0.8166130    0.031 0.422440    0.154   517.53 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_89. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDQNTML TPQDQNTML  0  0  0  0  0    TPQDQNTML HLA-B81_01_9_90 0.6409650    0.074 0.363607    0.270   978.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_90. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDRNTML TPQDRNTML  0  0  0  0  0    TPQDRNTML HLA-B81_01_9_91 0.7464390    0.042 0.422255    0.154   518.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_91. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDSNTML TPQDSNTML  0  0  0  0  0    TPQDSNTML HLA-B81_01_9_92 0.6890890    0.061 0.405838    0.181   619.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_92. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDTNTML TPQDTNTML  0  0  0  0  0    TPQDTNTML HLA-B81_01_9_93 0.7050480    0.055 0.420485    0.157   528.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_93. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDVNTML TPQDVNTML  0  0  0  0  0    TPQDVNTML HLA-B81_01_9_94 0.7869270    0.035 0.478984    0.100   280.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_94. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDWNTML TPQDWNTML  0  0  0  0  0    TPQDWNTML HLA-B81_01_9_95 0.6201170    0.082 0.437375    0.137   440.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_95. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDYNTML TPQDYNTML  0  0  0  0  0    TPQDYNTML HLA-B81_01_9_96 0.6259800    0.079 0.445306    0.128   404.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_96. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLATML TPQDLATML  0  0  0  0  0    TPQDLATML HLA-B81_01_9_97 0.7262940    0.048 0.441026    0.133   423.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_97. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLCTML TPQDLCTML  0  0  0  0  0    TPQDLCTML HLA-B81_01_9_98 0.4499610    0.173 0.355615    0.289  1066.46 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_98. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLDTML TPQDLDTML  0  0  0  0  0    TPQDLDTML HLA-B81_01_9_99 0.4828690    0.155 0.330318    0.361  1402.22 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_99. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLETML TPQDLETML  0  0  0  0  0    TPQDLETML HLA-B81_01_9_10 0.6203390    0.082 0.362480    0.273   990.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLFTML TPQDLFTML  0  0  0  0  0    TPQDLFTML HLA-B81_01_9_10 0.7845710    0.036 0.504855    0.076   212.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLGTML TPQDLGTML  0  0  0  0  0    TPQDLGTML HLA-B81_01_9_10 0.7782650    0.037 0.462644    0.113   334.98 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLHTML TPQDLHTML  0  0  0  0  0    TPQDLHTML HLA-B81_01_9_10 0.8743450    0.019 0.563511    0.041   112.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLITML TPQDLITML  0  0  0  0  0    TPQDLITML HLA-B81_01_9_10 0.7894350    0.035 0.452331    0.122   374.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLKTML TPQDLKTML  0  0  0  0  0    TPQDLKTML HLA-B81_01_9_10 0.8196070    0.031 0.446551    0.127   398.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLLTML TPQDLLTML  0  0  0  0  0    TPQDLLTML HLA-B81_01_9_10 0.7543060    0.040 0.459044    0.116   348.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLMTML TPQDLMTML  0  0  0  0  0    TPQDLMTML HLA-B81_01_9_10 0.7479160    0.042 0.468988    0.108   312.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLPTML TPQDLPTML  0  0  0  0  0    TPQDLPTML HLA-B81_01_9_10 0.8382640    0.026 0.437188    0.137   441.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLQTML TPQDLQTML  0  0  0  0  0    TPQDLQTML HLA-B81_01_9_10 0.7876380    0.035 0.440976    0.133   423.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_10. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLRTML TPQDLRTML  0  0  0  0  0    TPQDLRTML HLA-B81_01_9_11 0.8938980    0.015 0.567022    0.039   108.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLSTML TPQDLSTML  0  0  0  0  0    TPQDLSTML HLA-B81_01_9_11 0.7910490    0.035 0.477052    0.101   286.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLTTML TPQDLTTML  0  0  0  0  0    TPQDLTTML HLA-B81_01_9_11 0.8302580    0.029 0.498107    0.085   228.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLVTML TPQDLVTML  0  0  0  0  0    TPQDLVTML HLA-B81_01_9_11 0.7890550    0.035 0.451442    0.122   378.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLWTML TPQDLWTML  0  0  0  0  0    TPQDLWTML HLA-B81_01_9_11 0.6707800    0.066 0.477167    0.101   286.27 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLYTML TPQDLYTML  0  0  0  0  0    TPQDLYTML HLA-B81_01_9_11 0.7309590    0.047 0.468951    0.108   312.88 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNAML TPQDLNAML  0  0  0  0  0    TPQDLNAML HLA-B81_01_9_11 0.7036440    0.056 0.497736    0.086   229.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNCML TPQDLNCML  0  0  0  0  0    TPQDLNCML HLA-B81_01_9_11 0.4708050    0.161 0.408867    0.176   599.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNDML TPQDLNDML  0  0  0  0  0    TPQDLNDML HLA-B81_01_9_11 0.3590810    0.235 0.313858    0.415  1675.56 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNEML TPQDLNEML  0  0  0  0  0    TPQDLNEML HLA-B81_01_9_11 0.5408200    0.119 0.359762    0.279  1019.67 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_11. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNFML TPQDLNFML  0  0  0  0  0    TPQDLNFML HLA-B81_01_9_12 0.6948440    0.059 0.496389    0.088   232.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNGML TPQDLNGML  0  0  0  0  0    TPQDLNGML HLA-B81_01_9_12 0.5194320    0.132 0.418613    0.160   539.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNHML TPQDLNHML  0  0  0  0  0    TPQDLNHML HLA-B81_01_9_12 0.8105630    0.032 0.489620    0.093   250.18 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNIML TPQDLNIML  0  0  0  0  0    TPQDLNIML HLA-B81_01_9_12 0.7578720    0.039 0.484266    0.096   265.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNKML TPQDLNKML  0  0  0  0  0    TPQDLNKML HLA-B81_01_9_12 0.6087780    0.088 0.358370    0.282  1035.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNLML TPQDLNLML  0  0  0  0  0    TPQDLNLML HLA-B81_01_9_12 0.7493610    0.041 0.479850    0.099   278.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNMML TPQDLNMML  0  0  0  0  0    TPQDLNMML HLA-B81_01_9_12 0.7654170    0.038 0.502894    0.079   216.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNNML TPQDLNNML  0  0  0  0  0    TPQDLNNML HLA-B81_01_9_12 0.6811870    0.063 0.441318    0.133   421.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNPML TPQDLNPML  0  0  0  0  0    TPQDLNPML HLA-B81_01_9_12 0.7342270    0.046 0.453543    0.121   369.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNQML TPQDLNQML  0  0  0  0  0    TPQDLNQML HLA-B81_01_9_12 0.6968110    0.058 0.402739    0.187   640.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_12. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNRML TPQDLNRML  0  0  0  0  0    TPQDLNRML HLA-B81_01_9_13 0.6930500    0.060 0.420804    0.156   526.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNSML TPQDLNSML  0  0  0  0  0    TPQDLNSML HLA-B81_01_9_13 0.7271670    0.048 0.475648    0.102   291.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNVML TPQDLNVML  0  0  0  0  0    TPQDLNVML HLA-B81_01_9_13 0.7780810    0.037 0.496486    0.088   232.27 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNWML TPQDLNWML  0  0  0  0  0    TPQDLNWML HLA-B81_01_9_13 0.5781560    0.100 0.439821    0.134   428.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNYML TPQDLNYML  0  0  0  0  0    TPQDLNYML HLA-B81_01_9_13 0.7026690    0.056 0.485833    0.095   260.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTAL TPQDLNTAL  0  0  0  0  0    TPQDLNTAL HLA-B81_01_9_13 0.8742400    0.019 0.588571    0.032    85.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTCL TPQDLNTCL  0  0  0  0  0    TPQDLNTCL HLA-B81_01_9_13 0.5196750    0.132 0.375340    0.243   861.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTDL TPQDLNTDL  0  0  0  0  0    TPQDLNTDL HLA-B81_01_9_13 0.4293630    0.185 0.334746    0.348  1336.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTEL TPQDLNTEL  0  0  0  0  0    TPQDLNTEL HLA-B81_01_9_13 0.8141530    0.032 0.498810    0.084   226.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTFL TPQDLNTFL  0  0  0  0  0    TPQDLNTFL HLA-B81_01_9_13 0.6560520    0.070 0.461001    0.115   340.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_13. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTGL TPQDLNTGL  0  0  0  0  0    TPQDLNTGL HLA-B81_01_9_14 0.6682890    0.066 0.435031    0.139   451.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTHL TPQDLNTHL  0  0  0  0  0    TPQDLNTHL HLA-B81_01_9_14 0.7178340    0.051 0.412103    0.170   578.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTIL TPQDLNTIL  0  0  0  0  0    TPQDLNTIL HLA-B81_01_9_14 0.7642780    0.039 0.497670    0.086   229.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTKL TPQDLNTKL  0  0  0  0  0    TPQDLNTKL HLA-B81_01_9_14 0.7641440    0.039 0.416953    0.163   549.19 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTLL TPQDLNTLL  0  0  0  0  0    TPQDLNTLL HLA-B81_01_9_14 0.7395940    0.044 0.482483    0.097   270.27 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTNL TPQDLNTNL  0  0  0  0  0    TPQDLNTNL HLA-B81_01_9_14 0.7015800    0.057 0.423553    0.152   511.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTPL TPQDLNTPL  0  0  0  0  0    TPQDLNTPL HLA-B81_01_9_14 0.8187680    0.031 0.618707    0.022    61.90 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTQL TPQDLNTQL  0  0  0  0  0    TPQDLNTQL HLA-B81_01_9_14 0.8307900    0.029 0.471988    0.105   302.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTRL TPQDLNTRL  0  0  0  0  0    TPQDLNTRL HLA-B81_01_9_14 0.6920920    0.060 0.404046    0.184   631.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTSL TPQDLNTSL  0  0  0  0  0    TPQDLNTSL HLA-B81_01_9_14 0.8787870    0.019 0.550575    0.049   129.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_14. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTTL TPQDLNTTL  0  0  0  0  0    TPQDLNTTL HLA-B81_01_9_15 0.8799630    0.018 0.543766    0.053   139.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTVL TPQDLNTVL  0  0  0  0  0    TPQDLNTVL HLA-B81_01_9_15 0.8465060    0.024 0.549790    0.049   130.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTWL TPQDLNTWL  0  0  0  0  0    TPQDLNTWL HLA-B81_01_9_15 0.4806810    0.156 0.408423    0.176   602.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTYL TPQDLNTYL  0  0  0  0  0    TPQDLNTYL HLA-B81_01_9_15 0.7254720    0.048 0.473973    0.104   296.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMA TPQDLNTMA  0  0  0  0  0    TPQDLNTMA HLA-B81_01_9_15 0.0344310    1.893 0.135875    2.493 11494.70 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMC TPQDLNTMC  0  0  0  0  0    TPQDLNTMC HLA-B81_01_9_15 0.0195550    2.741 0.107351    3.835 15650.59
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMD TPQDLNTMD  0  0  0  0  0    TPQDLNTMD HLA-B81_01_9_15 0.0003030   21.121 0.033123   21.952 34940.25
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTME TPQDLNTME  0  0  0  0  0    TPQDLNTME HLA-B81_01_9_15 0.0011260   12.073 0.048396   13.380 29618.20
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMF TPQDLNTMF  0  0  0  0  0    TPQDLNTMF HLA-B81_01_9_15 0.3742820    0.223 0.278558    0.561  2454.90 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMG TPQDLNTMG  0  0  0  0  0    TPQDLNTMG HLA-B81_01_9_15 0.0015150   10.511 0.058962   10.074 26418.58
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_15. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMH TPQDLNTMH  0  0  0  0  0    TPQDLNTMH HLA-B81_01_9_16 0.0149700    3.237 0.062823    9.139 25337.67
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMI TPQDLNTMI  0  0  0  0  0    TPQDLNTMI HLA-B81_01_9_16 0.2931910    0.314 0.292530    0.502  2110.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMK TPQDLNTMK  0  0  0  0  0    TPQDLNTMK HLA-B81_01_9_16 0.0054010    5.636 0.057862   10.364 26734.88
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMM TPQDLNTMM  0  0  0  0  0    TPQDLNTMM HLA-B81_01_9_16 0.5218720    0.130 0.374319    0.245   871.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMN TPQDLNTMN  0  0  0  0  0    TPQDLNTMN HLA-B81_01_9_16 0.0003090   20.950 0.034398   20.925 34461.55
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMP TPQDLNTMP  0  0  0  0  0    TPQDLNTMP HLA-B81_01_9_16 0.0033580    7.154 0.051490   12.256 28643.10
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMQ TPQDLNTMQ  0  0  0  0  0    TPQDLNTMQ HLA-B81_01_9_16 0.0014830   10.616 0.043908   15.311 31091.93
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMR TPQDLNTMR  0  0  0  0  0    TPQDLNTMR HLA-B81_01_9_16 0.0062530    5.252 0.056768   10.651 27053.21
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMS TPQDLNTMS  0  0  0  0  0    TPQDLNTMS HLA-B81_01_9_16 0.0030300    7.538 0.062249    9.272 25495.52
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMT TPQDLNTMT  0  0  0  0  0    TPQDLNTMT HLA-B81_01_9_16 0.0101410    4.053 0.084544    5.705 20030.89
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_16. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMV TPQDLNTMV  0  0  0  0  0    TPQDLNTMV HLA-B81_01_9_17 0.2114540    0.463 0.249674    0.723  3355.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_17. Allele HLA-B*8101. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMW TPQDLNTMW  0  0  0  0  0    TPQDLNTMW HLA-B81_01_9_17 0.0972040    0.900 0.136509    2.475 11416.11 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_17. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*8101      TPQDLNTMY TPQDLNTMY  0  0  0  0  0    TPQDLNTMY HLA-B81_01_9_17 0.0659610    1.236 0.110102    3.676 15191.62 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B81_01_9_17. Allele HLA-B*8101. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Mon Nov 11 14:38:30 2024]
+rule sanitycheck_io:
+    input: data/netmhcpan_inputs_mhcii-1dhamming.csv, data/predictions/netMHCpan_formated_mhcii-1dhamming.csv
+    output: data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt
+    jobid: 0
+    reason: Missing output files: data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt
+    wildcards: distance=mhcii-1dhamming
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp/9046150.1.comp.q
+
+
+        pep=`wc -l data/predictions/netMHCpan_formated_mhcii-1dhamming.csv`
+        pred=`wc -l data/netmhcpan_inputs_mhcii-1dhamming.csv`
+        echo "$pep	$pred" >> data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt.tmp
+        awk  '{ print $3, $1, $2, ($2-1) - ($1-1)*2}' data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt.tmp > data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt
+        rm data/sanitycheck_peptides_predictions_mhcii-1dhamming.txt.tmp
+        
+[Mon Nov 11 14:38:30 2024]
+Finished job 0.
+1 of 1 steps (100%) done

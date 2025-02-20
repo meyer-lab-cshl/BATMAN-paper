@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Sun Sep 15 14:53:31 2024]
+rule netmhcpan:
+    input: data/fastafiles/peptides_HLA-B4201_9.fasta
+    output: data/predictions/netMHCpan_HLA-B4201_9.txt
+    jobid: 0
+    reason: Missing output files: data/predictions/netMHCpan_HLA-B4201_9.txt
+    wildcards: mhc=HLA-B4201, plength=9
+    resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954, tmpdir=/tmp/8893517.1.comp.q
+
+
+        netMHCpan -f data/fastafiles/peptides_HLA-B4201_9.fasta             -l 9             -a  HLA-B4201             -BA             > data/predictions/netMHCpan_HLA-B4201_9.txt
+        
+[Sun Sep 15 14:53:43 2024]
+Finished job 0.
+1 of 1 steps (100%) done

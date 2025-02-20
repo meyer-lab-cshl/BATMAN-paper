@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Mon Nov 11 14:00:09 2024]
+rule netmhcpan:
+    input: data/fastafiles/mhcii-1dhamming/peptides_HLA-DRB1_0401_20.fasta
+    output: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1_0401_20.txt
+    jobid: 0
+    reason: Missing output files: data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1_0401_20.txt
+    wildcards: distance=mhcii-1dhamming, mhc=HLA-DRB1_0401, plength=20
+    resources: mem_mb=10000, mem_mib=9537, disk_mb=1000, disk_mib=954, tmpdir=/tmp/9045736.1.comp.q
+
+
+        if [[ classII == "classII" ]]; then
+            netMHCIIpan -f data/fastafiles/mhcii-1dhamming/peptides_HLA-DRB1_0401_20.fasta                 -length 20                 -a  HLA-DRB1_0401                 -BA                 > data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1_0401_20.txt
+        else
+            netMHCpan -f data/fastafiles/mhcii-1dhamming/peptides_HLA-DRB1_0401_20.fasta                 -l 20                 -a  HLA-DRB1_0401                 -BA                 > data/predictions/mhcii-1dhamming/netMHCpan_HLA-DRB1_0401_20.txt
+        fi
+        
+[Mon Nov 11 14:00:10 2024]
+Finished job 0.
+1 of 1 steps (100%) done

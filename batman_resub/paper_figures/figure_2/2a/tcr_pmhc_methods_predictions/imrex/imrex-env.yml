@@ -1,0 +1,4 @@
+name: imrex-env
+channels:
+  - defaults
+prefix: C:\Users\amita\miniconda3\envs\imrex-env

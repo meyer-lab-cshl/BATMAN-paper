@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 96
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Sun Sep 15 14:55:43 2024]
+rule combine:
+    input: data/predictions/netMHCpan_HLA-B8101_9_formated.csv, data/predictions/netMHCpan_HLA-A2402_10_formated.csv, data/predictions/netMHCpan_HLA-A0101_9_formated.csv, data/predictions/netMHCpan_HLA-B2705_9_formated.csv, data/predictions/netMHCpan_HLA-A0201_10_formated.csv, data/predictions/netMHCpan_H-2-Db_9_formated.csv, data/predictions/netMHCpan_HLA-B4201_9_formated.csv, data/predictions/netMHCpan_HLA-B0702_10_formated.csv, data/predictions/netMHCpan_H-2-Kb_8_formated.csv, data/predictions/netMHCpan_HLA-A0201_9_formated.csv, data/predictions/netMHCpan_HLA-B0702_9_formated.csv, data/predictions/netMHCpan_HLA-A0201_11_formated.csv
+    output: data/predictions/netMHCpan_formated.csv
+    jobid: 0
+    reason: Missing output files: data/predictions/netMHCpan_formated.csv
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp/8893537.1.comp.q
+
+
+        echo "Pos,MHC,Peptide,Core,Of,Gp,Gl,Ip,Il,Icore,Identity,Score_EL,Rank_EL,Score_BA,Rank_BA,Aff_nM,BindLevel"> data/predictions/netMHCpan_formated.csv
+        for file in data/predictions/netMHCpan_HLA-B8101_9_formated.csv data/predictions/netMHCpan_HLA-A2402_10_formated.csv data/predictions/netMHCpan_HLA-A0101_9_formated.csv data/predictions/netMHCpan_HLA-B2705_9_formated.csv data/predictions/netMHCpan_HLA-A0201_10_formated.csv data/predictions/netMHCpan_H-2-Db_9_formated.csv data/predictions/netMHCpan_HLA-B4201_9_formated.csv data/predictions/netMHCpan_HLA-B0702_10_formated.csv data/predictions/netMHCpan_H-2-Kb_8_formated.csv data/predictions/netMHCpan_HLA-A0201_9_formated.csv data/predictions/netMHCpan_HLA-B0702_9_formated.csv data/predictions/netMHCpan_HLA-A0201_11_formated.csv; do
+            tail -n +2 $file >> data/predictions/netMHCpan_formated.csv
+        done
+        
+[Sun Sep 15 14:55:43 2024]
+Finished job 0.
+1 of 1 steps (100%) done

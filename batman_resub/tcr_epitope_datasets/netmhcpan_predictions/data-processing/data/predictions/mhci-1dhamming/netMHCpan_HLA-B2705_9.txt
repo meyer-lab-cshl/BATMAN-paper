@@ -1,0 +1,1939 @@
+# /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -f data/fastafiles/peptides_HLA-B2705_9.fasta -l 9 -a HLA-B2705 -BA
+# Sun Sep 15 14:53:27 2024
+# User: hmeyer
+# PWD : /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing
+# Host: Linux bam02 4.18.0-348.12.2.el8_5.x86_64 x86_64
+# -f       data/fastafiles/peptides_HLA-B2705_9.fasta File name with input
+# -l       9                    Peptide length [8-11] (multiple length with ,)
+# -a       HLA-B2705            MHC allele
+# -BA      1                    Include Binding affinity prediction
+# Command line parameters set to:
+#	[-rdir filename]     /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/8893520.1.comp.q/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-B2705            MHC allele
+#	[-f filename]        data/fastafiles/peptides_HLA-B2705_9.fasta File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 0                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          9                    Peptide length [8-11] (multiple length with ,)
+#	[-xls]               0                    Save output to xls file
+#	[-xlsfile filename]  NetMHCpan_out.xls    Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/8893520.1.comp.q/netMHCpanoOCBOZ
+# Input is in FSA format
+
+# Peptide length 9
+
+# Make both EL and BA predictions
+
+HLA-B2705 : Distance to training data  0.000 (using nearest neighbor HLA-B27:05)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQR GRLKALCQR  0  0  0  0  0    GRLKALCQR  HLA-B27_05_9_1 0.8003700    0.147 0.620678    0.194    60.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_1. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      ARLKALCQR ARLKALCQR  0  0  0  0  0    ARLKALCQR  HLA-B27_05_9_2 0.7845720    0.159 0.584494    0.302    89.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_2. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      CRLKALCQR CRLKALCQR  0  0  0  0  0    CRLKALCQR  HLA-B27_05_9_3 0.3028660    0.834 0.582841    0.307    91.25 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_3. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      DRLKALCQR DRLKALCQR  0  0  0  0  0    DRLKALCQR  HLA-B27_05_9_4 0.0735640    2.181 0.231065    4.570  4103.95
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_4. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      ERLKALCQR ERLKALCQR  0  0  0  0  0    ERLKALCQR  HLA-B27_05_9_5 0.2656450    0.929 0.346447    2.112  1177.68 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_5. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      FRLKALCQR FRLKALCQR  0  0  0  0  0    FRLKALCQR  HLA-B27_05_9_6 0.5260210    0.425 0.590863    0.277    83.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_6. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      HRLKALCQR HRLKALCQR  0  0  0  0  0    HRLKALCQR  HLA-B27_05_9_7 0.7152600    0.218 0.602572    0.238    73.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_7. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      IRLKALCQR IRLKALCQR  0  0  0  0  0    IRLKALCQR  HLA-B27_05_9_8 0.5157200    0.441 0.527791    0.527   165.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_8. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      KRLKALCQR KRLKALCQR  0  0  0  0  0    KRLKALCQR  HLA-B27_05_9_9 0.7892300    0.155 0.622917    0.189    59.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_9. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      LRLKALCQR LRLKALCQR  0  0  0  0  0    LRLKALCQR HLA-B27_05_9_10 0.4534760    0.537 0.566212    0.362   109.23 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      MRLKALCQR MRLKALCQR  0  0  0  0  0    MRLKALCQR HLA-B27_05_9_11 0.6035740    0.331 0.660513    0.100    39.38 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      NRLKALCQR NRLKALCQR  0  0  0  0  0    NRLKALCQR HLA-B27_05_9_12 0.4113290    0.602 0.471958    0.838   302.87 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      PRLKALCQR PRLKALCQR  0  0  0  0  0    PRLKALCQR HLA-B27_05_9_13 0.1012870    1.802 0.278437    3.322  2458.12 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      QRLKALCQR QRLKALCQR  0  0  0  0  0    QRLKALCQR HLA-B27_05_9_14 0.6841190    0.247 0.529115    0.520   163.18 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      RRLKALCQR RRLKALCQR  0  0  0  0  0    RRLKALCQR HLA-B27_05_9_15 0.8588170    0.102 0.718227    0.039    21.09 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      SRLKALCQR SRLKALCQR  0  0  0  0  0    SRLKALCQR HLA-B27_05_9_16 0.7288170    0.206 0.573904    0.337   100.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      TRLKALCQR TRLKALCQR  0  0  0  0  0    TRLKALCQR HLA-B27_05_9_17 0.5840780    0.353 0.516743    0.585   186.56 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_17. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      VRLKALCQR VRLKALCQR  0  0  0  0  0    VRLKALCQR HLA-B27_05_9_18 0.5685580    0.371 0.527039    0.531   166.89 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_18. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      WRLKALCQR WRLKALCQR  0  0  0  0  0    WRLKALCQR HLA-B27_05_9_19 0.4914600    0.479 0.661042    0.099    39.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_19. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      YRLKALCQR YRLKALCQR  0  0  0  0  0    YRLKALCQR HLA-B27_05_9_20 0.6501180    0.281 0.626325    0.180    57.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_20. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GALKALCQR GALKALCQR  0  0  0  0  0    GALKALCQR HLA-B27_05_9_21 0.0014570   11.786 0.087618   17.802 19375.62
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_21. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GCLKALCQR GCLKALCQR  0  0  0  0  0    GCLKALCQR HLA-B27_05_9_22 0.0002630   23.690 0.040978   49.370 32093.39
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_22. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GDLKALCQR GDLKALCQR  0  0  0  0  0    GDLKALCQR HLA-B27_05_9_23 0.0004690   18.689 0.041828   48.218 31799.60
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_23. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GELKALCQR GELKALCQR  0  0  0  0  0    GELKALCQR HLA-B27_05_9_24 0.0086990    5.687 0.112755   12.520 14761.74
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_24. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GFLKALCQR GFLKALCQR  0  0  0  0  0    GFLKALCQR HLA-B27_05_9_25 0.0017490   10.949 0.078376   20.876 21413.30
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_25. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GGLKALCQR GGLKALCQR  0  0  0  0  0    GGLKALCQR HLA-B27_05_9_26 0.0006820   16.052 0.069541   24.698 23561.29
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_26. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GHLKALCQR GHLKALCQR  0  0  0  0  0    GHLKALCQR HLA-B27_05_9_27 0.0290310    3.393 0.182597    6.528  6933.50
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_27. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GILKALCQR GILKALCQR  0  0  0  0  0    GILKALCQR HLA-B27_05_9_28 0.0007150   15.752 0.075762   21.919 22027.56
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_28. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GKLKALCQR GKLKALCQR  0  0  0  0  0    GKLKALCQR HLA-B27_05_9_29 0.0413500    2.884 0.223378    4.839  4459.88
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_29. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GLLKALCQR GLLKALCQR  0  0  0  0  0    GLLKALCQR HLA-B27_05_9_30 0.0029660    8.808 0.119304   11.601 13751.94
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_30. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GMLKALCQR GMLKALCQR  0  0  0  0  0    GMLKALCQR HLA-B27_05_9_31 0.0038220    7.951 0.165463    7.431  8345.73
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_31. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GNLKALCQR GNLKALCQR  0  0  0  0  0    GNLKALCQR HLA-B27_05_9_32 0.0010170   13.647 0.075937   21.848 21985.90
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_32. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GPLKALCQR GPLKALCQR  0  0  0  0  0    GPLKALCQR HLA-B27_05_9_33 0.0006850   16.021 0.044394   44.951 30928.86
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_33. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GQLKALCQR GQLKALCQR  0  0  0  0  0    GQLKALCQR HLA-B27_05_9_34 0.0431290    2.831 0.279954    3.286  2418.10
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_34. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GSLKALCQR GSLKALCQR  0  0  0  0  0    GSLKALCQR HLA-B27_05_9_35 0.0014540   11.795 0.094856   15.887 17916.14
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_35. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GTLKALCQR GTLKALCQR  0  0  0  0  0    GTLKALCQR HLA-B27_05_9_36 0.0013370   12.190 0.091181   16.813 18642.89
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_36. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GVLKALCQR GVLKALCQR  0  0  0  0  0    GVLKALCQR HLA-B27_05_9_37 0.0014780   11.724 0.087063   17.959 19492.32
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_37. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GWLKALCQR GWLKALCQR  0  0  0  0  0    GWLKALCQR HLA-B27_05_9_38 0.0011010   13.190 0.080311   20.136 20969.64
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_38. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GYLKALCQR GYLKALCQR  0  0  0  0  0    GYLKALCQR HLA-B27_05_9_39 0.0053480    6.927 0.104097   13.949 16211.43
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_39. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRAKALCQR GRAKALCQR  0  0  0  0  0    GRAKALCQR HLA-B27_05_9_40 0.6348100    0.297 0.527648    0.528   165.79 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_40. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRCKALCQR GRCKALCQR  0  0  0  0  0    GRCKALCQR HLA-B27_05_9_41 0.4384800    0.560 0.481026    0.777   274.56 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_41. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRDKALCQR GRDKALCQR  0  0  0  0  0    GRDKALCQR HLA-B27_05_9_42 0.4971810    0.470 0.337678    2.240  1294.89 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_42. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GREKALCQR GREKALCQR  0  0  0  0  0    GREKALCQR HLA-B27_05_9_43 0.3574820    0.708 0.352088    2.030  1107.95 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_43. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRFKALCQR GRFKALCQR  0  0  0  0  0    GRFKALCQR HLA-B27_05_9_44 0.8744430    0.087 0.637483    0.148    50.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_44. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRGKALCQR GRGKALCQR  0  0  0  0  0    GRGKALCQR HLA-B27_05_9_45 0.4541270    0.536 0.459109    0.930   348.04 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_45. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRHKALCQR GRHKALCQR  0  0  0  0  0    GRHKALCQR HLA-B27_05_9_46 0.6729580    0.258 0.554711    0.400   123.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_46. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRIKALCQR GRIKALCQR  0  0  0  0  0    GRIKALCQR HLA-B27_05_9_47 0.7682650    0.172 0.575588    0.331    98.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_47. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRKKALCQR GRKKALCQR  0  0  0  0  0    GRKKALCQR HLA-B27_05_9_48 0.4340890    0.567 0.424345    1.228   506.97 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_48. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRMKALCQR GRMKALCQR  0  0  0  0  0    GRMKALCQR HLA-B27_05_9_49 0.8100160    0.141 0.691208    0.062    28.25 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_49. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRNKALCQR GRNKALCQR  0  0  0  0  0    GRNKALCQR HLA-B27_05_9_50 0.6571110    0.274 0.502151    0.657   218.46 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_50. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRPKALCQR GRPKALCQR  0  0  0  0  0    GRPKALCQR HLA-B27_05_9_51 0.2473460    0.982 0.276537    3.367  2509.17 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_51. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRQKALCQR GRQKALCQR  0  0  0  0  0    GRQKALCQR HLA-B27_05_9_52 0.6205950    0.312 0.525327    0.540   170.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_52. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRRKALCQR GRRKALCQR  0  0  0  0  0    GRRKALCQR HLA-B27_05_9_53 0.3355060    0.758 0.458227    0.936   351.38 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_53. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRSKALCQR GRSKALCQR  0  0  0  0  0    GRSKALCQR HLA-B27_05_9_54 0.6004910    0.335 0.497851    0.677   228.87 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_54. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRTKALCQR GRTKALCQR  0  0  0  0  0    GRTKALCQR HLA-B27_05_9_55 0.5575460    0.383 0.491872    0.708   244.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_55. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRVKALCQR GRVKALCQR  0  0  0  0  0    GRVKALCQR HLA-B27_05_9_56 0.6611670    0.270 0.530616    0.512   160.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_56. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRWKALCQR GRWKALCQR  0  0  0  0  0    GRWKALCQR HLA-B27_05_9_57 0.8905180    0.079 0.714030    0.042    22.07 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_57. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRYKALCQR GRYKALCQR  0  0  0  0  0    GRYKALCQR HLA-B27_05_9_58 0.8631270    0.098 0.630726    0.167    54.35 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_58. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLAALCQR GRLAALCQR  0  0  0  0  0    GRLAALCQR HLA-B27_05_9_59 0.7476300    0.189 0.634537    0.156    52.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_59. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLCALCQR GRLCALCQR  0  0  0  0  0    GRLCALCQR HLA-B27_05_9_60 0.4224550    0.584 0.634673    0.156    52.08 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_60. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLDALCQR GRLDALCQR  0  0  0  0  0    GRLDALCQR HLA-B27_05_9_61 0.8176770    0.136 0.542526    0.456   141.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_61. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLEALCQR GRLEALCQR  0  0  0  0  0    GRLEALCQR HLA-B27_05_9_62 0.8245890    0.132 0.574835    0.334    99.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_62. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLFALCQR GRLFALCQR  0  0  0  0  0    GRLFALCQR HLA-B27_05_9_63 0.6677690    0.264 0.618592    0.200    61.98 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_63. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLGALCQR GRLGALCQR  0  0  0  0  0    GRLGALCQR HLA-B27_05_9_64 0.7845780    0.159 0.587165    0.292    87.08 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_64. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLHALCQR GRLHALCQR  0  0  0  0  0    GRLHALCQR HLA-B27_05_9_65 0.6897610    0.242 0.591237    0.276    83.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_65. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLIALCQR GRLIALCQR  0  0  0  0  0    GRLIALCQR HLA-B27_05_9_66 0.6527760    0.279 0.588945    0.285    85.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_66. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLLALCQR GRLLALCQR  0  0  0  0  0    GRLLALCQR HLA-B27_05_9_67 0.7095540    0.224 0.618004    0.201    62.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_67. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLMALCQR GRLMALCQR  0  0  0  0  0    GRLMALCQR HLA-B27_05_9_68 0.6370530    0.295 0.624660    0.184    58.04 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_68. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLNALCQR GRLNALCQR  0  0  0  0  0    GRLNALCQR HLA-B27_05_9_69 0.7431070    0.193 0.622026    0.191    59.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_69. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLPALCQR GRLPALCQR  0  0  0  0  0    GRLPALCQR HLA-B27_05_9_70 0.8567810    0.104 0.544298    0.448   138.46 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_70. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLQALCQR GRLQALCQR  0  0  0  0  0    GRLQALCQR HLA-B27_05_9_71 0.8296110    0.129 0.617568    0.202    62.67 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_71. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLRALCQR GRLRALCQR  0  0  0  0  0    GRLRALCQR HLA-B27_05_9_72 0.7563610    0.181 0.681053    0.071    31.53 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_72. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLSALCQR GRLSALCQR  0  0  0  0  0    GRLSALCQR HLA-B27_05_9_73 0.8030450    0.145 0.625392    0.182    57.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_73. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLTALCQR GRLTALCQR  0  0  0  0  0    GRLTALCQR HLA-B27_05_9_74 0.7419650    0.194 0.609048    0.223    68.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_74. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLVALCQR GRLVALCQR  0  0  0  0  0    GRLVALCQR HLA-B27_05_9_75 0.6558010    0.276 0.597546    0.251    77.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_75. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLWALCQR GRLWALCQR  0  0  0  0  0    GRLWALCQR HLA-B27_05_9_76 0.7467750    0.190 0.652045    0.117    43.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_76. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLYALCQR GRLYALCQR  0  0  0  0  0    GRLYALCQR HLA-B27_05_9_77 0.6461850    0.285 0.606383    0.229    70.73 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_77. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKCLCQR GRLKCLCQR  0  0  0  0  0    GRLKCLCQR HLA-B27_05_9_78 0.6168290    0.317 0.674511    0.078    33.84 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_78. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKDLCQR GRLKDLCQR  0  0  0  0  0    GRLKDLCQR HLA-B27_05_9_79 0.7143350    0.219 0.514908    0.595   190.30 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_79. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKELCQR GRLKELCQR  0  0  0  0  0    GRLKELCQR HLA-B27_05_9_80 0.7474470    0.189 0.535863    0.487   151.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_80. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKFLCQR GRLKFLCQR  0  0  0  0  0    GRLKFLCQR HLA-B27_05_9_81 0.8683160    0.091 0.689688    0.063    28.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_81. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKGLCQR GRLKGLCQR  0  0  0  0  0    GRLKGLCQR HLA-B27_05_9_82 0.8433710    0.118 0.598410    0.248    77.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_82. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKHLCQR GRLKHLCQR  0  0  0  0  0    GRLKHLCQR HLA-B27_05_9_83 0.7994540    0.147 0.648316    0.125    44.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_83. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKILCQR GRLKILCQR  0  0  0  0  0    GRLKILCQR HLA-B27_05_9_84 0.8932440    0.077 0.667572    0.088    36.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_84. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKKLCQR GRLKKLCQR  0  0  0  0  0    GRLKKLCQR HLA-B27_05_9_85 0.7469640    0.190 0.570201    0.349   104.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_85. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKLLCQR GRLKLLCQR  0  0  0  0  0    GRLKLLCQR HLA-B27_05_9_86 0.8662010    0.094 0.687239    0.065    29.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_86. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKMLCQR GRLKMLCQR  0  0  0  0  0    GRLKMLCQR HLA-B27_05_9_87 0.8175560    0.136 0.697197    0.056    26.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_87. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKNLCQR GRLKNLCQR  0  0  0  0  0    GRLKNLCQR HLA-B27_05_9_88 0.7548580    0.183 0.583045    0.307    91.05 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_88. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKPLCQR GRLKPLCQR  0  0  0  0  0    GRLKPLCQR HLA-B27_05_9_89 0.8927970    0.077 0.570330    0.349   104.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_89. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKQLCQR GRLKQLCQR  0  0  0  0  0    GRLKQLCQR HLA-B27_05_9_90 0.8036760    0.145 0.612172    0.215    66.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_90. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKRLCQR GRLKRLCQR  0  0  0  0  0    GRLKRLCQR HLA-B27_05_9_91 0.6733650    0.258 0.620574    0.195    60.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_91. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKSLCQR GRLKSLCQR  0  0  0  0  0    GRLKSLCQR HLA-B27_05_9_92 0.8182140    0.136 0.615083    0.208    64.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_92. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKTLCQR GRLKTLCQR  0  0  0  0  0    GRLKTLCQR HLA-B27_05_9_93 0.8369380    0.124 0.634032    0.158    52.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_93. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKVLCQR GRLKVLCQR  0  0  0  0  0    GRLKVLCQR HLA-B27_05_9_94 0.8791690    0.085 0.659133    0.103    39.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_94. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKWLCQR GRLKWLCQR  0  0  0  0  0    GRLKWLCQR HLA-B27_05_9_95 0.8308110    0.128 0.677840    0.074    32.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_95. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKYLCQR GRLKYLCQR  0  0  0  0  0    GRLKYLCQR HLA-B27_05_9_96 0.8160490    0.137 0.679867    0.072    31.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_96. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAACQR GRLKAACQR  0  0  0  0  0    GRLKAACQR HLA-B27_05_9_97 0.7505250    0.186 0.585967    0.297    88.21 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_97. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKACCQR GRLKACCQR  0  0  0  0  0    GRLKACCQR HLA-B27_05_9_98 0.4530040    0.538 0.549196    0.426   131.32 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_98. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKADCQR GRLKADCQR  0  0  0  0  0    GRLKADCQR HLA-B27_05_9_99 0.5656250    0.374 0.484973    0.752   263.09 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_99. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAECQR GRLKAECQR  0  0  0  0  0    GRLKAECQR HLA-B27_05_9_10 0.6477030    0.284 0.477107    0.802   286.46 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAFCQR GRLKAFCQR  0  0  0  0  0    GRLKAFCQR HLA-B27_05_9_10 0.7861940    0.157 0.636715    0.150    50.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAGCQR GRLKAGCQR  0  0  0  0  0    GRLKAGCQR HLA-B27_05_9_10 0.7214610    0.212 0.578206    0.323    95.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAHCQR GRLKAHCQR  0  0  0  0  0    GRLKAHCQR HLA-B27_05_9_10 0.7139470    0.219 0.584396    0.302    89.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAICQR GRLKAICQR  0  0  0  0  0    GRLKAICQR HLA-B27_05_9_10 0.8710400    0.089 0.620105    0.196    60.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAKCQR GRLKAKCQR  0  0  0  0  0    GRLKAKCQR HLA-B27_05_9_10 0.6801670    0.251 0.513180    0.603   193.89 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAMCQR GRLKAMCQR  0  0  0  0  0    GRLKAMCQR HLA-B27_05_9_10 0.7508270    0.186 0.603062    0.237    73.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKANCQR GRLKANCQR  0  0  0  0  0    GRLKANCQR HLA-B27_05_9_10 0.7241850    0.210 0.578753    0.321    95.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAPCQR GRLKAPCQR  0  0  0  0  0    GRLKAPCQR HLA-B27_05_9_10 0.8204520    0.135 0.521171    0.562   177.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAQCQR GRLKAQCQR  0  0  0  0  0    GRLKAQCQR HLA-B27_05_9_10 0.7966870    0.149 0.569941    0.350   104.91 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_10. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKARCQR GRLKARCQR  0  0  0  0  0    GRLKARCQR HLA-B27_05_9_11 0.6100290    0.324 0.573332    0.339   101.13 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKASCQR GRLKASCQR  0  0  0  0  0    GRLKASCQR HLA-B27_05_9_11 0.7475640    0.189 0.571855    0.344   102.76 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKATCQR GRLKATCQR  0  0  0  0  0    GRLKATCQR HLA-B27_05_9_11 0.7885010    0.155 0.577726    0.324    96.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAVCQR GRLKAVCQR  0  0  0  0  0    GRLKAVCQR HLA-B27_05_9_11 0.8518370    0.109 0.601741    0.240    74.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAWCQR GRLKAWCQR  0  0  0  0  0    GRLKAWCQR HLA-B27_05_9_11 0.7387880    0.197 0.658454    0.104    40.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKAYCQR GRLKAYCQR  0  0  0  0  0    GRLKAYCQR HLA-B27_05_9_11 0.7086090    0.224 0.574162    0.336   100.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALAQR GRLKALAQR  0  0  0  0  0    GRLKALAQR HLA-B27_05_9_11 0.8997580    0.073 0.616044    0.206    63.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALDQR GRLKALDQR  0  0  0  0  0    GRLKALDQR HLA-B27_05_9_11 0.7588130    0.179 0.508625    0.625   203.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALEQR GRLKALEQR  0  0  0  0  0    GRLKALEQR HLA-B27_05_9_11 0.8812920    0.084 0.551846    0.414   127.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALFQR GRLKALFQR  0  0  0  0  0    GRLKALFQR HLA-B27_05_9_11 0.9559570    0.024 0.701777    0.052    25.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_11. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALGQR GRLKALGQR  0  0  0  0  0    GRLKALGQR HLA-B27_05_9_12 0.7600730    0.178 0.604731    0.233    72.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALHQR GRLKALHQR  0  0  0  0  0    GRLKALHQR HLA-B27_05_9_12 0.9339170    0.043 0.612839    0.214    65.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALIQR GRLKALIQR  0  0  0  0  0    GRLKALIQR HLA-B27_05_9_12 0.9620770    0.021 0.614035    0.211    65.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALKQR GRLKALKQR  0  0  0  0  0    GRLKALKQR HLA-B27_05_9_12 0.8452530    0.116 0.536106    0.486   151.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALLQR GRLKALLQR  0  0  0  0  0    GRLKALLQR HLA-B27_05_9_12 0.9613370    0.022 0.661200    0.099    39.09 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALMQR GRLKALMQR  0  0  0  0  0    GRLKALMQR HLA-B27_05_9_12 0.9468200    0.029 0.648791    0.124    44.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALNQR GRLKALNQR  0  0  0  0  0    GRLKALNQR HLA-B27_05_9_12 0.8792670    0.085 0.564132    0.369   111.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALPQR GRLKALPQR  0  0  0  0  0    GRLKALPQR HLA-B27_05_9_12 0.9304300    0.047 0.595868    0.257    79.25 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALQQR GRLKALQQR  0  0  0  0  0    GRLKALQQR HLA-B27_05_9_12 0.9219100    0.054 0.548298    0.430   132.60 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALRQR GRLKALRQR  0  0  0  0  0    GRLKALRQR HLA-B27_05_9_12 0.8436270    0.117 0.584109    0.303    90.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_12. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALSQR GRLKALSQR  0  0  0  0  0    GRLKALSQR HLA-B27_05_9_13 0.8902450    0.079 0.608669    0.224    69.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALTQR GRLKALTQR  0  0  0  0  0    GRLKALTQR HLA-B27_05_9_13 0.9264920    0.050 0.595978    0.257    79.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALVQR GRLKALVQR  0  0  0  0  0    GRLKALVQR HLA-B27_05_9_13 0.9587450    0.023 0.603548    0.236    72.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALWQR GRLKALWQR  0  0  0  0  0    GRLKALWQR HLA-B27_05_9_13 0.9378940    0.039 0.667149    0.089    36.65 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALYQR GRLKALYQR  0  0  0  0  0    GRLKALYQR HLA-B27_05_9_13 0.9396640    0.037 0.644587    0.133    46.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCAR GRLKALCAR  0  0  0  0  0    GRLKALCAR HLA-B27_05_9_13 0.6764540    0.255 0.641613    0.139    48.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCCR GRLKALCCR  0  0  0  0  0    GRLKALCCR HLA-B27_05_9_13 0.4700240    0.512 0.573487    0.338   100.97 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCDR GRLKALCDR  0  0  0  0  0    GRLKALCDR HLA-B27_05_9_13 0.4410080    0.556 0.536521    0.484   150.62 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCER GRLKALCER  0  0  0  0  0    GRLKALCER HLA-B27_05_9_13 0.7024770    0.230 0.593313    0.267    81.47 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCFR GRLKALCFR  0  0  0  0  0    GRLKALCFR HLA-B27_05_9_13 0.6467320    0.285 0.656668    0.108    41.05 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_13. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCGR GRLKALCGR  0  0  0  0  0    GRLKALCGR HLA-B27_05_9_14 0.6805820    0.251 0.626769    0.179    56.73 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCHR GRLKALCHR  0  0  0  0  0    GRLKALCHR HLA-B27_05_9_14 0.7048710    0.228 0.600237    0.244    75.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCIR GRLKALCIR  0  0  0  0  0    GRLKALCIR HLA-B27_05_9_14 0.6365700    0.295 0.634762    0.155    52.03 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCKR GRLKALCKR  0  0  0  0  0    GRLKALCKR HLA-B27_05_9_14 0.7436200    0.192 0.604727    0.233    72.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCLR GRLKALCLR  0  0  0  0  0    GRLKALCLR HLA-B27_05_9_14 0.7582030    0.180 0.696849    0.057    26.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCMR GRLKALCMR  0  0  0  0  0    GRLKALCMR HLA-B27_05_9_14 0.6815610    0.250 0.636052    0.152    51.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCNR GRLKALCNR  0  0  0  0  0    GRLKALCNR HLA-B27_05_9_14 0.6909510    0.241 0.593628    0.266    81.20 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCPR GRLKALCPR  0  0  0  0  0    GRLKALCPR HLA-B27_05_9_14 0.5868680    0.350 0.660086    0.101    39.56 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCRR GRLKALCRR  0  0  0  0  0    GRLKALCRR HLA-B27_05_9_14 0.6975410    0.235 0.632037    0.163    53.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCSR GRLKALCSR  0  0  0  0  0    GRLKALCSR HLA-B27_05_9_14 0.7574590    0.181 0.640771    0.141    48.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_14. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCTR GRLKALCTR  0  0  0  0  0    GRLKALCTR HLA-B27_05_9_15 0.7966860    0.149 0.635549    0.153    51.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCVR GRLKALCVR  0  0  0  0  0    GRLKALCVR HLA-B27_05_9_15 0.6668820    0.265 0.632325    0.163    53.42 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCWR GRLKALCWR  0  0  0  0  0    GRLKALCWR HLA-B27_05_9_15 0.5647490    0.375 0.654405    0.112    42.07 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCYR GRLKALCYR  0  0  0  0  0    GRLKALCYR HLA-B27_05_9_15 0.6712770    0.260 0.636139    0.151    51.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQA GRLKALCQA  0  0  0  0  0    GRLKALCQA HLA-B27_05_9_15 0.2426790    0.995 0.478874    0.791   281.03 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQC GRLKALCQC  0  0  0  0  0    GRLKALCQC HLA-B27_05_9_15 0.1573190    1.377 0.349453    2.069  1139.99 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQD GRLKALCQD  0  0  0  0  0    GRLKALCQD HLA-B27_05_9_15 0.0031940    8.539 0.212635    5.224  5009.62
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQE GRLKALCQE  0  0  0  0  0    GRLKALCQE HLA-B27_05_9_15 0.0703530    2.234 0.301779    2.826  1909.50
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQF GRLKALCQF  0  0  0  0  0    GRLKALCQF HLA-B27_05_9_15 0.9192250    0.055 0.628011    0.175    55.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQG GRLKALCQG  0  0  0  0  0    GRLKALCQG HLA-B27_05_9_15 0.0395280    2.938 0.406922    1.416   612.15
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_15. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQH GRLKALCQH  0  0  0  0  0    GRLKALCQH HLA-B27_05_9_16 0.5356860    0.410 0.441175    1.080   422.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQI GRLKALCQI  0  0  0  0  0    GRLKALCQI HLA-B27_05_9_16 0.6169270    0.316 0.604170    0.234    72.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQK GRLKALCQK  0  0  0  0  0    GRLKALCQK HLA-B27_05_9_16 0.8162150    0.137 0.646152    0.129    46.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQL GRLKALCQL  0  0  0  0  0    GRLKALCQL HLA-B27_05_9_16 0.8737270    0.088 0.646488    0.128    45.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQM GRLKALCQM  0  0  0  0  0    GRLKALCQM HLA-B27_05_9_16 0.8277370    0.130 0.635688    0.153    51.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQN GRLKALCQN  0  0  0  0  0    GRLKALCQN HLA-B27_05_9_16 0.0181620    4.195 0.331103    2.336  1390.36
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQP GRLKALCQP  0  0  0  0  0    GRLKALCQP HLA-B27_05_9_16 0.0782880    2.102 0.279557    3.296  2428.51
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQQ GRLKALCQQ  0  0  0  0  0    GRLKALCQQ HLA-B27_05_9_16 0.1797320    1.249 0.364029    1.888   973.66 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQS GRLKALCQS  0  0  0  0  0    GRLKALCQS HLA-B27_05_9_16 0.0662710    2.302 0.383807    1.646   786.09
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQT GRLKALCQT  0  0  0  0  0    GRLKALCQT HLA-B27_05_9_16 0.1211660    1.625 0.395809    1.508   690.36 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_16. Allele HLA-B*2705. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQV GRLKALCQV  0  0  0  0  0    GRLKALCQV HLA-B27_05_9_17 0.5596050    0.381 0.568865    0.354   106.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_17. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQW GRLKALCQW  0  0  0  0  0    GRLKALCQW HLA-B27_05_9_17 0.6032460    0.332 0.434093    1.140   456.23 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_17. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*2705      GRLKALCQY GRLKALCQY  0  0  0  0  0    GRLKALCQY HLA-B27_05_9_17 0.9123650    0.060 0.570308    0.349   104.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B27_05_9_17. Allele HLA-B*2705. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
