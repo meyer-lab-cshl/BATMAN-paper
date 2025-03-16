@@ -1,0 +1,1939 @@
+# /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/bin/netMHCpan -f data/fastafiles/peptides_HLA-B0702_9.fasta -l 9 -a HLA-B0702 -BA
+# Sun Sep 15 14:53:22 2024
+# User: hmeyer
+# PWD : /grid/meyer/home/hmeyer/projects/BATMAN-paper/data-processing
+# Host: Linux bam13 4.18.0-348.12.2.el8_5.x86_64 x86_64
+# -f       data/fastafiles/peptides_HLA-B0702_9.fasta File name with input
+# -l       9                    Peptide length [8-11] (multiple length with ,)
+# -a       HLA-B0702            MHC allele
+# -BA      1                    Include Binding affinity prediction
+# Command line parameters set to:
+#	[-rdir filename]     /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64 Home directory for NetMHpan
+#	[-syn filename]      /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/synlist.bin Synaps file
+#	[-v]                 0                    Verbose mode
+#	[-dirty]             0                    Dirty mode, leave tmp dir+files
+#	[-tdir filename]     /tmp/8893515.1.comp.q/netMHCpanXXXXXX Temporary directory (made with mkdtemp)
+#	[-hlapseudo filename] /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/MHC_pseudo.dat File with MHC pseudo sequences
+#	[-hlaseq filename]                        File with full length MHC sequences
+#	[-a line]            HLA-B0702            MHC allele
+#	[-f filename]        data/fastafiles/peptides_HLA-B0702_9.fasta File name with input
+#	[-w]                 0                    w option for webface
+#	[-s]                 0                    Sort output on descending affinity
+#	[-p]                 0                    Use peptide input
+#	[-rth float]         0.500000             Rank Threshold for high binding peptides
+#	[-rlt float]         2.000000             Rank Threshold for low binding peptides
+#	[-l string]          9                    Peptide length [8-11] (multiple length with ,)
+#	[-xls]               0                    Save output to xls file
+#	[-xlsfile filename]  NetMHCpan_out.xls    Filename for xls dump
+#	[-t float]           -99.900002           Threshold for output (%rank) [<0 print all]
+#	[-thrfmt filename]   /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/threshold/%s.thr.%s Format for threshold filenames
+#	[-expfix]            0                    Exclude prefix from synlist
+#	[-version filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/version File with version information
+#	[-inptype int]       0                    Input type [0] FASTA [1] Peptide
+#	[-listMHC]           0                    Print list of alleles included in netMHCpan
+#	[-allname filename]  /grid/meyer/home/software/netMHCpan-4.1/Linux_x86_64/data/allelenames File with print names for alleles
+#	[-BA]                1                    Include Binding affinity prediction
+
+# NetMHCpan version 4.1b
+
+# Tmpdir made /tmp/8893515.1.comp.q/netMHCpanWCd2Ns
+# Input is in FSA format
+
+# Peptide length 9
+
+# Make both EL and BA predictions
+
+HLA-B0702 : Distance to training data  0.000 (using nearest neighbor HLA-B07:02)
+
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      APSVWRSSL APSVWRSSL  0  0  0  0  0    APSVWRSSL  HLA-B07_02_9_1 0.9956760    0.004 0.894031    0.007     3.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_1. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      RPSVWRSSL RPSVWRSSL  0  0  0  0  0    RPSVWRSSL  HLA-B07_02_9_2 0.9965720    0.003 0.922707    0.005     2.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_2. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      NPSVWRSSL NPSVWRSSL  0  0  0  0  0    NPSVWRSSL  HLA-B07_02_9_3 0.9708080    0.021 0.832137    0.012     6.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_3. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      DPSVWRSSL DPSVWRSSL  0  0  0  0  0    DPSVWRSSL  HLA-B07_02_9_4 0.6769960    0.238 0.556543    0.352   121.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_4. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      CPSVWRSSL CPSVWRSSL  0  0  0  0  0    CPSVWRSSL  HLA-B07_02_9_5 0.9074360    0.066 0.845020    0.010     5.35 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_5. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      QPSVWRSSL QPSVWRSSL  0  0  0  0  0    QPSVWRSSL  HLA-B07_02_9_6 0.9873810    0.010 0.849194    0.009     5.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_6. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      EPSVWRSSL EPSVWRSSL  0  0  0  0  0    EPSVWRSSL  HLA-B07_02_9_7 0.8869550    0.077 0.690561    0.107    28.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_7. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      GPSVWRSSL GPSVWRSSL  0  0  0  0  0    GPSVWRSSL  HLA-B07_02_9_8 0.9884430    0.010 0.863116    0.009     4.40 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_8. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      HPSVWRSSL HPSVWRSSL  0  0  0  0  0    HPSVWRSSL  HLA-B07_02_9_9 0.9934950    0.006 0.887756    0.007     3.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_9. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      IPSVWRSSL IPSVWRSSL  0  0  0  0  0    IPSVWRSSL HLA-B07_02_9_10 0.9860770    0.011 0.868999    0.008     4.13 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      LPSVWRSSL LPSVWRSSL  0  0  0  0  0    LPSVWRSSL HLA-B07_02_9_11 0.9834020    0.012 0.877841    0.008     3.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      KPSVWRSSL KPSVWRSSL  0  0  0  0  0    KPSVWRSSL HLA-B07_02_9_12 0.9948170    0.004 0.898679    0.006     2.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      MPSVWRSSL MPSVWRSSL  0  0  0  0  0    MPSVWRSSL HLA-B07_02_9_13 0.9884590    0.010 0.904651    0.006     2.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      FPSVWRSSL FPSVWRSSL  0  0  0  0  0    FPSVWRSSL HLA-B07_02_9_14 0.9825000    0.013 0.873405    0.008     3.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      PPSVWRSSL PPSVWRSSL  0  0  0  0  0    PPSVWRSSL HLA-B07_02_9_15 0.6765420    0.238 0.614900    0.215    64.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      SPSVWRSSL SPSVWRSSL  0  0  0  0  0    SPSVWRSSL HLA-B07_02_9_16 0.9951330    0.004 0.898115    0.006     3.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      TPSVWRSSL TPSVWRSSL  0  0  0  0  0    TPSVWRSSL HLA-B07_02_9_17 0.9897710    0.009 0.871543    0.008     4.01 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_17. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      WPSVWRSSL WPSVWRSSL  0  0  0  0  0    WPSVWRSSL HLA-B07_02_9_18 0.9671160    0.024 0.887694    0.007     3.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_18. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      YPSVWRSSL YPSVWRSSL  0  0  0  0  0    YPSVWRSSL HLA-B07_02_9_19 0.9900410    0.009 0.889217    0.007     3.32 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_19. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSL VPSVWRSSL  0  0  0  0  0    VPSVWRSSL HLA-B07_02_9_20 0.9893370    0.009 0.872866    0.008     3.96 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_20. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VASVWRSSL VASVWRSSL  0  0  0  0  0    VASVWRSSL HLA-B07_02_9_21 0.4003960    0.520 0.551409    0.366   128.21 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_21. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VRSVWRSSL VRSVWRSSL  0  0  0  0  0    VRSVWRSSL HLA-B07_02_9_22 0.0109090    4.909 0.205275    3.737  5424.87
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_22. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VNSVWRSSL VNSVWRSSL  0  0  0  0  0    VNSVWRSSL HLA-B07_02_9_23 0.0175090    3.843 0.206701    3.693  5341.81
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_23. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VDSVWRSSL VDSVWRSSL  0  0  0  0  0    VDSVWRSSL HLA-B07_02_9_24 0.0155130    4.077 0.152342    6.064  9618.77
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_24. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VCSVWRSSL VCSVWRSSL  0  0  0  0  0    VCSVWRSSL HLA-B07_02_9_25 0.0587300    2.019 0.263503    2.412  2889.20
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_25. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VQSVWRSSL VQSVWRSSL  0  0  0  0  0    VQSVWRSSL HLA-B07_02_9_26 0.0517220    2.190 0.284584    2.080  2299.95
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_26. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VESVWRSSL VESVWRSSL  0  0  0  0  0    VESVWRSSL HLA-B07_02_9_27 0.0223070    3.390 0.194913    4.070  6068.47
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_27. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VGSVWRSSL VGSVWRSSL  0  0  0  0  0    VGSVWRSSL HLA-B07_02_9_28 0.0729470    1.770 0.325907    1.582  1470.76 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_28. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VHSVWRSSL VHSVWRSSL  0  0  0  0  0    VHSVWRSSL HLA-B07_02_9_29 0.0237740    3.283 0.198806    3.935  5818.17
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_29. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VISVWRSSL VISVWRSSL  0  0  0  0  0    VISVWRSSL HLA-B07_02_9_30 0.2765440    0.735 0.510267    0.490   200.10 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_30. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VLSVWRSSL VLSVWRSSL  0  0  0  0  0    VLSVWRSSL HLA-B07_02_9_31 0.1362680    1.178 0.408531    0.926   601.58 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_31. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VKSVWRSSL VKSVWRSSL  0  0  0  0  0    VKSVWRSSL HLA-B07_02_9_32 0.0106610    4.960 0.196940    3.993  5936.83
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_32. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VMSVWRSSL VMSVWRSSL  0  0  0  0  0    VMSVWRSSL HLA-B07_02_9_33 0.0957010    1.492 0.422003    0.857   519.98 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_33. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VFSVWRSSL VFSVWRSSL  0  0  0  0  0    VFSVWRSSL HLA-B07_02_9_34 0.0327060    2.778 0.251484    2.625  3290.44
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_34. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VSSVWRSSL VSSVWRSSL  0  0  0  0  0    VSSVWRSSL HLA-B07_02_9_35 0.1632090    1.049 0.422192    0.856   518.92 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_35. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VTSVWRSSL VTSVWRSSL  0  0  0  0  0    VTSVWRSSL HLA-B07_02_9_36 0.2024180    0.909 0.442582    0.755   416.19 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_36. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VWSVWRSSL VWSVWRSSL  0  0  0  0  0    VWSVWRSSL HLA-B07_02_9_37 0.0101860    5.077 0.192862    4.149  6204.65
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_37. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VYSVWRSSL VYSVWRSSL  0  0  0  0  0    VYSVWRSSL HLA-B07_02_9_38 0.0255830    3.150 0.211200    3.555  5088.01
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_38. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VVSVWRSSL VVSVWRSSL  0  0  0  0  0    VVSVWRSSL HLA-B07_02_9_39 0.3975680    0.524 0.548640    0.373   132.11 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_39. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPAVWRSSL VPAVWRSSL  0  0  0  0  0    VPAVWRSSL HLA-B07_02_9_40 0.9915220    0.007 0.891990    0.007     3.22 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_40. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPRVWRSSL VPRVWRSSL  0  0  0  0  0    VPRVWRSSL HLA-B07_02_9_41 0.9922550    0.007 0.905366    0.006     2.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_41. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPNVWRSSL VPNVWRSSL  0  0  0  0  0    VPNVWRSSL HLA-B07_02_9_42 0.9911400    0.008 0.875277    0.008     3.86 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_42. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPDVWRSSL VPDVWRSSL  0  0  0  0  0    VPDVWRSSL HLA-B07_02_9_43 0.9771900    0.015 0.790573    0.027     9.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_43. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPCVWRSSL VPCVWRSSL  0  0  0  0  0    VPCVWRSSL HLA-B07_02_9_44 0.8660160    0.092 0.741018    0.055    16.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_44. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPQVWRSSL VPQVWRSSL  0  0  0  0  0    VPQVWRSSL HLA-B07_02_9_45 0.9875510    0.010 0.867174    0.008     4.21 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_45. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPEVWRSSL VPEVWRSSL  0  0  0  0  0    VPEVWRSSL HLA-B07_02_9_46 0.9711300    0.021 0.809373    0.018     7.87 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_46. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPGVWRSSL VPGVWRSSL  0  0  0  0  0    VPGVWRSSL HLA-B07_02_9_47 0.9714040    0.021 0.840924    0.010     5.59 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_47. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPHVWRSSL VPHVWRSSL  0  0  0  0  0    VPHVWRSSL HLA-B07_02_9_48 0.9914250    0.007 0.880716    0.007     3.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_48. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPIVWRSSL VPIVWRSSL  0  0  0  0  0    VPIVWRSSL HLA-B07_02_9_49 0.9776980    0.015 0.851434    0.009     4.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_49. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPLVWRSSL VPLVWRSSL  0  0  0  0  0    VPLVWRSSL HLA-B07_02_9_50 0.9714640    0.021 0.844456    0.010     5.38 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_50. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPKVWRSSL VPKVWRSSL  0  0  0  0  0    VPKVWRSSL HLA-B07_02_9_51 0.9846380    0.012 0.848643    0.009     5.14 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_51. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPMVWRSSL VPMVWRSSL  0  0  0  0  0    VPMVWRSSL HLA-B07_02_9_52 0.9875890    0.010 0.907766    0.006     2.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_52. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPFVWRSSL VPFVWRSSL  0  0  0  0  0    VPFVWRSSL HLA-B07_02_9_53 0.9737650    0.019 0.835697    0.011     5.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_53. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPPVWRSSL VPPVWRSSL  0  0  0  0  0    VPPVWRSSL HLA-B07_02_9_54 0.9093310    0.064 0.724153    0.070    19.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_54. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPTVWRSSL VPTVWRSSL  0  0  0  0  0    VPTVWRSSL HLA-B07_02_9_55 0.9795810    0.014 0.852611    0.009     4.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_55. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPWVWRSSL VPWVWRSSL  0  0  0  0  0    VPWVWRSSL HLA-B07_02_9_56 0.9531440    0.033 0.839150    0.010     5.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_56. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPYVWRSSL VPYVWRSSL  0  0  0  0  0    VPYVWRSSL HLA-B07_02_9_57 0.9849740    0.012 0.863641    0.008     4.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_57. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPVVWRSSL VPVVWRSSL  0  0  0  0  0    VPVVWRSSL HLA-B07_02_9_58 0.9765440    0.016 0.852970    0.009     4.91 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_58. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSAWRSSL VPSAWRSSL  0  0  0  0  0    VPSAWRSSL HLA-B07_02_9_59 0.9928340    0.006 0.885986    0.007     3.43 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_59. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSRWRSSL VPSRWRSSL  0  0  0  0  0    VPSRWRSSL HLA-B07_02_9_60 0.9925570    0.006 0.891401    0.007     3.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_60. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSNWRSSL VPSNWRSSL  0  0  0  0  0    VPSNWRSSL HLA-B07_02_9_61 0.9915920    0.007 0.876532    0.008     3.80 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_61. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSDWRSSL VPSDWRSSL  0  0  0  0  0    VPSDWRSSL HLA-B07_02_9_62 0.9911550    0.008 0.837957    0.010     5.77 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_62. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSCWRSSL VPSCWRSSL  0  0  0  0  0    VPSCWRSSL HLA-B07_02_9_63 0.9532230    0.033 0.878968    0.008     3.70 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_63. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSQWRSSL VPSQWRSSL  0  0  0  0  0    VPSQWRSSL HLA-B07_02_9_64 0.9951750    0.004 0.884642    0.007     3.48 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_64. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSEWRSSL VPSEWRSSL  0  0  0  0  0    VPSEWRSSL HLA-B07_02_9_65 0.9930140    0.006 0.856575    0.009     4.72 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_65. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSGWRSSL VPSGWRSSL  0  0  0  0  0    VPSGWRSSL HLA-B07_02_9_66 0.9930970    0.006 0.871316    0.008     4.02 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_66. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSHWRSSL VPSHWRSSL  0  0  0  0  0    VPSHWRSSL HLA-B07_02_9_67 0.9917940    0.007 0.876072    0.008     3.82 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_67. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSIWRSSL VPSIWRSSL  0  0  0  0  0    VPSIWRSSL HLA-B07_02_9_68 0.9899600    0.009 0.873757    0.008     3.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_68. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSLWRSSL VPSLWRSSL  0  0  0  0  0    VPSLWRSSL HLA-B07_02_9_69 0.9920200    0.007 0.880754    0.007     3.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_69. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSKWRSSL VPSKWRSSL  0  0  0  0  0    VPSKWRSSL HLA-B07_02_9_70 0.9950750    0.004 0.888728    0.007     3.33 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_70. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSMWRSSL VPSMWRSSL  0  0  0  0  0    VPSMWRSSL HLA-B07_02_9_71 0.9911900    0.008 0.890441    0.007     3.27 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_71. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSFWRSSL VPSFWRSSL  0  0  0  0  0    VPSFWRSSL HLA-B07_02_9_72 0.9891680    0.009 0.884405    0.007     3.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_72. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSPWRSSL VPSPWRSSL  0  0  0  0  0    VPSPWRSSL HLA-B07_02_9_73 0.9965500    0.003 0.874606    0.008     3.88 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_73. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSSWRSSL VPSSWRSSL  0  0  0  0  0    VPSSWRSSL HLA-B07_02_9_74 0.9941750    0.005 0.884093    0.007     3.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_74. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSTWRSSL VPSTWRSSL  0  0  0  0  0    VPSTWRSSL HLA-B07_02_9_75 0.9930070    0.006 0.877062    0.008     3.78 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_75. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSWWRSSL VPSWWRSSL  0  0  0  0  0    VPSWWRSSL HLA-B07_02_9_76 0.9886910    0.010 0.886520    0.007     3.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_76. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSYWRSSL VPSYWRSSL  0  0  0  0  0    VPSYWRSSL HLA-B07_02_9_77 0.9891860    0.009 0.882373    0.007     3.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_77. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVARSSL VPSVARSSL  0  0  0  0  0    VPSVARSSL HLA-B07_02_9_78 0.9940500    0.005 0.873441    0.008     3.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_78. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVRRSSL VPSVRRSSL  0  0  0  0  0    VPSVRRSSL HLA-B07_02_9_79 0.9949730    0.004 0.871891    0.008     4.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_79. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVNRSSL VPSVNRSSL  0  0  0  0  0    VPSVNRSSL HLA-B07_02_9_80 0.9905930    0.008 0.848016    0.009     5.18 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_80. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVDRSSL VPSVDRSSL  0  0  0  0  0    VPSVDRSSL HLA-B07_02_9_81 0.9843170    0.012 0.811418    0.018     7.69 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_81. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVCRSSL VPSVCRSSL  0  0  0  0  0    VPSVCRSSL HLA-B07_02_9_82 0.9758240    0.017 0.876435    0.008     3.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_82. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVQRSSL VPSVQRSSL  0  0  0  0  0    VPSVQRSSL HLA-B07_02_9_83 0.9947660    0.005 0.856077    0.009     4.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_83. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVERSSL VPSVERSSL  0  0  0  0  0    VPSVERSSL HLA-B07_02_9_84 0.9891910    0.009 0.813222    0.017     7.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_84. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVGRSSL VPSVGRSSL  0  0  0  0  0    VPSVGRSSL HLA-B07_02_9_85 0.9951860    0.004 0.871165    0.008     4.03 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_85. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVHRSSL VPSVHRSSL  0  0  0  0  0    VPSVHRSSL HLA-B07_02_9_86 0.9961380    0.003 0.883618    0.007     3.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_86. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVIRSSL VPSVIRSSL  0  0  0  0  0    VPSVIRSSL HLA-B07_02_9_87 0.9938620    0.005 0.860027    0.009     4.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_87. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVLRSSL VPSVLRSSL  0  0  0  0  0    VPSVLRSSL HLA-B07_02_9_88 0.9923120    0.007 0.864364    0.008     4.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_88. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVKRSSL VPSVKRSSL  0  0  0  0  0    VPSVKRSSL HLA-B07_02_9_89 0.9950270    0.004 0.842205    0.010     5.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_89. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVMRSSL VPSVMRSSL  0  0  0  0  0    VPSVMRSSL HLA-B07_02_9_90 0.9896330    0.009 0.876409    0.008     3.81 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_90. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVFRSSL VPSVFRSSL  0  0  0  0  0    VPSVFRSSL HLA-B07_02_9_91 0.9881760    0.010 0.854501    0.009     4.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_91. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVPRSSL VPSVPRSSL  0  0  0  0  0    VPSVPRSSL HLA-B07_02_9_92 0.9974950    0.002 0.863714    0.008     4.37 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_92. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVSRSSL VPSVSRSSL  0  0  0  0  0    VPSVSRSSL HLA-B07_02_9_93 0.9948800    0.004 0.869468    0.008     4.11 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_93. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVTRSSL VPSVTRSSL  0  0  0  0  0    VPSVTRSSL HLA-B07_02_9_94 0.9949650    0.004 0.872576    0.008     3.97 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_94. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVYRSSL VPSVYRSSL  0  0  0  0  0    VPSVYRSSL HLA-B07_02_9_95 0.9886820    0.010 0.865901    0.008     4.27 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_95. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVVRSSL VPSVVRSSL  0  0  0  0  0    VPSVVRSSL HLA-B07_02_9_96 0.9944240    0.005 0.864571    0.008     4.33 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_96. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWASSL VPSVWASSL  0  0  0  0  0    VPSVWASSL HLA-B07_02_9_97 0.9238420    0.053 0.758638    0.043    13.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_97. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWNSSL VPSVWNSSL  0  0  0  0  0    VPSVWNSSL HLA-B07_02_9_98 0.9352440    0.045 0.769092    0.037    12.16 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_98. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWDSSL VPSVWDSSL  0  0  0  0  0    VPSVWDSSL HLA-B07_02_9_99 0.7665630    0.170 0.655191    0.150    41.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_99. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWCSSL VPSVWCSSL  0  0  0  0  0    VPSVWCSSL HLA-B07_02_9_10 0.6802720    0.235 0.697034    0.100    26.52 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWQSSL VPSVWQSSL  0  0  0  0  0    VPSVWQSSL HLA-B07_02_9_10 0.9434210    0.039 0.738952    0.057    16.85 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWESSL VPSVWESSL  0  0  0  0  0    VPSVWESSL HLA-B07_02_9_10 0.8509680    0.101 0.656932    0.148    40.93 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWGSSL VPSVWGSSL  0  0  0  0  0    VPSVWGSSL HLA-B07_02_9_10 0.9676950    0.023 0.806275    0.019     8.13 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWHSSL VPSVWHSSL  0  0  0  0  0    VPSVWHSSL HLA-B07_02_9_10 0.9746250    0.018 0.824451    0.014     6.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWISSL VPSVWISSL  0  0  0  0  0    VPSVWISSL HLA-B07_02_9_10 0.9310030    0.048 0.741431    0.055    16.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWLSSL VPSVWLSSL  0  0  0  0  0    VPSVWLSSL HLA-B07_02_9_10 0.9305560    0.048 0.766951    0.038    12.45 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWKSSL VPSVWKSSL  0  0  0  0  0    VPSVWKSSL HLA-B07_02_9_10 0.9774130    0.015 0.794834    0.025     9.21 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWMSSL VPSVWMSSL  0  0  0  0  0    VPSVWMSSL HLA-B07_02_9_10 0.9133060    0.062 0.764797    0.039    12.74 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWFSSL VPSVWFSSL  0  0  0  0  0    VPSVWFSSL HLA-B07_02_9_10 0.9208120    0.056 0.788670    0.028     9.84 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_10. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWPSSL VPSVWPSSL  0  0  0  0  0    VPSVWPSSL HLA-B07_02_9_11 0.9646090    0.025 0.744081    0.053    15.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWSSSL VPSVWSSSL  0  0  0  0  0    VPSVWSSSL HLA-B07_02_9_11 0.9523320    0.034 0.791430    0.027     9.55 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWTSSL VPSVWTSSL  0  0  0  0  0    VPSVWTSSL HLA-B07_02_9_11 0.9637110    0.026 0.806704    0.019     8.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWWSSL VPSVWWSSL  0  0  0  0  0    VPSVWWSSL HLA-B07_02_9_11 0.8792140    0.082 0.784431    0.031    10.30 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWYSSL VPSVWYSSL  0  0  0  0  0    VPSVWYSSL HLA-B07_02_9_11 0.8867030    0.077 0.755435    0.045    14.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWVSSL VPSVWVSSL  0  0  0  0  0    VPSVWVSSL HLA-B07_02_9_11 0.9314490    0.047 0.746482    0.052    15.53 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRASL VPSVWRASL  0  0  0  0  0    VPSVWRASL HLA-B07_02_9_11 0.9799760    0.014 0.859574    0.009     4.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRRSL VPSVWRRSL  0  0  0  0  0    VPSVWRRSL HLA-B07_02_9_11 0.9777160    0.015 0.845648    0.010     5.31 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRNSL VPSVWRNSL  0  0  0  0  0    VPSVWRNSL HLA-B07_02_9_11 0.9843910    0.012 0.846274    0.010     5.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRDSL VPSVWRDSL  0  0  0  0  0    VPSVWRDSL HLA-B07_02_9_11 0.9402370    0.041 0.770448    0.037    11.99 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_11. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRCSL VPSVWRCSL  0  0  0  0  0    VPSVWRCSL HLA-B07_02_9_12 0.9232510    0.054 0.824121    0.014     6.71 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRQSL VPSVWRQSL  0  0  0  0  0    VPSVWRQSL HLA-B07_02_9_12 0.9857930    0.011 0.832903    0.012     6.10 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRESL VPSVWRESL  0  0  0  0  0    VPSVWRESL HLA-B07_02_9_12 0.9633620    0.026 0.781255    0.032    10.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRGSL VPSVWRGSL  0  0  0  0  0    VPSVWRGSL HLA-B07_02_9_12 0.9717140    0.021 0.858502    0.009     4.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRHSL VPSVWRHSL  0  0  0  0  0    VPSVWRHSL HLA-B07_02_9_12 0.9880530    0.010 0.848472    0.009     5.15 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRISL VPSVWRISL  0  0  0  0  0    VPSVWRISL HLA-B07_02_9_12 0.9828590    0.012 0.831222    0.012     6.21 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRLSL VPSVWRLSL  0  0  0  0  0    VPSVWRLSL HLA-B07_02_9_12 0.9839280    0.012 0.851235    0.009     5.00 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRKSL VPSVWRKSL  0  0  0  0  0    VPSVWRKSL HLA-B07_02_9_12 0.9753900    0.017 0.816507    0.016     7.28 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRMSL VPSVWRMSL  0  0  0  0  0    VPSVWRMSL HLA-B07_02_9_12 0.9834820    0.012 0.860134    0.009     4.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRFSL VPSVWRFSL  0  0  0  0  0    VPSVWRFSL HLA-B07_02_9_12 0.9433200    0.039 0.822587    0.015     6.82 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_12. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRPSL VPSVWRPSL  0  0  0  0  0    VPSVWRPSL HLA-B07_02_9_13 0.9766040    0.016 0.814890    0.017     7.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRTSL VPSVWRTSL  0  0  0  0  0    VPSVWRTSL HLA-B07_02_9_13 0.9902190    0.008 0.859491    0.009     4.57 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRWSL VPSVWRWSL  0  0  0  0  0    VPSVWRWSL HLA-B07_02_9_13 0.8874260    0.077 0.752068    0.048    14.62 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRYSL VPSVWRYSL  0  0  0  0  0    VPSVWRYSL HLA-B07_02_9_13 0.9504080    0.035 0.822456    0.015     6.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRVSL VPSVWRVSL  0  0  0  0  0    VPSVWRVSL HLA-B07_02_9_13 0.9850800    0.011 0.837045    0.011     5.83 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSAL VPSVWRSAL  0  0  0  0  0    VPSVWRSAL HLA-B07_02_9_13 0.9893730    0.009 0.887859    0.007     3.36 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSRL VPSVWRSRL  0  0  0  0  0    VPSVWRSRL HLA-B07_02_9_13 0.9467120    0.037 0.782552    0.031    10.51 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSNL VPSVWRSNL  0  0  0  0  0    VPSVWRSNL HLA-B07_02_9_13 0.9515030    0.034 0.794008    0.025     9.29 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSDL VPSVWRSDL  0  0  0  0  0    VPSVWRSDL HLA-B07_02_9_13 0.9065380    0.066 0.776535    0.034    11.22 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSCL VPSVWRSCL  0  0  0  0  0    VPSVWRSCL HLA-B07_02_9_13 0.9062280    0.066 0.790605    0.027     9.64 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_13. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSQL VPSVWRSQL  0  0  0  0  0    VPSVWRSQL HLA-B07_02_9_14 0.9802910    0.014 0.817998    0.016     7.17 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSEL VPSVWRSEL  0  0  0  0  0    VPSVWRSEL HLA-B07_02_9_14 0.9821990    0.013 0.838298    0.010     5.75 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSGL VPSVWRSGL  0  0  0  0  0    VPSVWRSGL HLA-B07_02_9_14 0.9488650    0.036 0.803916    0.020     8.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSHL VPSVWRSHL  0  0  0  0  0    VPSVWRSHL HLA-B07_02_9_14 0.9593960    0.030 0.788166    0.029     9.89 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSIL VPSVWRSIL  0  0  0  0  0    VPSVWRSIL HLA-B07_02_9_14 0.9598170    0.030 0.826981    0.013     6.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSLL VPSVWRSLL  0  0  0  0  0    VPSVWRSLL HLA-B07_02_9_14 0.9412620    0.040 0.797523    0.023     8.94 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSKL VPSVWRSKL  0  0  0  0  0    VPSVWRSKL HLA-B07_02_9_14 0.9678210    0.023 0.792028    0.027     9.49 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSML VPSVWRSML  0  0  0  0  0    VPSVWRSML HLA-B07_02_9_14 0.9519380    0.034 0.802858    0.020     8.44 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSFL VPSVWRSFL  0  0  0  0  0    VPSVWRSFL HLA-B07_02_9_14 0.9204250    0.056 0.791588    0.027     9.54 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSPL VPSVWRSPL  0  0  0  0  0    VPSVWRSPL HLA-B07_02_9_14 0.9700850    0.022 0.888611    0.007     3.34 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_14. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSTL VPSVWRSTL  0  0  0  0  0    VPSVWRSTL HLA-B07_02_9_15 0.9861590    0.011 0.852718    0.009     4.92 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSWL VPSVWRSWL  0  0  0  0  0    VPSVWRSWL HLA-B07_02_9_15 0.8300290    0.117 0.774308    0.035    11.50 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSYL VPSVWRSYL  0  0  0  0  0    VPSVWRSYL HLA-B07_02_9_15 0.9485900    0.036 0.806396    0.019     8.12 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSVL VPSVWRSVL  0  0  0  0  0    VPSVWRSVL HLA-B07_02_9_15 0.9797050    0.014 0.857342    0.009     4.68 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSA VPSVWRSSA  0  0  0  0  0    VPSVWRSSA HLA-B07_02_9_15 0.6441440    0.261 0.689856    0.108    28.67 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSR VPSVWRSSR  0  0  0  0  0    VPSVWRSSR HLA-B07_02_9_15 0.0367230    2.602 0.231315    3.023  4092.87
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSN VPSVWRSSN  0  0  0  0  0    VPSVWRSSN HLA-B07_02_9_15 0.0171960    3.875 0.300184    1.854  1942.74
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSD VPSVWRSSD  0  0  0  0  0    VPSVWRSSD HLA-B07_02_9_15 0.0090850    5.374 0.247724    2.698  3427.07
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSC VPSVWRSSC  0  0  0  0  0    VPSVWRSSC HLA-B07_02_9_15 0.4100920    0.507 0.557041    0.351   120.63 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSQ VPSVWRSSQ  0  0  0  0  0    VPSVWRSSQ HLA-B07_02_9_15 0.1011370    1.446 0.357897    1.268  1040.45 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_15. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSE VPSVWRSSE  0  0  0  0  0    VPSVWRSSE HLA-B07_02_9_16 0.0669390    1.876 0.338611    1.457  1281.88 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSG VPSVWRSSG  0  0  0  0  0    VPSVWRSSG HLA-B07_02_9_16 0.1083820    1.385 0.480271    0.589   276.82 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSH VPSVWRSSH  0  0  0  0  0    VPSVWRSSH HLA-B07_02_9_16 0.2266990    0.848 0.401621    0.967   648.28 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSI VPSVWRSSI  0  0  0  0  0    VPSVWRSSI HLA-B07_02_9_16 0.9196750    0.057 0.816782    0.016     7.26 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSK VPSVWRSSK  0  0  0  0  0    VPSVWRSSK HLA-B07_02_9_16 0.0559860    2.086 0.295281    1.920  2048.58
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSM VPSVWRSSM  0  0  0  0  0    VPSVWRSSM HLA-B07_02_9_16 0.9769420    0.015 0.857767    0.009     4.66 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSF VPSVWRSSF  0  0  0  0  0    VPSVWRSSF HLA-B07_02_9_16 0.9356590    0.044 0.791117    0.027     9.58 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSP VPSVWRSSP  0  0  0  0  0    VPSVWRSSP HLA-B07_02_9_16 0.1977720    0.924 0.414412    0.893   564.50 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSS VPSVWRSSS  0  0  0  0  0    VPSVWRSSS HLA-B07_02_9_16 0.1583230    1.071 0.481630    0.585   272.78 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSST VPSVWRSST  0  0  0  0  0    VPSVWRSST HLA-B07_02_9_16 0.3926830    0.531 0.587087    0.271    87.15 <= WB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_16. Allele HLA-B*0702. Number of high binders 0. Number of weak binders 1. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSW VPSVWRSSW  0  0  0  0  0    VPSVWRSSW HLA-B07_02_9_17 0.4244530    0.487 0.516212    0.472   187.63 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_17. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSY VPSVWRSSY  0  0  0  0  0    VPSVWRSSY HLA-B07_02_9_17 0.4214160    0.491 0.481079    0.586   274.41 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_17. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
+# Rank Threshold for Strong binding peptides   0.500
+# Rank Threshold for Weak binding peptides   2.000
+---------------------------------------------------------------------------------------------------------------------------
+ Pos         MHC        Peptide      Core Of Gp Gl Ip Il        Icore        Identity  Score_EL %Rank_EL Score_BA %Rank_BA  Aff(nM) BindLevel
+---------------------------------------------------------------------------------------------------------------------------
+   1  HLA-B*0702      VPSVWRSSV VPSVWRSSV  0  0  0  0  0    VPSVWRSSV HLA-B07_02_9_17 0.9025430    0.069 0.794500    0.025     9.24 <= SB
+---------------------------------------------------------------------------------------------------------------------------
+
+Protein HLA-B07_02_9_17. Allele HLA-B*0702. Number of high binders 1. Number of weak binders 0. Number of peptides 1
+
+-----------------------------------------------------------------------------------
