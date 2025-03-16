@@ -77,3 +77,7 @@ p <- p + geom_point(aes(x=contacts, y=weights_norm,
 
 ggsave(plot=p, "../figures/extended_data_fig8/structure-weight-relationship.pdf",
        width=15, height=4)
+
+tcr_interactions %>%
+    group_by(tcr) %>%
+    summarize(cor=cor(weights_norm, contacts))
