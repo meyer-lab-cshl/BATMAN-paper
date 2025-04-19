@@ -180,25 +180,28 @@ trace_elbo = approx.hist #ELBO trace
 '''Plotting'''
 
 #Weights index for all 14 TCRs binding 9 mers in benchmark
+fig = plt.figure(figsize=(20, 10))
+
 plt.rcParams.update({'font.size': 28})
 
 plt.subplot(2,1,1)
-plt.plot(np.arange(len(traces_mean[:,443:569])),
-        traces_mean[:,443:570], '-k')
+#Select only the positional weights parameters to plot
+#From the model above, we need to skip the last 2+1+14+1+1 inferred paarmeters
+# to get to the 14*9=126 weights for 14 TCRs
+# Plot every 10 steps
+plt.plot(10*np.arange(len(traces_mean[::10,427:553])), 
+        traces_mean[::10,427:553], '-k', linewidth=0.5)
 plt.ylim(0,1)
-plt.xlabel('ADVI steps')
-plt.ylabel('Mean of inferred positional weight')
-plt.title('Inferred positional weight traces')
+plt.xticks([])#plt.xlabel('ADVI steps')
+plt.ylabel('Positional weight \n posterior mean')
 
 plt.subplot(2,1,2)
-plt.plot(np.arange(len(traces_mean[:,443:569])),
-        trace_elbo, '-k')
-#plt.ylim(0,1)
+plt.plot(np.arange(len(traces_mean)),
+        trace_elbo, '-k',linewidth=0.5)
 plt.xlabel('ADVI steps')
 plt.ylabel('ELBO loss')
-plt.title('ELBO trace')
 
-
+plt.savefig("figS10.pdf") # Saves the plot as a PDF file
         
 
 
