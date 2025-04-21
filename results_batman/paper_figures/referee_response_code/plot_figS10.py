@@ -194,12 +194,19 @@ plt.plot(10*np.arange(len(traces_mean[::10,427:553])),
 plt.ylim(0,1)
 plt.xticks([])#plt.xlabel('ADVI steps')
 plt.ylabel('Positional weight \n posterior mean')
+plt.title('A', loc='left')
+
 
 plt.subplot(2,1,2)
 plt.plot(np.arange(len(traces_mean)),
         trace_elbo, '-k',linewidth=0.5)
 plt.xlabel('ADVI steps')
 plt.ylabel('ELBO loss')
+plt.title('B', loc='left')
+
+# Save plot data
+pd.DataFrame(traces_mean[::10,427:553]).to_csv('raw_data_fig_S10a.csv')
+pd.DataFrame(trace_elbo).to_csv('raw_data_fig_S10b.csv')
 
 plt.savefig("figS10.pdf") # Saves the plot as a PDF file
         
