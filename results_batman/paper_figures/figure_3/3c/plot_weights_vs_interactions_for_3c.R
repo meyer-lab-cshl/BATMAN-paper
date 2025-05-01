@@ -10,7 +10,7 @@ library(forcats)
 library(ggrepel)
 
 # set working directory to where this script is
-setwd(getSrcDirectory(function(){})[1]) 
+setwd(getSrcDirectory(function(){})[1])
 
 ############
 ## data  ###
@@ -74,6 +74,10 @@ tcr_interactions$pepresidue <- substr(peptides$peptide,tcr_interactions$position
 tcr_interactions$pepresidue <- paste0(tcr_interactions$position,
                                       tcr_interactions$pepresidue)
 
+# Save raw data
+write.csv(tcr_interactions, "raw_data_fig_3c.csv")
+
+
 # Show label only for 1E6
 tcr_interactions$pepresidue[tcr_interactions$tcr!='TCR-1E6'] <- NA
 
@@ -94,9 +98,9 @@ p <- p + geom_point(aes(x=contacts, y=weights_norm,
   labs(color="",
        y="Normalized positional weight",
        x="Number of TCR interactions") +
-  geom_smooth(aes(x=contacts, y=weights_norm, 
+  geom_smooth(aes(x=contacts, y=weights_norm,
                   group=factor(tcr,levels=c("TCR-1E6", "47BE7","TIL1383I","NYE-S1",
-                                            "NYE-S2", "NYE-S3","TCR-F5", "F24")), 
+                                            "NYE-S2", "NYE-S3","TCR-F5", "F24")),
                   color=factor(tcr,levels=c("TCR-1E6", "47BE7","TIL1383I",
                                             "NYE-S1", "NYE-S2", "NYE-S3",
                                             "TCR-F5", "F24"))),
@@ -112,10 +116,8 @@ p <- p + geom_point(aes(x=contacts, y=weights_norm,
   theme(text = element_text(size=35),
         axis.text = element_text(size=25)) +
   theme(legend.position = "bottom")
-  
+
 
 ggsave(plot=p, "structure_weight_relationship_3c.pdf",
        width=6, height=11)
 
-# Save raw data
-write.csv(tcr_interactions, "raw_data_fig_3c.csv")
