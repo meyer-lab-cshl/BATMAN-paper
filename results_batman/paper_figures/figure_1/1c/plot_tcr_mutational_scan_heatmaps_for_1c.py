@@ -5,6 +5,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import os
+print(os.getcwd())
+
 # Plotting order for substituted amino acids (interfacial hydrophobicity order)
 # Ref: https://www.annualreviews.org/content/journals/10.1146/annurev.biophys.28.1.319
 amino_acid_list = ['W','F','Y','L','I','C','M','G','V','S','T','A','N','P',
@@ -12,11 +15,11 @@ amino_acid_list = ['W','F','Y','L','I','C','M','G','V','S','T','A','N','P',
 
 # Load full mutant epitope activity data for MHCI and MHCII
 mutant_activity_data_mhci = pd.read_excel(
-    ''.join(['../../../tcr_epitope_datasets/mutational_scan_datasets/',
+    ''.join(['../../../tcr_epitope_datasets/mutational_scan_datasets/database/',
              'TCR_pMHCI_mutational_scan_database.xlsx']))
 
 mutant_activity_data_mhcii = pd.read_excel(
-    ''.join(['../../../tcr_epitope_datasets/mutational_scan_datasets/',
+    ''.join(['../../../tcr_epitope_datasets/mutational_scan_datasets/database/',
              'TCR_pMHCII_mutational_scan_database.xlsx']))
 
 mutant_activity_data = pd.concat([mutant_activity_data_mhci,
