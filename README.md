@@ -1,3 +1,4 @@
+![DOI](https://zenodo.org/badge/733549809.svg)
 # Comprehensive epitope mutational scan database enables accurate T cell receptor cross-reactivity prediction
 
 A single T Cell Receptor (TCR) can recognize a diverse variety of peptides, an essential property known as TCR cross-reactivity.
