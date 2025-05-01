@@ -1,5 +1,5 @@
-![DOI](https://zenodo.org/badge/733549809.svg)
-# Comprehensive epitope mutational scan database enables accurate T cell receptor cross-reactivity prediction
+![DOI](https://zenodo.org/badge/733549809.svg)&emsp;&emsp;[![DOI:10.1101/2024.01.22.576714](http://img.shields.io/badge/DOI-10.1101/2024.01.22.576714-B31B1B.svg)](https://doi.org/10.1101/2024.01.22.576714)&emsp;&emsp;[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meyer-lab-cshl/BATMAN/blob/main/run_batman/pyBATMAN_Tutorial.ipynb) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+# T cell receptor cross-reactivity prediction improved by a comprehensive mutational scan database
 
 A single T Cell Receptor (TCR) can recognize a diverse variety of peptides, an essential property known as TCR cross-reactivity.
 Predicting which peptides a TCR cross-reacts to is critical for numerous applications, including predicting viral escape, cancer
@@ -32,7 +32,7 @@ BATMAN outperforms existing methods and reveals important biochemical predictors
 Finally, we demonstrate the broad applicability of BATMAN, including for predicting off-target effects for TCR-based therapies and
 polyclonal T cell responses.
 
-For access to the software and an interactive tutorial refer to our [pyBATMAN github page](https://github.com/meyer-lab-cshl/BATMAN/tree/main) and included [tutorial in jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb).
+For access to the software and an interactive tutorial refer to our [pyBATMAN github page](https://github.com/meyer-lab-cshl/BATMAN/tree/main) and included [tutorial in jupyter notebook](https://github.com/meyer-lab-cshl/BATMAN-paper/blob/main/run_batman/pyBATMAN_Tutorial.ipynb) [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meyer-lab-cshl/BATMAN/blob/main/run_batman/pyBATMAN_Tutorial.ipynb).
 
 
 # BATMAN preprint
