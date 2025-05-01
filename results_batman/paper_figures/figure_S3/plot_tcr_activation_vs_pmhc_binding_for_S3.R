@@ -72,6 +72,11 @@ p <- ggplot(tcr_data,aes(y=factor(activation,levels=c('No','Weak','Strong')),
 ggsave(plot=p, "figS3.pdf",
        width=15, height=10)
 
+# Save raw data
+write.csv(tcr_data[c("tcr","peptide","activation","mutation_position","BindLevel")],
+          "raw_data_fig_S3.csv")
+
+
 
 
 
