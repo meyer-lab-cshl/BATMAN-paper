@@ -36,7 +36,17 @@ For access to the software and an interactive tutorial refer to our [pyBATMAN gi
 
 
 # BATMAN preprint
-The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/paper_figures) in this repository contains all code and raw data to reproduce figures in our BATMAN [preprint](https://www.biorxiv.org/content/10.1101/2024.01.22.576714v3) - now accepted at Cell Systems. 
+The folder [paper_figures](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/paper_figures) in this repository contains all code and raw data to reproduce figures in our BATMAN [preprint](https://www.biorxiv.org/content/10.1101/2024.01.22.576714v3) - now accepted at Cell Systems. If you use or refer to BATMAN or BATCAVE in your work, please cite us as
+
+```
+@article{banerjee2025comprehensive,
+  title={Comprehensive epitope mutational scan database enables accurate T cell receptor cross-reactivity prediction},
+  author={Banerjee, Amitava and Pattinson, David J and Wincek, Cornelia L and Bunk, Paul and Axhemi, Armend and Chapin, Sarah R and Navlakha, Saket and Meyer, Hannah V},
+  journal={bioRxiv},
+  pages={2024--01},
+  year={2025}
+}
+```
 
 # Downloading BATCAVE dataset
 The fully curated database of TCR-pMHC interactions can be downloaded from the [database folder](https://github.com/meyer-lab-cshl/BATMAN-paper/tree/main/results_batman/tcr_epitope_datasets/mutational_scan_datasets/database) in this repository. 
